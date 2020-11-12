@@ -4,51 +4,46 @@ import '../css/standard.css';
 import '../css/parallax.css';
 import '../css/welcome.css';
 import Fade from 'react-reveal';
+import Parallax from './parallax';
 
 class Welcome extends Component {
-  componentDidMount(){
-        window.addEventListener('scroll', function(event) {
-            var depth, i, layer, layers, len, movement, topDistance, translate3d;
-            topDistance = this.pageYOffset;
-            var elementDistance = topDistance - document.getElementById("welcome-component").offsetTop
-            layers = document.querySelectorAll("[data-type='parallax']");
-            for (i = 0, len = layers.length; i < len; i++) {
-              layer = layers[i];
-              depth = layer.getAttribute('data-depth');
-              movement = -1 * (topDistance + elementDistance * depth) 
-              translate3d = 'translate3d(' + 0 + ',' + movement + 'px, 0)';
-              layer.style['-webkit-transform'] = translate3d;
-              layer.style['-moz-transform'] = translate3d;
-              layer.style['-ms-transform'] = translate3d;
-              layer.style['-o-transform'] = translate3d;
-              layer.style.transform = translate3d;
-            }
-        });   
-  }
+
   render() {
+    const items = {
+      background: "linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))",
+      name : "blog-welcome",
+      layers: [ 
+      {image: require("../images/bluebubbles1.png"), depth: "-0.90", name: "layer1"},
+      {image: require("../images/bluebubbles2.png"), depth: "-0.8",  name: "layer2"},
+      {image: require("../images/bluebubbles3.png"), depth: "-0.7",  name: "layer3"},
+      ]
+    }
+    
     return (
-    <div>
-        <section id = "welcome">
-        <div id='welcome-component' style= {{minHeight: "100vh"}}>
-        <div class='layer-bg layer' data-depth='-0.50' data-type='parallax'></div>
-        <div class='layer-1 layer' data-depth='-0.60' data-type='parallax'></div>
-        <div class='layer-2 layer' data-depth='-0.50' data-type='parallax'></div>
-        <div class='layer-3 layer' data-depth='-0.40' data-type='parallax'></div>
-        <div class='layer-4 layer' data-depth='-0.30' data-type='parallax'></div>   
-        
-          <div className= "namecard">
-          <Row>
-            <Col md={8} className= "welcome-title">
-            <Fade bottom duration= {5000}>
-              <h1>JORDAN LEI</h1>
-            </Fade>
-            </Col>
-          </Row>
+      <div>
+        <section id = "blog-welcome">
+          <Parallax items = {items}>
+            <div>
+              <section id = "welcome">
+              <div className= "light-container">
+                <Row style = {{paddingTop: "30vh"}}>
+                  <Col md={8}>
+                  <Fade bottom duration= {5000}>
+                    <h1>matthew lei</h1>
+                  </Fade>
+                  </Col>
+                </Row>
+              </div>
+              
+              <div>
+
+              </div>
+              <div id='welcome-mobile'></div>
+              </section>
           </div>
-        </div>
-        <div id='welcome-mobile'></div>
+          </Parallax>
         </section>
-    </div>
+      </div>
     );
   }
 }

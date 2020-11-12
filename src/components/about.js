@@ -1,54 +1,28 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import "../css/welcome.css"
 import Fade from 'react-reveal';
+import Parallax from './parallax';
 
 class About extends Component {
-  
   render() {
-
-    var innerContent=[
-        <Col md={3}>
-        <Fade bottom duration={5000}>
-          <h3>
-            I love drawing, writing, making music, 
-            and training AI to beat me at all of those things
-          </h3>
-        </Fade>
-        </Col>,
-        <Col md={1}></Col>,
-        <Col md={5}>
-          <p>
-          I'm a senior in the <b>Jerome Fisher Program in 
-          Management and Technology</b> at the <b>University of Pennsylvania.</b> <br/>
-          I consider myself an inquisitive person - I love figuring 
-          out what makes things tick - maybe that's why I chose to 
-          pursue <b>Computer Science</b> and <b>Operations, Information, and Decision Processes</b>!
-          Curiosity drives me. <br/>
-          I have a nerdy passion for <b>Deep Learning and Artificial 
-          Intelligence</b>. Before the singularity, you'll find me painting, 
-          playing the guitar, or snuggling up with a good book. <br/>
-          </p>
-        </Col>]
-    
-      
     return (
-      <div className="dark-container" style={{paddingBottom: 2+"%"}}>            
-        <div className= "mobile-only">
-        <Row>
-          <div className= "banner">
-            {innerContent}
-          </div>
-        </Row>
-        </div>
-
-        <div className= "web-only">
-        <Row>
-            {innerContent}
-        </Row>
-        </div>
+      <div className= "light-container" style={{paddingBottom: "10%"}}>
+      <Row>
+        <Col md={8}>
+        <Fade bottom duration= {5000}>
+          <h3>about</h3>
+          <h4>
+            Hi! My name is Matthew. I am a sophomore at Lincoln High School.
+            I'm passionate about art and animation (Pixar, please hire me).
+            In my spare time, you'll find me imitating the Giant Pacific Salamander.
+            It is very important as this species is on the brink of extinction.
+          </h4>
+        </Fade>
+        </Col>
+      </Row>
       </div>
-    );
+    )
+
   }
 }
 

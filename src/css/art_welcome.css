@@ -1,15 +1,4 @@
 /* welcome page (left side) formatting*/
-.welcome-container{
-    color: rgba(255, 255, 255, 0.9);
-    background-image: url(../public/static/byte-me-2.jpg);
-    /**background-image: linear-gradient(rgb(194, 202, 221), rgb(171, 178, 197), #8090B8);**/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    position:relative;
-}
 
 .welcome-title h1{
     text-align: left;
@@ -43,28 +32,6 @@
     z-index: -1;
 }
 
-#art-welcome .layer-bg {
-    background-color: black;
-}
-#art-welcome .layer-1 {
-	background-image: url("../public/static/art/art-header-1.png");
-}
-#art-welcome .layer-2 {
-    background-image: url("../public/static/art/art-header-2.png");
-}
-#art-welcome .layer-3 {
-	background-image: url("../public/static/art/art-header-3.png");
-}
-#art-welcome .layer-4 {
-    background-image: url("../public/static/art/art-header-4.png");
-}
-
-#art-welcome-mobile {
-	display: none;
-	background: url("../public/static/byte-me-2.jpg")
-		no-repeat center bottom / cover;
-	height: 320px;
-}
 
 .art-header h3{
     letter-spacing: 15px;

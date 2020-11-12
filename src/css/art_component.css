@@ -18,12 +18,6 @@ body {
 	background-position: center;
 }
 
-#hero-mobile {
-	display: none;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png")
-		no-repeat center bottom / cover;
-	height: 320px;
-}
 
 .first-section {
 	padding: 50px 0 20px 0;
@@ -42,69 +36,5 @@ p {
 	line-height: 150%;
 }
 
-#art-component .layer-bg {
-    background-color: black;
-}
-#art-component .layer-1 {
-	background-image: url("../public/static/swirl-large-1-2.png");
-	
-}
-#art-component .layer-2 {
-	background-image: url("../public/static/swirl-large-2-2.png");
-}
 
-#art-component .layer-3 {
-	background-image: url("../public/static/swirl-large-3-2.png");
-}
-
-#art-component .layer-4 {
-	background-image: url("../public/static/swirl-large-4-2.png");
-}
-#art-component .layer-overlay {
-	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
-}
-
-.tutorial-link {
-	color: white;
-	font-size: 18px;
-	text-decoration: underline;
-}
-
-
-.art-title a{
-    text-align: center;
-    font-weight: lighter; 
-    letter-spacing: 13px;
-    font-size: 40px;
-	color: rgba(255, 255, 255, 0.7);
-	width: 26vw;
-	height: 20vh;
-	word-wrap: break-word;
-}
-
-.art-title a:hover{
-	font-size: 40px;
-	font-weight: normal;
-	color: rgba(255, 255, 255, 0.9);
-}
-
-.blog-title a{
-	position: absolute;
-	top: 165vh; 
-	left: 39vw;
-    text-align: center;
-    font-weight: lighter; 
-    letter-spacing: 13px;
-    font-size: 40px;
-	color: rgba(255, 255, 255, 0.7);
-	width: 22vw;
-	word-wrap: break-word;
-}
-
-.blog-title a:hover{
-	font-size: 40px;
-	font-weight: normal;
-	color: rgba(255, 255, 255, 0.9);
-}
-  
 
