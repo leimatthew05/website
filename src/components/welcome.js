@@ -13,9 +13,11 @@ class Welcome extends Component {
       background: "linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1))",
       name : "blog-welcome",
       layers: [ 
-      {image: require("../images/bluebubbles1.png"), depth: "-0.90", name: "layer1"},
-      {image: require("../images/bluebubbles2.png"), depth: "-0.8",  name: "layer2"},
-      {image: require("../images/bluebubbles3.png"), depth: "-0.7",  name: "layer3"},
+      
+      {image: require("../images/howdy2.png"), depth: "0",  name: "layer3"},
+      {image: require("../images/howdy3.png"), depth: "0.7",  name: "layer3"},
+      {image: require("../images/howdy.png"), depth: "-1.3",  name: "layer3"},
+      
       ]
     }
     

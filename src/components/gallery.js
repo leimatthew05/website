@@ -14,17 +14,18 @@ class Gallery extends Component {
     <img  src = {require("../images/mermaid and cuttles.png")} alt="4" />,
     <img  src = {require("../images/rubberducky.jpeg")} alt="5" />, 
     <img  src = {require("../images/s&d-tshirt.png")} alt="5" />,
+    <img  src = {require("../images/partyman.png")} alt="5" />,
     <img  src = {require("../images/the-spider.png")} alt="5" />,
     ]
     return (
-        <div className="dark-container" style={{height: "120vh"}}>
+        <div className="dark-container" style={{height: "150vh"}}>
         
             <Row>
             <Col md={8}>
             <Fade bottom duration= {5000}>
                 <h3>gallery</h3>
                 <h4>
-                I'm a moose in a moose.
+                Here's some of my art. Have a look!
                 </h4>
                 
             </Fade>

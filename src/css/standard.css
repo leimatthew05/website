@@ -63,7 +63,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 	text-transform: none;
   font-weight: 200;
   font-size: 6em;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
 }
 
 .landing-container h2{
@@ -216,4 +216,14 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   background-image: url("../images/past.png");
   background-size:contain;
   border: 0px !important;
+}
+
+.activities a{
+  text-decoration: none;
+  color: black;
+}
+
+.activities a:hover{
+  text-decoration: none; 
+  color: black;
 }
