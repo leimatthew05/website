@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.cf329784.chunk.css",
-    "main.js": "/website/static/js/main.b00ea60e.chunk.js",
-    "main.js.map": "/website/static/js/main.b00ea60e.chunk.js.map",
+    "main.css": "/website/static/css/main.2a490856.chunk.css",
+    "main.js": "/website/static/js/main.81d7770f.chunk.js",
+    "main.js.map": "/website/static/js/main.81d7770f.chunk.js.map",
     "runtime-main.js": "/website/static/js/runtime-main.70a96838.js",
     "runtime-main.js.map": "/website/static/js/runtime-main.70a96838.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/website/static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.667a24c5.chunk.js": "/website/static/js/2.667a24c5.chunk.js",
-    "static/js/2.667a24c5.chunk.js.map": "/website/static/js/2.667a24c5.chunk.js.map",
+    "static/js/2.22dfe794.chunk.js": "/website/static/js/2.22dfe794.chunk.js",
+    "static/js/2.22dfe794.chunk.js.map": "/website/static/js/2.22dfe794.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.6bf937d5ba83f5b51843efce5954ff94.js": "/website/precache-manifest.6bf937d5ba83f5b51843efce5954ff94.js",
+    "precache-manifest.1e85f9eaabf37412b076d09bd9948af9.js": "/website/precache-manifest.1e85f9eaabf37412b076d09bd9948af9.js",
     "service-worker.js": "/website/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/website/static/css/2.b0bb7f2c.chunk.css.map",
-    "static/css/main.cf329784.chunk.css.map": "/website/static/css/main.cf329784.chunk.css.map",
-    "static/js/2.667a24c5.chunk.js.LICENSE": "/website/static/js/2.667a24c5.chunk.js.LICENSE",
+    "static/css/main.2a490856.chunk.css.map": "/website/static/css/main.2a490856.chunk.css.map",
+    "static/js/2.22dfe794.chunk.js.LICENSE": "/website/static/js/2.22dfe794.chunk.js.LICENSE",
     "static/media/amanda-trade.png": "/website/static/media/amanda-trade.a5e8fd4c.png",
     "static/media/axolotl.png": "/website/static/media/axolotl.bfc23d8a.png",
     "static/media/cactuscowboy.png": "/website/static/media/cactuscowboy.595cc939.png",
     "static/media/clapperboard.png": "/website/static/media/clapperboard.704da0fe.png",
     "static/media/howdy.png": "/website/static/media/howdy.5dec0a4a.png",
     "static/media/howdy2.png": "/website/static/media/howdy2.2196993f.png",
-    "static/media/howdy3.png": "/website/static/media/howdy3.37b152ef.png",
+    "static/media/howdy3.svg": "/website/static/media/howdy3.78c28404.svg",
     "static/media/instagram.png": "/website/static/media/instagram.5c570427.png",
     "static/media/logo.svg": "/website/static/media/logo.5d5d9eef.svg",
     "static/media/mermaid and cuttles.png": "/website/static/media/mermaid and cuttles.e65c6b68.png",
@@ -35,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.70a96838.js",
     "static/css/2.b0bb7f2c.chunk.css",
-    "static/js/2.667a24c5.chunk.js",
-    "static/css/main.cf329784.chunk.css",
-    "static/js/main.b00ea60e.chunk.js"
+    "static/js/2.22dfe794.chunk.js",
+    "static/css/main.2a490856.chunk.css",
+    "static/js/main.81d7770f.chunk.js"
   ]
 }
