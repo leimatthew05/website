@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.leimatthew05.github.io/website",
+  "homepage": "https://www.matthewlei.com",
   "dependencies": {
     "3d-react-carousal": "^3.1.0",
     "@brainhubeu/react-carousel": "^1.10.30",

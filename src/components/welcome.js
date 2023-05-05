@@ -15,7 +15,7 @@ class Welcome extends Component {
       layers: [ 
       
       {image: require("../images/howdy2.png"), depth: "0",  name: "layer3"},
-      {image: require("../images/howdy3.png"), depth: "0.7",  name: "layer3"},
+      {image: require("../images/howdy3.svg"), depth: "0.7",  name: "layer3"},
       {image: require("../images/howdy.png"), depth: "-1.3",  name: "layer3"},
       
       ]
@@ -23,11 +23,11 @@ class Welcome extends Component {
     
     return (
       <div>
-        <section id = "blog-welcome">
+        <section id = "welcome">
           <Parallax items = {items}>
             <div>
               <section id = "welcome">
-              <div className= "light-container">
+              <div className= "light-container welcome-header">
                 <Row style = {{paddingTop: "30vh"}}>
                   <Col md={8}>
                   <Fade bottom duration= {5000}>

@@ -13,7 +13,10 @@ class Menu extends Component {
           <Link class= "navlink" activeClass="active" to="about" href= "" spy={true} smooth={true} duration= {800}>About</Link>
       </NavItem>,
       <NavItem>
-          <Link class= "navlink" activeClass="active" to="blogpostlist" href= "" spy={true} smooth={true} duration= {800}> Gallery</Link>
+          <Link class= "navlink" activeClass="active" to="gallery" href= "" spy={true} smooth={true} duration= {800}> Gallery</Link>
+      </NavItem>,
+      <NavItem>
+            <Link class= "navlink" activeClass="active" to="activities" href= "" spy={true} smooth={true} duration= {800}> Activities</Link>
       </NavItem>,
     ]
     return (

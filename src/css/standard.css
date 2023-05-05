@@ -87,6 +87,13 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   letter-spacing: 1px;
 }
 
+.landing-container h5{
+	text-transform: none;
+	font-weight: 200;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
 .landing-container p{
 	text-transform: none;
 	font-weight: 150;

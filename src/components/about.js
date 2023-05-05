@@ -6,8 +6,10 @@ import Parallax from './parallax';
 class About extends Component {
   render() {
     return (
+      <section id= "about">
       <div className= "light-container" style={{paddingBottom: "10%"}}>
       <Row>
+        <div className= "about-container">
         <Col md={8}>
         <Fade bottom duration= {5000}>
           <h3>about</h3>
@@ -22,8 +24,10 @@ class About extends Component {
           </h4>
         </Fade>
         </Col>
+        </div>
       </Row>
       </div>
+      </section>
     )
 
   }
