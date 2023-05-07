@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <section id= "about">
-      <div className= "light-container" style={{paddingBottom: "10%"}}>
+      <div className= "dark-container" style={{paddingBottom: "10%"}}>
       <Row>
         <div className= "about-container">
         <Col md={8}>
@@ -15,12 +15,8 @@ class About extends Component {
           <h3>about</h3>
           <h4>
             Hi! My name is Matthew. Welcome to my website! 
-            I'm a sophomore at Lincoln High School.
-            I'm passionate about art and animation (Pixar, please hire me).
-            My goal is to be a storyboard artist, character designer, or perhaps
-            a movie director. I'm working towards getting into art school. 
-            Be sure to check out some of my
-            artworks in my gallery and some videos from my YouTube channels.
+            I'm a senior at Lincoln High School.
+            This website is a work in progress... stay tuned for some changes!
           </h4>
         </Fade>
         </Col>

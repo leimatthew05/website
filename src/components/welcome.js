@@ -27,7 +27,7 @@ class Welcome extends Component {
           <Parallax items = {items}>
             <div>
               <section id = "welcome">
-              <div className= "light-container welcome-header">
+              <div className= "dark-container welcome-header">
                 <Row style = {{paddingTop: "30vh"}}>
                   <Col md={8}>
                   <Fade bottom duration= {5000}>

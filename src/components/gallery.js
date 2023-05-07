@@ -9,25 +9,33 @@ class Gallery extends Component {
 
     render() {
     var images = [
-    <img  src = {require("../images/amanda-trade.png")} alt="1" />,
-    <img  src = {require("../images/axolotl.png")} alt="2" />,
-    <img  src = {require("../images/cactuscowboy.png")} alt="3" />,
-    <img  src = {require("../images/mermaid and cuttles.png")} alt="4" />,
-    <img  src = {require("../images/rubberducky.jpeg")} alt="5" />, 
-    <img  src = {require("../images/s&d-tshirt.png")} alt="5" />,
-    <img  src = {require("../images/partyman.png")} alt="5" />,
-    <img  src = {require("../images/the-spider.png")} alt="5" />,
+    <img  src = {require("../images/1.png")} alt="1" />,
+    <img  src = {require("../images/2.png")} alt="2" />,
+    <img  src = {require("../images/3.png")} alt="3" />,
+    <img  src = {require("../images/4.png")} alt="4" />,
+    <img  src = {require("../images/5.png")} alt="5" />,
+    <img  src = {require("../images/6.png")} alt="5" />,
+    <img  src = {require("../images/7.png")} alt="6" />,
+    <img  src = {require("../images/8.png")} alt="7" />,
+    <img  src = {require("../images/9.png")} alt="8" />,
+    <img  src = {require("../images/10.png")} alt="9" />,
+    <img  src = {require("../images/11.png")} alt="10" />,
+    <img  src = {require("../images/12.png")} alt="11" />,
     ]
 
     var mobileimages=[
-        {src: require("../images/amanda-trade.png")}, 
-        {src: require("../images/axolotl.png")},
-        {src: require("../images/cactuscowboy.png")},
-        {src: require("../images/mermaid and cuttles.png")},
-        {src: require("../images/rubberducky.jpeg")},
-        {src: require("../images/s&d-tshirt.png")},
-        {src: require("../images/partyman.png")},
-        {src: require("../images/the-spider.png")},
+        {src: require("../images/1.png")}, 
+        {src: require("../images/2.png")},
+        {src: require("../images/3.png")},
+        {src: require("../images/4.png")},
+        {src: require("../images/5.png")},
+        {src: require("../images/6.png")},
+        {src: require("../images/7.png")}, 
+        {src: require("../images/8.png")},
+        {src: require("../images/9.png")},
+        {src: require("../images/10.png")},
+        {src: require("../images/11.png")},
+        {src: require("../images/12.png")},
     ]
 
     return (

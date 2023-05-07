@@ -18,7 +18,7 @@ class CarouselComponent extends Component {
             className="d-block"
             src={this.items[i].src}
             alt={this.items[i].altText}
-            style={{height: "70vh", width: "auto", margin:"0 auto", backgroundSize: "contain"}}
+            style={{height: "50vh", width: "auto", margin:"0 auto", backgroundSize: "contain"}}
         />
         <Carousel.Caption style={{width: "20vw", margin:"0 auto", 
         backgroundColor: "rgba(0, 0, 0, 0.8)"}}>

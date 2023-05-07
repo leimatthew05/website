@@ -4,7 +4,6 @@ import Welcome from "./welcome";
 import About from "./about";
 import Menu from "./menu";
 import Gallery from "./gallery";
-import Activities from "./activities";
 
 class Dev extends Component {
   render() {
@@ -16,7 +15,6 @@ class Dev extends Component {
         <About/>
       </div>
       <Gallery/>
-      <Activities/>
       </div>
       
     );

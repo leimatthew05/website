@@ -101,8 +101,8 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 }
 
 .dark-container{
-  color: rgba(255, 255, 255, 0.9);
-  background-color:rgb(8, 11, 19); 
+  color: rgb(255, 255, 255);
+  background-color:rgb(57, 35, 167); 
   padding: 5%;
   padding-left: 20%;
   padding-right: 15%;
@@ -178,13 +178,13 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 }
 
 .nav-item a{
-  color: black;
+  color: white;
   font-size: 100%;
 }
 
 .nav-item a:hover{
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 105%;
 }
 
@@ -223,14 +223,4 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
   background-image: url("../images/past.png");
   background-size:contain;
   border: 0px !important;
-}
-
-.activities a{
-  text-decoration: none;
-  color: black;
-}
-
-.activities a:hover{
-  text-decoration: none; 
-  color: black;
 }

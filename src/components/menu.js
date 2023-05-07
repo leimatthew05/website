@@ -15,13 +15,10 @@ class Menu extends Component {
       <NavItem>
           <Link class= "navlink" activeClass="active" to="gallery" href= "" spy={true} smooth={true} duration= {800}> Gallery</Link>
       </NavItem>,
-      <NavItem>
-            <Link class= "navlink" activeClass="active" to="activities" href= "" spy={true} smooth={true} duration= {800}> Activities</Link>
-      </NavItem>,
     ]
     return (
       <div class = "menu">
-      <Navbar light expand="md" style = {{backgroundColor: "rgba(255, 255, 255, 0.7)"}}>
+      <Navbar light expand="md" style = {{backgroundColor: "rgba(0, 220, 250, 0.7)"}}>
         <Nav style = {{width: "100%"}}>
           {items}
         </Nav>

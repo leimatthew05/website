@@ -41,22 +41,9 @@
     }
 
     .about-container{
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(57, 35, 167, 0.6);
         z-index: 1;
         margin: -10px;
-    }
-    
-    .activities img{
-        width: 100px !important;
-    }
-
-    .activities div.row{
-        padding: 0px !important;
-    }
-
-    .activities div.col-md-2{
-        padding: 5% !important;
-        text-align: center;
     }
 
 
