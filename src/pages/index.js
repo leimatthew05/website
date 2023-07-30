@@ -3,6 +3,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 
+
 // Step 2: Define your component
 const IndexPage = () => {
   return (
@@ -12,6 +13,16 @@ const IndexPage = () => {
         alt="Guido the water fish" 
         src="../images/fish-copy.gif"
       />
+      <StaticImage 
+        alt="Guido the water fish" 
+        src="../images/fish-copy.gif"
+      />
+      <StaticImage 
+        alt="Guido the water fish" 
+        src="../images/fish-copy.gif"
+      />
+      
+
     </Layout>
   )
 }
