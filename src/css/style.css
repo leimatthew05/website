@@ -1,6 +1,8 @@
 .container {
-    margin: auto;
-    max-width: 500px;
+    /* margin-left: 0px !important;
+    margin-right: 0px !important; */
+    margin: 0;
+    min-width: 100vw !important;
     font-family: sans-serif;
 }
 
@@ -20,3 +22,12 @@
     color: black;
 }
 
+img{
+    object-fit: contain !important;
+}
+
+.gallerycell{
+    background-size: cover; 
+    height: 50vh;
+    cursor: pointer; 
+}

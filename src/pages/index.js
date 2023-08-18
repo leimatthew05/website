@@ -2,6 +2,8 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 // Step 2: Define your component
