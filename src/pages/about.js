@@ -1,14 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
-import { useState } from "react";
-import {Row, Col, Button} from 'reactstrap';
+import Gallery from './gallery'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
-
-import { Gallery } from "react-grid-gallery";
-import Lightbox from "react-18-image-lightbox";
-import 'react-18-image-lightbox/style.css'
-import '../css/style.css'
 
 
 
@@ -29,62 +22,11 @@ const AboutPage = () => {
         height: 300,
         w: 6,
         alt: "Boats (Jeshu John - designerspics.com)",
-    },   
-    // {
-    //     src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    //     width: 320,
-    //     height: 400,
-    // },
-    // {
-    //     src: "../images/icon.png",
-    //     width: 320,
-    //     height: 212,
-    // },
-    ];
-
-    var gallery = images.map((image, index) => {
-        return (
-        <Col className="gallerycell" onClick={() => setIndex(index)} md={image.w} 
-            style={{backgroundImage: `url(${image.src})`}}>
-        </Col>
-        )
-    })
-
-    console.log(gallery)
-    
-    const [index, setIndex] = useState(-1);
-
-    const currentImage = images[index];
-    const nextIndex = (index + 1) % images.length;
-    const nextImage = images[nextIndex] || currentImage;
-    const prevIndex = (index + images.length - 1) % images.length;
-    const prevImage = images[prevIndex] || currentImage;
-
-    const handleClick = (index, item) => setIndex(index);
-    const handleClose = () => setIndex(-1);
-    const handleMovePrev = () => setIndex(prevIndex);
-    const handleMoveNext = () => setIndex(nextIndex);
+    }] 
 
     return (
         <Layout>
-            <Row style={{width: "100vw !important"}}>
-            {gallery}
-            </Row>
-            {!!currentImage && (
-            /* @ts-ignore */
-            <Lightbox
-                mainSrc={currentImage.src}
-                imageTitle={currentImage.caption}
-                mainSrcThumbnail={currentImage.src}
-                nextSrc={nextImage.original}
-                nextSrcThumbnail={nextImage.src}
-                prevSrc={prevImage.original}
-                prevSrcThumbnail={prevImage.src}
-                onCloseRequest={handleClose}
-                onMovePrevRequest={handleMovePrev}
-                onMoveNextRequest={handleMoveNext}
-            />
-            )}
+            <Gallery images={images}/>
         </Layout>
     )
 
