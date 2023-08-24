@@ -5,21 +5,18 @@ import Layout from '../components/layout'
 
 
 
+
 // Step 2: Define your component
 const AboutPage = () => {
 
     const images = [
     {
         src: "../images/fish-copy.gif",
-        width: 300,
-        height: 100,
         w: 6,
         caption: "After Rain (Jeshu John - designerspics.com)",
     },
     {
         src: "../images/snew-duck.png",
-        width: "10vw",
-        height: 300,
         w: 6,
         alt: "Boats (Jeshu John - designerspics.com)",
     }] 

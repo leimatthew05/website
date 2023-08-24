@@ -9,21 +9,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>They go to san fransisco where the disco's off the rails!</p>
+    <Layout pageTitle="Matthew Lei">
+      <p>Welcome to my portfolio!!</p>
       <StaticImage 
-        alt="Guido the water fish" 
-        src="../images/fish-copy.gif"
+        alt="Sim U Later!" 
+        src="../images/char-1.png"
       />
       <StaticImage 
-        alt="Guido the water fish" 
-        src="../images/fish-copy.gif"
+        alt="Robots Human Design" 
+        src="../images/char-5.png"
       />
       <StaticImage 
-        alt="Guido the water fish" 
-        src="../images/fish-copy.gif"
+        alt="Robots Human Design" 
+        src="../images/char-2.png"
       />
-      
+      <StaticImage 
+        alt="Cnideria Mains" 
+        src="../images/char-3.png"
+      />
+      <StaticImage 
+        alt="Cnideria Citizens" 
+        src="../images/char-4.png"
+      />      
+      <StaticImage 
+        alt="Sarah" 
+        src="../images/char-6.png"
+      />  
 
     </Layout>
   )

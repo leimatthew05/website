@@ -12,11 +12,11 @@ const Layout = ({ pageTitle, children }) => {
                             Home
                         </Link>
                     </li>
-                    <li className="nav-link-item">
+                    {/* <li className="nav-link-item">
                         <Link to="/about" className="nav-link-text">
                             About
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
             <main>
