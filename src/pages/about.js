@@ -9,23 +9,23 @@ import Layout from '../components/layout'
 // Step 2: Define your component
 const AboutPage = () => {
 
-    const images = [
-    {
-        src: "../images/fish-copy.gif",
-        w: 6,
-        caption: "After Rain (Jeshu John - designerspics.com)",
-    },
-    {
-        src: "../images/snew-duck.png",
-        w: 6,
-        alt: "Boats (Jeshu John - designerspics.com)",
-    }] 
+    // const images = [
+    // {
+    //     src: "../images/fish-copy.gif",
+    //     w: 6,
+    //     caption: "After Rain (Jeshu John - designerspics.com)",
+    // },
+    // {
+    //     src: "../images/snew-duck.png",
+    //     w: 6,
+    //     alt: "Boats (Jeshu John - designerspics.com)",
+    // }] 
 
-    return (
-        <Layout>
-            <Gallery images={images}/>
-        </Layout>
-    )
+    // return (
+    //     <Layout>
+    //         <Gallery images={images}/>
+    //     </Layout>
+    // )
 
   
 
