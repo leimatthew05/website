@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmatthew_lei_portfolio=self.webpackChunkmatthew_lei_portfolio||[]).push([[682],{5465:function(e,t,l){l.r(t),l.d(t,{Head:function(){return o}});var n=l(7294);l(6089),l(8678);const o=()=>n.createElement("title",null,"About Me");t.default=()=>{}}}]);
+//# sourceMappingURL=component---src-pages-about-js-f12f554afcb465d316d9.js.map
