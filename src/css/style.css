@@ -18,7 +18,8 @@
     padding-left: 0;
 }
 .nav-link-item {
-    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 .nav-link-text {
     color: black;
