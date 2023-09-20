@@ -12,11 +12,16 @@ const Layout = ({ pageTitle, children }) => {
                             Home
                         </Link>
                     </li>
-                    {/* <li className="nav-link-item">
-                        <Link to="/about" className="nav-link-text">
-                            About
+                    <li className="nav-link-item">
+                        <Link to="/character" className="nav-link-text">
+                            Character Design
                         </Link>
-                    </li> */}
+                    </li>
+                    <li className="nav-link-item">
+                        <Link to="/visdev" className="nav-link-text">
+                            Visual Development
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             <main>
