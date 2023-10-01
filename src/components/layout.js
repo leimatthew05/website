@@ -1,28 +1,47 @@
 import * as React from 'react'
+import {
+    Nav, 
+    Navbar,
+    NavLink,
+} from 'reactstrap';
+import '../css/style.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'gatsby'
-import "../css/style.css"
 
 const Layout = ({ pageTitle, children }) => {
+    var menuitems = 
+    [
+      <NavLink>
+        <Link to={"/"} >Nature</Link>
+      </NavLink>,
+      <NavLink>
+        <Link to={"/ocean/"}>Ocean</Link>
+      </NavLink>,
+      <NavLink>
+      <Link to={"/animation/"}>Animation</Link>
+    </NavLink>,
+      <NavLink>
+        <Link to={"/about/"}>About</Link>
+      </NavLink>,
+    ]
+
     return (
-        <div className="container">
-            <nav>
-                <ul className="nav-links">
-                    <li className="nav-link-item">
-                        <Link to="/" className="nav-link-text">
-                            Character Design
-                        </Link>
-                    </li>
-                    <li className="nav-link-item">
-                        <Link to="/visdev" className="nav-link-text">
-                            Visual Development
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <h1 className="heading">{pageTitle}</h1>
-                {children}
-            </main>
+        <div className = "layout">
+        <main>
+            <div className="menu">
+                    <Navbar>
+                        <Nav className="m-auto">
+                        {menuitems}
+                        </Nav>
+                    </Navbar>
+            </div>
+            <div className = "header" style = {{textAlign: "center", paddingBottom:"30px"}}>
+                <h1>{"My Portfolio"}</h1>
+                <h2>{pageTitle}</h2>
+            </div>
+
+            {children}
+        </main>
         </div>
     )
 }

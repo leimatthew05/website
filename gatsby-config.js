@@ -3,15 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Matthew Lei Portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Simple Gallery`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
-    },
-    __key: "images"
-  }]
-};
+  plugins: [],
+}

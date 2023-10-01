@@ -1,47 +1,39 @@
 // Step 1: Import React
 import * as React from 'react'
+import Gallery from '../components/gallery';
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 
 // Step 2: Define your component
-const Character = () => {
+const IndexPage = () => {
+  const images = [
+    [
+      {file: "../../images/img1.jpg", caption: "Ocean", width: 5464, height: 3576}, 
+      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
+      {file: "../../images/img3.jpg", caption: "Forest", width: 6720, height: 4480},
+    ],
+    [
+      {file: "../../images/img6.jpg", caption: "Hello", subcaption: "This is a photo of a beach", width: 2400, height: 3600},
+      {file: "../../images/img2.jpg", caption: "Beach", width: 5472, height: 3078}, 
+      {file: "../../images/img4.jpg", caption: "Tree", width: 2400, height: 3200},
+    ],
+    [
+      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
+      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
+      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
+    ],
+  ]
+  
   return (
-    <Layout pageTitle="Matthew Lei">
-      <p>Character Portfolio</p>
-      <StaticImage 
-        alt="Sim U Later!" 
-        src="../images/char-1.png"
-      />
-      <StaticImage 
-        alt="Robots Human Design" 
-        src="../images/char-2.png"
-      />
-      <StaticImage 
-        alt="Robots Human Design" 
-        src="../images/char-3.png"
-      />
-      <StaticImage 
-        alt="Cnideria Mains" 
-        src="../images/char-4.png"
-      />
-      <StaticImage 
-        alt="Cnideria Citizens" 
-        src="../images/char-5.png"
-      />      
-      <StaticImage 
-        alt="Sarah" 
-        src="../images/char-6.png"
-      />  
-
-    </Layout>
+    <main>
+      <Layout pageTitle="Nature">
+        <Gallery images = {images}/>
+      </Layout>
+    </main>
   )
 }
 
 // You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Character Design</title>
+export const Head = () => <title>Portfolio</title>
 
 // Step 3: Export your component
-export default Character
+export default IndexPage
