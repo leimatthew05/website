@@ -7,25 +7,32 @@ import Layout from '../components/layout'
 const IndexPage = () => {
   const images = [
     [
-      {file: "../../images/img1.jpg", caption: "Ocean", width: 5464, height: 3576}, 
-      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
-      {file: "../../images/img3.jpg", caption: "Forest", width: 6720, height: 4480},
+      {file: "../../images/robots-example.png", caption: "The Last Human On Earth", width: 2880, height: 2304}, 
+      {file: "../../images/robots-human.png", caption: "The Last Human On Earth (Reaction Sheet)", width: 2880, height: 2304},
+      {file: "../../images/robots-robots.png", caption: "The Last Human On Earth (Robot Designs)", width: 2880, height: 2304},
     ],
     [
-      {file: "../../images/img6.jpg", caption: "Hello", subcaption: "This is a photo of a beach", width: 2400, height: 3600},
-      {file: "../../images/img2.jpg", caption: "Beach", width: 5472, height: 3078}, 
-      {file: "../../images/img4.jpg", caption: "Tree", width: 2400, height: 3200},
+      {file: "../../images/sim-you-later.png", caption: "Sim You Later!", subcaption: "This is a show idea I had", width: 3000, height: 3750},
+      {file: "../../images/character-lineup.png", caption: "Sim You Later! Character Lineup", subcaption: "Character Lineup", width: 7000, height: 2500},
     ],
     [
-      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
-      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
-      {file: "../../images/img5.jpg", caption: "Night Sky", width: 2400, height: 3613},
+      {file: "../../images/spider-butler-1.png", caption: "Spider Butler Character Exploration", width: 3000, height: 2500},
+      {file: "../../images/spider-butler-2.png", caption: "Spider Butler Character Sheet", width: 2500, height: 2500},
+      {file: "../../images/Sarah.png", caption: "Sarah and Her Best Friend", width: 1080, height: 1350},
+      {file: "../../images/character-design.png", caption: "Sarah Character Sheet", width: 1650, height: 1400},
+    ],
+    [
+      {file: "../../images/Aurelia Aurita.png", caption: "Aurelia Aurita", width: 2000, height: 2500},
+      {file: "../../images/Anton Aiptasia.png", caption: "Anton Aiptasia", width: 2000, height: 2500},
+      {file: "../../images/Turri Dohrns.png", caption: "Turri Dohrns", width: 2000, height: 2500},
+      {file: "../../images/The Man Of War.png", caption: "The Man Of War", width: 2000, height: 2500},
+      {file: "../../images/Cnidaria Citizens.png", caption: "Cnidaria Citizens", width: 2000, height: 2500},
     ],
   ]
   
   return (
     <main>
-      <Layout pageTitle="Nature">
+      <Layout pageTitle="Character Design">
         <Gallery images = {images}/>
       </Layout>
     </main>

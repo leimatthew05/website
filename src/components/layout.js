@@ -12,10 +12,10 @@ const Layout = ({ pageTitle, children }) => {
     var menuitems = 
     [
       <NavLink>
-        <Link to={"/"} >Nature</Link>
+        <Link to={"/"} >Character Design</Link>
       </NavLink>,
       <NavLink>
-        <Link to={"/ocean/"}>Ocean</Link>
+        <Link to={"/illustration/"}>Illustration</Link>
       </NavLink>,
       <NavLink>
       <Link to={"/animation/"}>Animation</Link>
@@ -36,7 +36,7 @@ const Layout = ({ pageTitle, children }) => {
                     </Navbar>
             </div>
             <div className = "header" style = {{textAlign: "center", paddingBottom:"30px"}}>
-                <h1>{"My Portfolio"}</h1>
+                <h1>{"Matthew Lei"}</h1>
                 <h2>{pageTitle}</h2>
             </div>
 
