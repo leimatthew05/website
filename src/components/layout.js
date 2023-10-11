@@ -18,7 +18,7 @@ const Layout = ({ pageTitle, children }) => {
         <Link to={"/illustration/"}>Illustration</Link>
       </NavLink>,
       <NavLink>
-      <Link to={"/animation/"}>Animation</Link>
+      <Link to={"/shortfilms/"}>Short Films</Link>
     </NavLink>,
       <NavLink>
         <Link to={"/about/"}>About</Link>

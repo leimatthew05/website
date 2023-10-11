@@ -2,6 +2,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import {Row, Col} from 'reactstrap';
+import { Link } from 'gatsby';
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -11,20 +12,29 @@ const IndexPage = () => {
         <div className = "section">
             <Row>
                 <Col sm={5} style={{paddingRight: "30px"}}>
-                    <img src = "../../images/profile.jpg" width = "100%"/>
+                    <img src = "../../images/pfp.png" width = "100%"/>
                 </Col>
                 <Col sm={6}>
                     <h3>
-                        Hi there! My name is [Name]
+                        Hi there! My name is Matthew Lei.
                     </h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                    occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum
+                    I'm in my first year of CalArts. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for
+                    any animation related internships over the Summer.
+                    <h3 style={{paddingTop: "50px"}}>
+                        Contacts
+                    </h3>
+                    <h6>
+                    <Link to={"mailto:mlei@students.calarts.edu"}>EMAIL: mlei@students.calarts.edu</Link>
+                    </h6>
+                    <h6>
+                    <Link to={"https://www.instagram.com/lei_doodles"}>INSTAGRAM: @lei_doodles</Link>
+                    </h6>
+                    <h6>
+                    <Link to={"https://www.linkedin.com/in/matthew-lei-777289275/"}>LINKEDIN</Link>
+                    </h6>
+                    <h6>
+                    <Link to={"https://linktr.ee/leidoodles"}>OTHER LINKS</Link>
+                    </h6>
                 </Col>
             </Row>
         </div>

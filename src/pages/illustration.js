@@ -7,8 +7,8 @@ import Layout from '../components/layout'
 const Page = () => {
   const images = [
     [
-      {file: "../../images/cnidaria-background.png", caption: "Cnidaria", width: 1920, height: 1080}, 
-      {file: "../../images/aclockalypse.png", caption: "Aclockalypse", width: 1920, height: 1080}, 
+      {file: "../../images/space-whale.png", caption: "Space-Whale", width: 1920, height: 1080}, 
+      {file: "../../images/elsewhere.jpg", caption: "Elsewhere", width: 2500, height: 2500}, 
     ],
     [
       {file: "../../images/fox-1.png", caption: "The Fox And The Grapes (1/3)", width: 1920, height: 1080}, 
@@ -18,6 +18,11 @@ const Page = () => {
     [
       {file: "../../images/echidna.png", caption: "Echidna Witch Doctor", width: 2500, height: 2000}, 
       {file: "../../images/the-savior.png", caption: "The Savior", width: 3840, height: 2160},
+    ],
+    [
+      {file: "../../images/cnidaria-background.png", caption: "Cnidaria", width: 1920, height: 1080}, 
+      {file: "../../images/marble.png", caption: "I Lost My Marbles", width: 1920, height: 1080}, 
+      {file: "../../images/aclockalypse.png", caption: "Aclockalypse", width: 1920, height: 1080}, 
     ],
     [
       {file: "../../images/achilles.png", caption: "The Song Of Achilles", width: 6300, height: 2700}, 
