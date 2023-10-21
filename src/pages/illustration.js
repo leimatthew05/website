@@ -11,6 +11,10 @@ const Page = () => {
       {file: "../../images/elsewhere.jpg", caption: "Elsewhere", width: 2500, height: 2500}, 
     ],
     [
+      {file: "../../images/artblock(red).png", caption: "Art Block", width: 1920, height: 1080}, 
+      {file: "../../images/cnidaria-background.png", caption: "Cnidaria", width: 1920, height: 1080}, 
+    ],
+    [
       {file: "../../images/fox-1.png", caption: "The Fox And The Grapes (1/3)", width: 1920, height: 1080}, 
       {file: "../../images/fox-2.png", caption: "The Fox And The Grapes (2/3)", width: 1920, height: 1080}, 
       {file: "../../images/fox-3.png", caption: "The Fox And The Grapes (3/3)", width: 1920, height: 1080}, 
@@ -20,7 +24,6 @@ const Page = () => {
       {file: "../../images/the-savior.png", caption: "The Savior", width: 3840, height: 2160},
     ],
     [
-      {file: "../../images/cnidaria-background.png", caption: "Cnidaria", width: 1920, height: 1080}, 
       {file: "../../images/marble.png", caption: "I Lost My Marbles", width: 1920, height: 1080}, 
       {file: "../../images/aclockalypse.png", caption: "Aclockalypse", width: 1920, height: 1080}, 
     ],

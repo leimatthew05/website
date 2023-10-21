@@ -28,7 +28,19 @@ body {
 
 .menu a:hover{
     text-decoration: none;
-    color: red;
+    color: rgb(255, 61, 142);
+}
+
+.link{
+    min-height: 80px;
+}
+
+.link a{
+    color: black;
+}
+
+.link a:hover{
+    color: rgb(255, 61, 142);
 }
 
 .section{

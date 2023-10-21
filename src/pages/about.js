@@ -15,26 +15,25 @@ const IndexPage = () => {
                     <img src = "../../images/pfp.png" width = "100%"/>
                 </Col>
                 <Col sm={6}>
-                    <h3>
-                        Hi there! My name is Matthew Lei.
-                    </h3>
                     I'm in my first year of CalArts. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for
                     any animation related internships over the Summer.
-                    <h3 style={{paddingTop: "50px"}}>
+                    <h3 style={{paddingTop: "50px", paddingBottom: "20px"}}>
                         Contacts
                     </h3>
-                    <h6>
-                    <Link to={"mailto:mlei@students.calarts.edu"}>EMAIL: mlei@students.calarts.edu</Link>
-                    </h6>
-                    <h6>
-                    <Link to={"https://www.instagram.com/lei_doodles"}>INSTAGRAM: @lei_doodles</Link>
-                    </h6>
-                    <h6>
-                    <Link to={"https://www.linkedin.com/in/matthew-lei-777289275/"}>LINKEDIN</Link>
-                    </h6>
-                    <h6>
-                    <Link to={"https://linktr.ee/leidoodles"}>OTHER LINKS</Link>
-                    </h6>
+                    <div className = "link">
+                      <h6>
+                      <Link to={"mailto:mlei@students.calarts.edu"}>EMAIL: mlei@students.calarts.edu</Link>
+                      </h6>
+                      <h6>
+                      <Link to={"https://www.instagram.com/lei_doodles"}>INSTAGRAM: @lei_doodles</Link>
+                      </h6>
+                      <h6>
+                      <Link to={"https://www.linkedin.com/in/matthew-lei-777289275/"}>LINKEDIN</Link>
+                      </h6>
+                      <h6>
+                      <Link to={"https://linktr.ee/leidoodles"}>OTHER LINKS</Link>
+                      </h6>
+                    </div>
                 </Col>
             </Row>
         </div>
