@@ -8,12 +8,6 @@ import YoutubeEmbed from '../components/youtubeembed'
 const Page = () => {
   const images = [
     [
-      {file: "../../images/alien0.png", caption: "Unidentified Friends Off-Planet Logline", width: 1650, height: 1275}, 
-      {file: "../../images/alien1.png", caption: "Unidentified Friends Off-Planet (1/3)", width: 1650, height: 1275}, 
-      {file: "../../images/alien2.png", caption: "Unidentified Friends Off-Planet (2/3)", width: 1650, height: 1275}, 
-      {file: "../../images/alien3.png", caption: "Unidentified Friends Off-Planet (3/3)", width: 1650, height: 1275}, 
-    ],
-    [
       {file: "../../images/action-board.png", caption: "Horror Animatic Concept", width: 5000, height: 1200}, 
     ],
     
@@ -32,6 +26,10 @@ const Page = () => {
   return (
     <main>
       <Layout pageTitle="Story">
+      <iframe
+  src="https://docs.google.com/presentation/d/e/2PACX-1vQDQsMoIKh-2EnUshrDKe8drkoTq6ugTOkUFrQGjwsSQXNieRL513YHuWrFfxIoTa91Zb_uy-4OdOqt/embed?start=false&loop=false&delayms=60000"
+  frameborder="0" width="100%" height="1080" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+  </iframe>
         <Gallery images = {images}/>
         <div style={{display: "block"}}>
           {embeds}
