@@ -7,9 +7,13 @@ import Layout from '../components/layout'
 const IndexPage = () => {
   const images = [
     [
-      {file: "../../images/robots-example.png", caption: "The Last Human On Earth", width: 2880, height: 2304}, 
+      {file: "../../images/robots-example.png", caption: "The Last Human On Earth",subcaption: "In a world run by robots, a young girl is raised as the last human on Earth.", width: 2880, height: 2304}, 
       {file: "../../images/robots-human.png", caption: "The Last Human On Earth (Reaction Sheet)", width: 2880, height: 2304},
       {file: "../../images/robots-robots.png", caption: "The Last Human On Earth (Robot Designs)", width: 2880, height: 2304},
+    ],
+    [
+      {file: "../../images/axolotl.jpg", caption: "Sci-Fi Teenage Axolotls!", width: 3000, height: 2500},
+      {file: "../../images/character-lineup.png", caption: "Sim You Later! Character Lineup", width: 7000, height: 2500},
     ],
     [
       {file: "../../images/spider-butler-1.png", caption: "Spider Butler Character Exploration", width: 3000, height: 2500},
@@ -23,14 +27,9 @@ const IndexPage = () => {
       {file: "../../images/lucifer.png", caption: "Lucifer", width: 6207, height: 2456},
     ],
     [
-      {file: "../../images/sim-you-later.png", caption: "Sim You Later!", subcaption: "This is a show idea I had", width: 3000, height: 3750},
-      {file: "../../images/character-lineup.png", caption: "Sim You Later! Character Lineup", subcaption: "Character Lineup", width: 7000, height: 2500},
-    ],
-    [
       {file: "../../images/Aurelia Aurita.png", caption: "Aurelia Aurita", width: 2000, height: 2500},
       {file: "../../images/Anton Aiptasia.png", caption: "Anton Aiptasia", width: 2000, height: 2500},
       {file: "../../images/Turri Dohrns.png", caption: "Turri Dohrns", width: 2000, height: 2500},
-      {file: "../../images/The Man Of War.png", caption: "The Man Of War", width: 2000, height: 2500},
       {file: "../../images/Cnidaria Citizens.png", caption: "Cnidaria Citizens", width: 2000, height: 2500},
     ],
   ]
