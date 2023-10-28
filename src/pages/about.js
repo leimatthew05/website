@@ -16,7 +16,7 @@ const IndexPage = () => {
                 </Col>
                 <Col sm={6}>
                     I'm in my first year of CalArts. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for
-                    any animation related internships over the Summer.
+                    any animation internships over the Summer.
                     <h3 style={{paddingTop: "50px", paddingBottom: "20px"}}>
                         Contacts
                     </h3>
@@ -28,10 +28,10 @@ const IndexPage = () => {
                       <Link to={"https://www.instagram.com/lei_doodles"}>INSTAGRAM: @lei_doodles</Link>
                       </h6>
                       <h6>
-                      <Link to={"https://www.linkedin.com/in/matthew-lei-777289275/"}>LINKEDIN</Link>
+                      <Link to={"https://www.linkedin.com/in/leidoodles/"}>LINKEDIN</Link>
                       </h6>
                       <h6>
-                      <Link to={"https://linktr.ee/leidoodles"}>OTHER LINKS</Link>
+                      <Link to={"https://linktr.ee/leidoodles"}>LINKTREE</Link>
                       </h6>
                     </div>
                 </Col>

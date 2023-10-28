@@ -8,7 +8,7 @@ import YoutubeEmbed from '../components/youtubeembed'
 const Page = () => {
   const images = [
     [
-      {file: "../../images/action-board.png", caption: "Horror Animatic Concept", width: 5000, height: 1200}, 
+      {file: "../../images/action-board.jpg", caption: "Horror Animatic Concept", width: 5000, height: 1200}, 
     ],
     
   ]
