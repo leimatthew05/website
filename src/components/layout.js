@@ -18,11 +18,11 @@ const Layout = ({ pageTitle, children }) => {
         <Link to={"/story/"}>Story</Link>
       </NavLink>,
       <NavLink>
-        <Link to={"/illustration/"}>Illustration</Link>
+        <Link to={"/visdev/"}>Visual Development</Link>
       </NavLink>,
       <NavLink>
-      <Link to={"/shortfilms/"}>Short Films</Link>
-    </NavLink>,
+        <Link to={"/shortfilms/"}>Short Films</Link>
+      </NavLink>,
       <NavLink>
         <Link to={"/about/"}>About</Link>
       </NavLink>,
