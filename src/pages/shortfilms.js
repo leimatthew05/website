@@ -18,7 +18,7 @@ const Page = () => {
 
   return (
     <main>
-      <Layout pageTitle="Short Films">
+      <Layout pageTitle="SHORT FILMS">
         <div style={{display: "block"}}>
           {embeds}
         </div>

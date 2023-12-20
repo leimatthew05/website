@@ -23,7 +23,7 @@ const Page = () => {
 
   return (
     <main>
-      <Layout pageTitle="Story">
+      <Layout pageTitle="STORY">
       <iframe
   src="https://docs.google.com/presentation/d/e/2PACX-1vRe8-8ZmO2WfI5KTkmozWPeYuxhWC-T0NkbYyDReuVzkwKPVrDy4tk_6yQtMxbtN7r005JoLoZsb2Li/embed?start=false&loop=false&delayms=60000"
   frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style={{width:"60%", height:"600px", margin:"0 20% auto"}}>

@@ -8,31 +8,36 @@ import { Link } from 'gatsby';
 const IndexPage = () => {
   return (
     <main>
-      <Layout pageTitle="About">
+      <Layout pageTitle="ABOUT">
         <div className = "section">
             <Row>
                 <Col sm={5} style={{paddingRight: "30px"}}>
                     <img src = "../../images/pfp.png" width = "100%"/>
                 </Col>
                 <Col sm={6}>
-                    I'm in my first year of CalArts. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for
-                    any animation internships over the Summer.
-                    <h3 style={{paddingTop: "50px", paddingBottom: "20px"}}>
-                        Contacts
-                    </h3>
-                    <div className = "link">
-                      <h6>
-                      <Link to={"mailto:mlei@students.calarts.edu"}>EMAIL: mlei@students.calarts.edu</Link>
-                      </h6>
-                      <h6>
-                      <Link to={"https://www.instagram.com/lei_doodles"}>INSTAGRAM: @lei_doodles</Link>
-                      </h6>
-                      <h6>
-                      <Link to={"https://www.linkedin.com/in/leidoodles/"}>LINKEDIN</Link>
-                      </h6>
-                      <h6>
-                      <Link to={"https://linktr.ee/leidoodles"}>LINKTREE</Link>
-                      </h6>
+                    <p>
+                    Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale.
+                    I'm currently on the hunt for any animation internships over the Summer.
+                    </p>
+                    <p>
+                    During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.
+                    </p>
+                    <h2 style={{paddingTop: "60px", paddingBottom: "20px"}}>
+                      LET'S BE FRIENDS :D
+                    </h2>
+                    <div>
+                      <a href={"https://www.instagram.com/lei_doodles"} style = {{paddingRight: "30px"}}> 
+                        <div id = "insta" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                      </a>
+                      <a href={"mailto:mlei@students.calarts.edu"} style = {{paddingRight: "30px"}}> 
+                        <div id = "mail" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                      </a>
+                      <a href={"https://www.youtube.com/@lei_doodles"} style = {{paddingRight: "30px"}}> 
+                        <div id = "youtube" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                      </a>
+                      <a href={"https://www.linkedin.com/in/leidoodles/"} style = {{paddingRight: "30px"}}> 
+                        <div id = "linkedin" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                      </a>
                     </div>
                 </Col>
             </Row>

@@ -35,7 +35,7 @@ const Layout = ({ pageTitle, children }) => {
                         </Nav>
                     </Navbar>
             </div>
-            <div className = "header" style = {{textAlign: "center", paddingBottom:"30px"}}>
+            <div className="header" style = {{textAlign: "center", paddingBottom:"30px"}}>
                 <h1>{"MATTHEW LEI"}</h1>
                 <h2>{pageTitle}</h2>
             </div>

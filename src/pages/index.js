@@ -38,7 +38,7 @@ const IndexPage = () => {
   
   return (
     <main>
-      <Layout pageTitle="Character Design">
+      <Layout pageTitle="CHARACTER DESIGN">
         <Gallery images = {images}/>
       </Layout>
     </main>

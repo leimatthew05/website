@@ -23,7 +23,7 @@ export default class Gallery extends Component {
                 <Img
                     small={i.file}
                     large={i.large_file}
-                    alt= {<span><h2>{i.caption}</h2><h3>{i.subcaption}</h3></span>}
+                    alt= {<span><h3>{i.caption}</h3><h4>{i.subcaption}</h4></span>}
                     width = {"" + i.width / i.height / denom * 100 + "%"}
                 />
             )
