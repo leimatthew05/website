@@ -16,6 +16,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.mobile-only{
+    display: none;
+}
+
+.desktop-only{
+    display: block;
+}
+
 .layout{
     font-family: "Grandstander", "Helvetica Neue", sans-serif;
 }
