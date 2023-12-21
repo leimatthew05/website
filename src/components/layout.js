@@ -5,8 +5,10 @@ import {
     NavLink,
 } from 'reactstrap';
 import '../css/style.css';
+import '../css/mobile.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'gatsby'
+import Menu from './menu.js';
 
 const Layout = ({ pageTitle, children }) => {
     var menuitems = 
@@ -28,13 +30,8 @@ const Layout = ({ pageTitle, children }) => {
     return (
         <div className = "layout">
         <main>
-            <div className="menu">
-                    <Navbar>
-                        <Nav className="m-auto">
-                        {menuitems}
-                        </Nav>
-                    </Navbar>
-            </div>
+            <Menu/>
+            <div className="mobile-only" style={{paddingTop: "80px"}}/>
             <div className="header" style = {{textAlign: "center", paddingBottom:"30px"}}>
                 <h1>{"MATTHEW LEI"}</h1>
                 <h2>{pageTitle}</h2>

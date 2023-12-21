@@ -7,7 +7,42 @@
         display: none;
     }
 
-    .h1{
-        
+    h1{
+        font-size: 50px !important;
     }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    .topnav{
+        /* font-family: 'Archivo', sans-serif; */
+        position: fixed;
+        z-index: 1;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        width: 100%;
+        text-decoration: "none" !important;
+        list-style-type: none;
+    }
+
+    .dropdown-menu.dropdown-menu-end.show{
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .dropdown-menu a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .dropdown-menu a:hover{
+        text-decoration: none;
+        /* color: rgba(0, 0, 0, 0.5); */
+        color:  #ff3d8e !important;
+
+    }
+
 }

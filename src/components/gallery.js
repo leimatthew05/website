@@ -30,9 +30,34 @@ export default class Gallery extends Component {
         })
     })
 
+    var mobileobjects = []
+
+    images.map((row) => {
+      var denom = row.reduce((a, b) => a +  (b.width / b.height), 0)
+      
+      row.forEach((i) => {
+          if (!i.large_file){
+              i.large_file = i.file
+          }
+          mobileobjects.push(
+              <Img
+                  small={i.file}
+                  large={i.large_file}
+                  alt= {<span><h3>{i.caption}</h3><h4>{i.subcaption}</h4></span>}
+                  width = {"100%"}
+              />
+          )
+      })
+  })
+
     return (
       <div>
-        {objects}
+        <div className = "desktop-only">
+          {objects}
+        </div>
+        <div className = "mobile-only">
+          {mobileobjects}
+        </div>
       </div>
     );
   }

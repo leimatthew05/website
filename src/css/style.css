@@ -14,21 +14,37 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg) !important;
 }
+
 
 .mobile-only{
     display: none;
+}
+
+.mobilemenu {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    font-family:"Grandstander", "Helvetica Neue", sans-serif;
+}
+
+.mobilemenu a{
+    text-decoration: none;
+    color:  #ff3d8e;
 }
 
 .desktop-only{
     display: block;
 }
 
+
 .layout{
     font-family: "Grandstander", "Helvetica Neue", sans-serif;
 }
 
 h1{
+    /* font-size: 100px !important; */
     font-size: 100px !important;
     color:  #ff3d8e !important;
 }
@@ -45,6 +61,7 @@ p{
 }
 
 .menu{
+    font-family: "Grandstander", "Helvetica Neue", sans-serif;
     min-height: 20px;
 }
 
