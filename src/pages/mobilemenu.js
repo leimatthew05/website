@@ -12,7 +12,7 @@ const Layout = ({ pageTitle, children }) => {
     return (
     <div>
       <div className="mobilemenu">
-        <div style={{fontSize:"70px", paddingBottom: "50px"}}>MENU</div>
+        <div style={{fontSize:"70px", paddingBottom: "50px", color: "var(--textcolor)"}}>MENU</div>
       <NavLink style={{paddingBottom: "20px"}}>
         <Link to={"/"} >Character Design</Link>
       </NavLink>

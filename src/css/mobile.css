@@ -35,7 +35,7 @@
 
     .dropdown-menu a{
         text-decoration: none;
-        color: rgba(0, 0, 0, 0.5);
+        color: var(--textcolor);
     }
 
     .dropdown-menu a:hover{

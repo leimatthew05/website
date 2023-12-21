@@ -16,14 +16,16 @@ const IndexPage = () => {
                     <img src = "../../images/pfp.png" width = "100%"/>
                 </Col>
                 <Col lg={6}>
-                    <p>
-                    Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale.
-                    I'm currently on the hunt for any animation internships over the Summer.
-                    </p>
-                    <p>
-                    During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.
-                    </p>
-                    <h2 style={{paddingTop: "60px", paddingBottom: "20px"}}>
+                      <div style={{color: "var(--paragraph)"}}>
+                        <p>
+                        Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale.
+                        I'm currently on the hunt for any animation internships over the Summer.
+                        </p>
+                        <p>
+                        During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.
+                        </p>
+                      </div>
+                    <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)"}}>
                       LET'S BE FRIENDS :D
                     </h2>
                     <div>
@@ -51,14 +53,16 @@ const IndexPage = () => {
                     <img style={{maxWidth: "200px"}} src = "../../images/pfp.png" width = "100%"/>
                 </div>
                 <div style={{paddingTop: "50px"}}>
-                    <p>
-                    Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale.
-                    I'm currently on the hunt for any animation internships over the Summer.
-                    </p>
-                    <p>
-                    During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.
-                    </p>
-                    <h2 style={{paddingTop: "60px", paddingBottom: "20px"}}>
+                  <div style={{color: "var(--paragraph)"}}>
+                      <p>
+                      Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale.
+                      I'm currently on the hunt for any animation internships over the Summer.
+                      </p>
+                      <p>
+                      During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.
+                      </p>
+                  </div>
+                    <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)"}}>
                       LET'S BE FRIENDS :D
                     </h2>
                     <div style = {{paddingBottom: "80px"}}>

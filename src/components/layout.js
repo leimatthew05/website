@@ -34,7 +34,7 @@ const Layout = ({ pageTitle, children }) => {
             <div className="mobile-only" style={{paddingTop: "80px"}}/>
             <div className="header" style = {{textAlign: "center", paddingBottom:"30px"}}>
                 <h1>{"MATTHEW LEI"}</h1>
-                <h2>{pageTitle}</h2>
+                <h2 style={{color: "var(--textcolor)"}}>{pageTitle}</h2>
             </div>
 
             {children}
