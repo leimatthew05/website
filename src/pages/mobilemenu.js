@@ -27,16 +27,16 @@ const Layout = ({ pageTitle, children }) => {
       </NavLink>
         <div style = {{paddingTop: "50px", paddingBottom: "80px"}}>
             <a href={"https://www.instagram.com/lei_doodles"} style = {{paddingLeft: "10px", paddingRight: "10px"}}> 
-                <div id = "insta" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                <div id = "insta" style={{width: "40px", height: "40px", display: "table-cell"}}></div>
             </a>
             <a href={"mailto:mlei@students.calarts.edu"} style = {{paddingLeft: "10px", paddingRight: "10px"}}> 
-                <div id = "mail" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                <div id = "mail" style={{width: "40px", height: "40px", display: "table-cell"}}></div>
             </a>
             <a href={"https://www.youtube.com/@lei_doodles"} style = {{paddingLeft: "10px", paddingRight: "10px"}}> 
-                <div id = "youtube" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                <div id = "youtube" style={{width: "40px", height: "40px", display: "table-cell"}}></div>
             </a>
             <a href={"https://www.linkedin.com/in/leidoodles/"} style = {{paddingLeft: "10px", paddingRight: "10px"}}> 
-                <div id = "linkedin" style={{width: "50px", height: "50px", display: "table-cell"}}></div>
+                <div id = "linkedin" style={{width: "40px", height: "40px", display: "table-cell"}}></div>
             </a>
         </div>
       </div>
