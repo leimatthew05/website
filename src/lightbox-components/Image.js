@@ -4,14 +4,14 @@ import { SpinnerIcon } from "./icons";
 
 export default class Image extends Component {
   state = {
-    loading: true
+    loading: true,
   };
 
   handleOnLoad = () => {
     this.setState({ loading: false });
   };
 
-  handleOnContextMenu = event => {
+  handleOnContextMenu = (event) => {
     !this.props.contextMenu && event.preventDefault();
   };
 

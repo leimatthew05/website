@@ -4,16 +4,16 @@ import Lightbox from "./Lightbox";
 
 export { default as Lightbox } from "./Lightbox";
 
-const uid = function(){
+const uid = function () {
   return Date.now().toString(36) + Math.random().toString(36).substr(2);
-}
+};
 
 export default class extends Component {
   state = { modalOpen: false };
 
   toggleModal = () => {
-    this.setState(prev => ({
-      modalOpen: !prev.modalOpen
+    this.setState((prev) => ({
+      modalOpen: !prev.modalOpen,
     }));
   };
 
@@ -29,7 +29,7 @@ export default class extends Component {
       hideZoom,
       showRotate,
       imageBackgroundColor,
-      height, 
+      height,
       width,
     } = this.props;
     const { modalOpen } = this.state;
@@ -37,13 +37,13 @@ export default class extends Component {
     return (
       <span>
         <img
-          id = {uid()}
+          id={uid()}
           className={className}
           style={{
             cursor: "pointer",
             width: width,
             maxHeight: height,
-            padding: 0
+            padding: 0,
           }}
           onClick={this.toggleModal}
           src={small}
@@ -52,7 +52,7 @@ export default class extends Component {
         />
         {modalOpen && (
           <Lightbox
-            id ={uid()}
+            id={uid()}
             medium={medium}
             large={large}
             alt={alt}

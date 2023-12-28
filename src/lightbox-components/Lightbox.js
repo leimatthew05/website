@@ -10,10 +10,10 @@ export default class Lightbox extends Component {
     move: { x: 0, y: 0 },
     moveStart: undefined,
     zoomed: false,
-    rotationDeg: 0
+    rotationDeg: 0,
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     // ESC or ENTER closes the modal
     if (event.keyCode === 27 || event.keyCode === 13) {
       this.props.onClose();
@@ -28,7 +28,7 @@ export default class Lightbox extends Component {
     document.removeEventListener("keydown", this.handleKeyDown, false);
   }
 
-  getCoordinatesIfOverImg = event => {
+  getCoordinatesIfOverImg = (event) => {
     const point = event.changedTouches ? event.changedTouches[0] : event;
 
     if (point.target.id !== "react-modal-image-img") {
@@ -43,7 +43,7 @@ export default class Lightbox extends Component {
     return { x, y };
   };
 
-  handleMouseDownOrTouchStart = event => {
+  handleMouseDownOrTouchStart = (event) => {
     event.preventDefault();
 
     if (event.touches && event.touches.length > 1) {
@@ -63,17 +63,17 @@ export default class Lightbox extends Component {
       return;
     }
 
-    this.setState(prev => {
+    this.setState((prev) => {
       return {
         moveStart: {
           x: coords.x - prev.move.x,
-          y: coords.y - prev.move.y
-        }
+          y: coords.y - prev.move.y,
+        },
       };
     });
   };
 
-  handleMouseMoveOrTouchMove = event => {
+  handleMouseMoveOrTouchMove = (event) => {
     event.preventDefault();
 
     if (!this.state.zoomed || !this.state.moveStart) {
@@ -93,32 +93,32 @@ export default class Lightbox extends Component {
       return;
     }
 
-    this.setState(prev => {
+    this.setState((prev) => {
       return {
         move: {
           x: coords.x - prev.moveStart.x,
-          y: coords.y - prev.moveStart.y
-        }
+          y: coords.y - prev.moveStart.y,
+        },
       };
     });
   };
 
-  handleMouseUpOrTouchEnd = event => {
+  handleMouseUpOrTouchEnd = (event) => {
     this.setState({
-      moveStart: undefined
+      moveStart: undefined,
     });
   };
 
-  toggleZoom = event => {
+  toggleZoom = (event) => {
     event.preventDefault();
-    this.setState(prev => ({
+    this.setState((prev) => ({
       zoomed: !prev.zoomed,
       // reset position if zoomed out
-      move: prev.zoomed ? { x: 0, y: 0 } : prev.move
+      move: prev.zoomed ? { x: 0, y: 0 } : prev.move,
     }));
   };
 
-  toggleRotate = event => {
+  toggleRotate = (event) => {
     event.preventDefault();
 
     const { rotationDeg } = this.state;
@@ -128,8 +128,8 @@ export default class Lightbox extends Component {
       return;
     }
 
-    this.setState(prevState => ({
-      rotationDeg: (prevState.rotationDeg += 90)
+    this.setState((prevState) => ({
+      rotationDeg: (prevState.rotationDeg += 90),
     }));
   };
 
@@ -142,7 +142,7 @@ export default class Lightbox extends Component {
       hideDownload,
       hideZoom,
       showRotate,
-      imageBackgroundColor = "black"
+      imageBackgroundColor = "black",
     } = this.props;
     const { move, zoomed, rotationDeg } = this.state;
 
@@ -162,7 +162,7 @@ export default class Lightbox extends Component {
             onTouchStart={this.handleMouseDownOrTouchStart}
             onTouchEnd={this.handleMouseUpOrTouchEnd}
             onTouchMove={this.handleMouseMoveOrTouchMove}
-            ref={el => {
+            ref={(el) => {
               this.contentEl = el;
             }}
           >
@@ -172,15 +172,9 @@ export default class Lightbox extends Component {
                 className="__react_modal_image__large_img"
                 src={large || medium}
                 style={{
-                  transform: `translate3d(-50%, -50%, 0) translate3d(${
-                    move.x
-                  }px, ${move.y}px, 0) rotate(${rotationDeg}deg)`,
-                  WebkitTransform: `translate3d(-50%, -50%, 0) translate3d(${
-                    move.x
-                  }px, ${move.y}px, 0) rotate(${rotationDeg}deg)`,
-                  MsTransform: `translate3d(-50%, -50%, 0) translate3d(${
-                    move.x
-                  }px, ${move.y}px, 0) rotate(${rotationDeg}deg)`
+                  transform: `translate3d(-50%, -50%, 0) translate3d(${move.x}px, ${move.y}px, 0) rotate(${rotationDeg}deg)`,
+                  WebkitTransform: `translate3d(-50%, -50%, 0) translate3d(${move.x}px, ${move.y}px, 0) rotate(${rotationDeg}deg)`,
+                  MsTransform: `translate3d(-50%, -50%, 0) translate3d(${move.x}px, ${move.y}px, 0) rotate(${rotationDeg}deg)`,
                 }}
                 handleDoubleClick={this.toggleZoom}
               />
@@ -195,7 +189,7 @@ export default class Lightbox extends Component {
                 style={{
                   transform: `translate3d(-50%, -50%, 0) rotate(${rotationDeg}deg)`,
                   WebkitTransform: `translate3d(-50%, -50%, 0) rotate(${rotationDeg}deg)`,
-                  MsTransform: `translate3d(-50%, -50%, 0) rotate(${rotationDeg}deg)`
+                  MsTransform: `translate3d(-50%, -50%, 0) rotate(${rotationDeg}deg)`,
                 }}
               />
             )}

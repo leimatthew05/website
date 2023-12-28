@@ -1,175 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?&family=Archivo&family=Poppins:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans&family=Grandstander:wght@900&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Shadow&display=swap');
+@import url("https://fonts.googleapis.com/css2?&family=Archivo&family=Poppins:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans&family=Grandstander:wght@900&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Shadow&display=swap");
 
-:root{
-    --bg: #ffded58d;
-    --textcolor: #a10043d2;
-    --paragraph: #600028d3;
-    --title: #ff3d8e;
-    --btn: rgb(177, 208, 233);
-    --btn-select: rgb(243, 210, 148);
+:root {
+  --bg: #ffded58d;
+  --textcolor: #a10043d2;
+  --paragraph: #600028d3;
+  --title: #ff3d8e;
+  --btn: rgb(177, 208, 233);
+  --btn-select: rgb(243, 210, 148);
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* background-image: url(../../public/images/paper.jpg) !important; */
-    background: 
-        linear-gradient(var(--bg), var(--bg)),
-        url(../../public/images/paper.png) !important;
-    background-size: 100vw !important;
-    background-color: var(--title) !important;
-        /* url(https://grainy-gradients.vercel.app/noise.svg); */
-    /* filter: contrast(170%) brightness(1000%);  */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url(../../public/images/paper.jpg) !important; */
+  background: linear-gradient(var(--bg), var(--bg)),
+    url(../../public/images/paper.png) !important;
+  background-size: 100vw !important;
+  background-color: var(--title) !important;
+  /* url(https://grainy-gradients.vercel.app/noise.svg); */
+  /* filter: contrast(170%) brightness(1000%);  */
 }
 
-
-.mobile-only{
-    display: none;
+.mobile-only {
+  display: none;
 }
 
 .mobilemenu {
-    text-align: center;
-    padding-top: 80px;
-    font-size: 40px;
-    font-family:"Grandstander", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 40px;
+  font-family: "Grandstander", "Helvetica Neue", sans-serif;
 }
 
-.mobilemenu a{
-    text-decoration: none;
-    color:  var(--title);
+.mobilemenu a {
+  text-decoration: none;
+  color: var(--title);
 }
 
-.desktop-only{
-    display: block;
+.desktop-only {
+  display: block;
 }
 
-
-.layout{
-    font-family: "Grandstander", "Helvetica Neue", sans-serif;
+.layout {
+  font-family: "Grandstander", "Helvetica Neue", sans-serif;
 }
 
-h1{
-    /* font-size: 100px !important; */
-    font-size: 100px !important;
-    color:  var(--title) !important;
+h1 {
+  /* font-size: 100px !important; */
+  font-size: 100px !important;
+  color: var(--title) !important;
 }
 
-h2{
-    font-size: 50px !important;
-    margin-top: -30px !important;
+h2 {
+  font-size: 50px !important;
+  margin-top: -30px !important;
 }
 
-p{
-    font-family: "Poppins", "Helvetica Neue", sans-serif;
-    font-weight:bold;
-    font-size: 20px;
+p {
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.menu{
-    font-family: "Grandstander", "Helvetica Neue", sans-serif;
-    min-height: 20px;
+.menu {
+  font-family: "Grandstander", "Helvetica Neue", sans-serif;
+  min-height: 20px;
 }
 
-.menu a{
-    font-size: 25px;
-    text-decoration:none;
-    color: var(--textcolor);
-    margin-bottom: 5px;
+.menu a {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--textcolor);
+  margin-bottom: 5px;
 }
 
-.menu a:hover{
-    font-size: 30px;
-    margin-top: -5px;
-    margin-bottom: 0px;
-    text-decoration: none;
-    color: var(--title);
+.menu a:hover {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: var(--title);
 }
 
-.link{
-    min-height: 50px;
+.link {
+  min-height: 50px;
 }
 
-.link a{
-    color: var(--textcolor);
+.link a {
+  color: var(--textcolor);
 }
 
-.link a:hover{
-    color: var(--title);
+.link a:hover {
+  color: var(--title);
 }
 
-.socialicon{
-    color: var(--title);
+.socialicon {
+  color: var(--title);
 }
 
-.section{
-    padding-left: 20%;
-    padding-right: 20%;
+.section {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
- /* For Youtube embeds */
- .video-responsive {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9  ratio*/
-    height: 0;
-    overflow: hidden;
-    /* display: inline-block !important; */
+/* For Youtube embeds */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9  ratio*/
+  height: 0;
+  overflow: hidden;
+  /* display: inline-block !important; */
 }
 
 .video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-#insta{
-    background-image: url("../../public/images/instagram.png");
-    background-size: contain;
+#insta {
+  background-image: url("../../public/images/instagram.png");
+  background-size: contain;
 }
 
-#insta:hover{
-    background-image: url("../../public/images/instagram1.png");
-    background-size: contain;
-    cursor:pointer !important;
+#insta:hover {
+  background-image: url("../../public/images/instagram1.png");
+  background-size: contain;
+  cursor: pointer !important;
 }
 
-#mail{
-    background-image: url("../../public/images/mail.png");
-    background-size: contain;
+#mail {
+  background-image: url("../../public/images/mail.png");
+  background-size: contain;
 }
 
-#mail:hover{
-    background-image: url("../../public/images/mail1.png");
-    background-size: contain;
-    cursor:pointer !important;
+#mail:hover {
+  background-image: url("../../public/images/mail1.png");
+  background-size: contain;
+  cursor: pointer !important;
 }
 
-#youtube{
-    background-image: url("../../public/images/youtube.png");
-    background-size: contain;
+#youtube {
+  background-image: url("../../public/images/youtube.png");
+  background-size: contain;
 }
 
-#youtube:hover{
-    background-image: url("../../public/images/youtube1.png");
-    background-size: contain;
-    cursor:pointer !important;
+#youtube:hover {
+  background-image: url("../../public/images/youtube1.png");
+  background-size: contain;
+  cursor: pointer !important;
 }
 
-#linkedin{
-    background-image: url("../../public/images/linkedin.png");
-    background-size: contain;
+#linkedin {
+  background-image: url("../../public/images/linkedin.png");
+  background-size: contain;
 }
 
-#linkedin:hover{
-    background-image: url("../../public/images/linkedin1.png");
-    background-size: contain;
-    cursor:pointer !important;
+#linkedin:hover {
+  background-image: url("../../public/images/linkedin1.png");
+  background-size: contain;
+  cursor: pointer !important;
 }
-
-
