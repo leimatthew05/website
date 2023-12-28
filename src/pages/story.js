@@ -6,20 +6,6 @@ import YoutubeEmbed from '../components/youtubeembed'
 
 // Step 2: Define your component
 const Page = () => {
-  const images = [
-    [
-      {file: "../../images/action-board.jpg", caption: "Horror Animatic Concept", width: 5000, height: 1200}, 
-    ],
-    
-  ]
-  const embed_ids = [
-    "quOtYMXKWmQ",
-  ]
-  
-  
-  var embeds = embed_ids.map((i) => {
-    return <YoutubeEmbed embedId={i}/>
-  })
 
   return (
     <main>
@@ -37,10 +23,6 @@ const Page = () => {
   src="https://docs.google.com/presentation/d/e/2PACX-1vQPi_Iy3rXsjsGlI-vxhKDJXgwuLuBcVs2glDsBl6EuIfj4zdkEuXC7XR5Ot7vwVTTk9dPtwli-ptKi/embed?start=false&loop=false&delayms=60000"
   frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style={{width:"60%", height:"600px", margin:"0 20% auto"}}>
       </iframe>
-        <Gallery images = {images}/>
-        <div style={{display: "block"}}>
-          {embeds}
-        </div>
       </div>
 
       <div className="mobile-only">
@@ -56,10 +38,6 @@ const Page = () => {
   src="https://docs.google.com/presentation/d/e/2PACX-1vQPi_Iy3rXsjsGlI-vxhKDJXgwuLuBcVs2glDsBl6EuIfj4zdkEuXC7XR5Ot7vwVTTk9dPtwli-ptKi/embed?start=false&loop=false&delayms=60000"
   frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style={{width:"100%", height:"300px", margin:"0"}}>
       </iframe>
-        <Gallery images = {images}/>
-        <div style={{display: "block"}}>
-          {embeds}
-        </div>
       </div>
       </Layout>
     </main>
