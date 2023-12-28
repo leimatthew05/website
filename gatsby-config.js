@@ -6,5 +6,12 @@ module.exports = {
     title: `Simple Gallery`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/pfp.png`,
+      },
+    },
+  ]
 }
