@@ -1,2 +1,489 @@
-"use strict";(self.webpackChunksimple_gallery=self.webpackChunksimple_gallery||[]).push([[682],{5717:function(e,t,n){n.r(t),n.d(t,{Head:function(){return A},default:function(){return C}});var l=n(7294),a=n(319),r=n(5697),i=n.n(r),o=n(3967),s=n.n(o),c=n(2040),d=["className","cssModule","noGutters","tag","widths"];function p(){return p=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var l in n)Object.prototype.hasOwnProperty.call(n,l)&&(e[l]=n[l])}return e},p.apply(this,arguments)}function m(e,t){if(null==e)return{};var n,l,a=function(e,t){if(null==e)return{};var n,l,a={},r=Object.keys(e);for(l=0;l<r.length;l++)n=r[l],t.indexOf(n)>=0||(a[n]=e[n]);return a}(e,t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);for(l=0;l<r.length;l++)n=r[l],t.indexOf(n)>=0||Object.prototype.propertyIsEnumerable.call(e,n)&&(a[n]=e[n])}return a}var u=["xs","sm","md","lg","xl","xxl"],g=i().oneOfType([i().number,i().string]),h={tag:c.iC,noGutters:(0,c.x9)(i().bool,"Please use Bootstrap 5 gutter utility classes. https://getbootstrap.com/docs/5.0/layout/gutters/"),className:i().string,cssModule:i().object,xs:g,sm:g,md:g,lg:g,xl:g,xxl:g,widths:i().array};function f(e){var t=e.className,n=e.cssModule,a=e.noGutters,r=e.tag,i=void 0===r?"div":r,o=e.widths,g=void 0===o?u:o,h=m(e,d),f=[];g.forEach((function(t,n){var l=e[t];if(delete h[t],l){var a=!n;f.push(a?"row-cols-".concat(l):"row-cols-".concat(t,"-").concat(l))}}));var y=(0,c.mx)(s()(t,a?"gx-0":null,"row",f),n);return l.createElement(i,p({},h,{className:y}))}f.propTypes=h;var y=f,x=["className","cssModule","widths","tag"];function v(){return v=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var l in n)Object.prototype.hasOwnProperty.call(n,l)&&(e[l]=n[l])}return e},v.apply(this,arguments)}function b(e,t){if(null==e)return{};var n,l,a=function(e,t){if(null==e)return{};var n,l,a={},r=Object.keys(e);for(l=0;l<r.length;l++)n=r[l],t.indexOf(n)>=0||(a[n]=e[n]);return a}(e,t);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);for(l=0;l<r.length;l++)n=r[l],t.indexOf(n)>=0||Object.prototype.propertyIsEnumerable.call(e,n)&&(a[n]=e[n])}return a}function E(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}var w=["xs","sm","md","lg","xl","xxl"],O=i().oneOfType([i().number,i().string]),j=i().oneOfType([i().bool,i().number,i().string,i().shape({size:i().oneOfType([i().bool,i().number,i().string]),order:O,offset:O})]),T={tag:c.iC,xs:j,sm:j,md:j,lg:j,xl:j,xxl:j,className:i().string,cssModule:i().object,widths:i().array},N=function(e,t,n){return!0===n||""===n?e?"col":"col-".concat(t):"auto"===n?e?"col-auto":"col-".concat(t,"-auto"):e?"col-".concat(n):"col-".concat(t,"-").concat(n)};function R(e){var t=e.className,n=e.cssModule,a=e.widths,r=void 0===a?w:a,i=e.tag,o=void 0===i?"div":i,d=function(e,t){var n=e,l=[];return(arguments.length>2&&void 0!==arguments[2]?arguments[2]:w).forEach((function(e,a){var r=n[e];if(delete n[e],r||""===r){var i=!a;if((0,c.Kn)(r)){var o,d=i?"-":"-".concat(e,"-"),p=N(i,e,r.size);l.push((0,c.mx)(s()((E(o={},p,r.size||""===r.size),E(o,"order".concat(d).concat(r.order),r.order||0===r.order),E(o,"offset".concat(d).concat(r.offset),r.offset||0===r.offset),o)),t))}else{var m=N(i,e,r);l.push(m)}}})),{colClasses:l,modifiedAttributes:n}}(b(e,x),n,r),p=d.modifiedAttributes,m=d.colClasses;m.length||m.push("col");var u=(0,c.mx)(s()(t,m),n);return l.createElement(o,v({},p,{className:u}))}R.propTypes=T;var k=R;n(4854);const A=()=>l.createElement("title",null,"Home Page");var C=()=>l.createElement("main",null,l.createElement(a.Z,{pageTitle:"ABOUT"},l.createElement("div",{className:"desktop-only"},l.createElement("div",{className:"section"},l.createElement(y,null,l.createElement(k,{lg:5,style:{paddingRight:"30px"}},l.createElement("img",{src:"../../images/pfp.png",width:"100%"})),l.createElement(k,{lg:6},l.createElement("div",{style:{color:"var(--paragraph)"}},l.createElement("p",null,"Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for any animation internships over the Summer."),l.createElement("p",null,"During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.")),l.createElement("h2",{style:{paddingTop:"60px",paddingBottom:"20px",color:"var(--textcolor)"}},"LET'S BE FRIENDS :D"),l.createElement("div",null,l.createElement("a",{href:"https://www.instagram.com/lei_doodles",style:{paddingRight:"30px"}},l.createElement("div",{id:"insta",style:{width:"50px",height:"50px",display:"table-cell"}})),l.createElement("a",{href:"mailto:mlei@students.calarts.edu",style:{paddingRight:"30px"}},l.createElement("div",{id:"mail",style:{width:"50px",height:"50px",display:"table-cell"}})),l.createElement("a",{href:"https://www.youtube.com/@lei_doodles",style:{paddingRight:"30px"}},l.createElement("div",{id:"youtube",style:{width:"50px",height:"50px",display:"table-cell"}})),l.createElement("a",{href:"https://www.linkedin.com/in/leidoodles/",style:{paddingRight:"30px"}},l.createElement("div",{id:"linkedin",style:{width:"50px",height:"50px",display:"table-cell"}}))))))),l.createElement("div",{className:"mobile-only"},l.createElement("div",{className:"section"},l.createElement("div",{style:{paddingRight:"30px",textAlign:"center"}},l.createElement("img",{style:{maxWidth:"200px"},src:"../../images/pfp.png",width:"100%"})),l.createElement("div",{style:{paddingTop:"50px"}},l.createElement("div",{style:{color:"var(--paragraph)"}},l.createElement("p",null,"Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for any animation internships over the Summer."),l.createElement("p",null,"During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.")),l.createElement("h2",{style:{paddingTop:"60px",paddingBottom:"20px",color:"var(--textcolor)"}},"LET'S BE FRIENDS :D"),l.createElement("div",{style:{paddingBottom:"80px"}},l.createElement("a",{href:"https://www.instagram.com/lei_doodles",style:{paddingLeft:"10px",paddingRight:"10px"}},l.createElement("div",{id:"insta",style:{width:"40px",height:"40px",display:"table-cell"}})),l.createElement("a",{href:"mailto:mlei@students.calarts.edu",style:{paddingLeft:"10px",paddingRight:"10px"}},l.createElement("div",{id:"mail",style:{width:"40px",height:"40px",display:"table-cell"}})),l.createElement("a",{href:"https://www.youtube.com/@lei_doodles",style:{paddingLeft:"10px",paddingRight:"10px"}},l.createElement("div",{id:"youtube",style:{width:"40px",height:"40px",display:"table-cell"}})),l.createElement("a",{href:"https://www.linkedin.com/in/leidoodles/",style:{paddingLeft:"10px",paddingRight:"10px"}},l.createElement("div",{id:"linkedin",style:{width:"40px",height:"40px",display:"table-cell"}}))))))))}}]);
+"use strict";
+(self.webpackChunksimple_gallery = self.webpackChunksimple_gallery || []).push([
+  [682],
+  {
+    5717: function (e, t, n) {
+      n.r(t),
+        n.d(t, {
+          Head: function () {
+            return A;
+          },
+          default: function () {
+            return C;
+          },
+        });
+      var l = n(7294),
+        a = n(319),
+        r = n(5697),
+        i = n.n(r),
+        o = n(3967),
+        s = n.n(o),
+        c = n(2040),
+        d = ["className", "cssModule", "noGutters", "tag", "widths"];
+      function p() {
+        return (
+          (p = Object.assign
+            ? Object.assign.bind()
+            : function (e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = arguments[t];
+                  for (var l in n)
+                    Object.prototype.hasOwnProperty.call(n, l) && (e[l] = n[l]);
+                }
+                return e;
+              }),
+          p.apply(this, arguments)
+        );
+      }
+      function m(e, t) {
+        if (null == e) return {};
+        var n,
+          l,
+          a = (function (e, t) {
+            if (null == e) return {};
+            var n,
+              l,
+              a = {},
+              r = Object.keys(e);
+            for (l = 0; l < r.length; l++)
+              (n = r[l]), t.indexOf(n) >= 0 || (a[n] = e[n]);
+            return a;
+          })(e, t);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          for (l = 0; l < r.length; l++)
+            (n = r[l]),
+              t.indexOf(n) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, n) &&
+                  (a[n] = e[n]));
+        }
+        return a;
+      }
+      var u = ["xs", "sm", "md", "lg", "xl", "xxl"],
+        g = i().oneOfType([i().number, i().string]),
+        h = {
+          tag: c.iC,
+          noGutters: (0, c.x9)(
+            i().bool,
+            "Please use Bootstrap 5 gutter utility classes. https://getbootstrap.com/docs/5.0/layout/gutters/",
+          ),
+          className: i().string,
+          cssModule: i().object,
+          xs: g,
+          sm: g,
+          md: g,
+          lg: g,
+          xl: g,
+          xxl: g,
+          widths: i().array,
+        };
+      function f(e) {
+        var t = e.className,
+          n = e.cssModule,
+          a = e.noGutters,
+          r = e.tag,
+          i = void 0 === r ? "div" : r,
+          o = e.widths,
+          g = void 0 === o ? u : o,
+          h = m(e, d),
+          f = [];
+        g.forEach(function (t, n) {
+          var l = e[t];
+          if ((delete h[t], l)) {
+            var a = !n;
+            f.push(
+              a ? "row-cols-".concat(l) : "row-cols-".concat(t, "-").concat(l),
+            );
+          }
+        });
+        var y = (0, c.mx)(s()(t, a ? "gx-0" : null, "row", f), n);
+        return l.createElement(i, p({}, h, { className: y }));
+      }
+      f.propTypes = h;
+      var y = f,
+        x = ["className", "cssModule", "widths", "tag"];
+      function v() {
+        return (
+          (v = Object.assign
+            ? Object.assign.bind()
+            : function (e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = arguments[t];
+                  for (var l in n)
+                    Object.prototype.hasOwnProperty.call(n, l) && (e[l] = n[l]);
+                }
+                return e;
+              }),
+          v.apply(this, arguments)
+        );
+      }
+      function b(e, t) {
+        if (null == e) return {};
+        var n,
+          l,
+          a = (function (e, t) {
+            if (null == e) return {};
+            var n,
+              l,
+              a = {},
+              r = Object.keys(e);
+            for (l = 0; l < r.length; l++)
+              (n = r[l]), t.indexOf(n) >= 0 || (a[n] = e[n]);
+            return a;
+          })(e, t);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          for (l = 0; l < r.length; l++)
+            (n = r[l]),
+              t.indexOf(n) >= 0 ||
+                (Object.prototype.propertyIsEnumerable.call(e, n) &&
+                  (a[n] = e[n]));
+        }
+        return a;
+      }
+      function E(e, t, n) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = n),
+          e
+        );
+      }
+      var w = ["xs", "sm", "md", "lg", "xl", "xxl"],
+        O = i().oneOfType([i().number, i().string]),
+        j = i().oneOfType([
+          i().bool,
+          i().number,
+          i().string,
+          i().shape({
+            size: i().oneOfType([i().bool, i().number, i().string]),
+            order: O,
+            offset: O,
+          }),
+        ]),
+        T = {
+          tag: c.iC,
+          xs: j,
+          sm: j,
+          md: j,
+          lg: j,
+          xl: j,
+          xxl: j,
+          className: i().string,
+          cssModule: i().object,
+          widths: i().array,
+        },
+        N = function (e, t, n) {
+          return !0 === n || "" === n
+            ? e
+              ? "col"
+              : "col-".concat(t)
+            : "auto" === n
+              ? e
+                ? "col-auto"
+                : "col-".concat(t, "-auto")
+              : e
+                ? "col-".concat(n)
+                : "col-".concat(t, "-").concat(n);
+        };
+      function R(e) {
+        var t = e.className,
+          n = e.cssModule,
+          a = e.widths,
+          r = void 0 === a ? w : a,
+          i = e.tag,
+          o = void 0 === i ? "div" : i,
+          d = (function (e, t) {
+            var n = e,
+              l = [];
+            return (
+              (arguments.length > 2 && void 0 !== arguments[2]
+                ? arguments[2]
+                : w
+              ).forEach(function (e, a) {
+                var r = n[e];
+                if ((delete n[e], r || "" === r)) {
+                  var i = !a;
+                  if ((0, c.Kn)(r)) {
+                    var o,
+                      d = i ? "-" : "-".concat(e, "-"),
+                      p = N(i, e, r.size);
+                    l.push(
+                      (0, c.mx)(
+                        s()(
+                          (E((o = {}), p, r.size || "" === r.size),
+                          E(
+                            o,
+                            "order".concat(d).concat(r.order),
+                            r.order || 0 === r.order,
+                          ),
+                          E(
+                            o,
+                            "offset".concat(d).concat(r.offset),
+                            r.offset || 0 === r.offset,
+                          ),
+                          o),
+                        ),
+                        t,
+                      ),
+                    );
+                  } else {
+                    var m = N(i, e, r);
+                    l.push(m);
+                  }
+                }
+              }),
+              { colClasses: l, modifiedAttributes: n }
+            );
+          })(b(e, x), n, r),
+          p = d.modifiedAttributes,
+          m = d.colClasses;
+        m.length || m.push("col");
+        var u = (0, c.mx)(s()(t, m), n);
+        return l.createElement(o, v({}, p, { className: u }));
+      }
+      R.propTypes = T;
+      var k = R;
+      n(4854);
+      const A = () => l.createElement("title", null, "Home Page");
+      var C = () =>
+        l.createElement(
+          "main",
+          null,
+          l.createElement(
+            a.Z,
+            { pageTitle: "ABOUT" },
+            l.createElement(
+              "div",
+              { className: "desktop-only" },
+              l.createElement(
+                "div",
+                { className: "section" },
+                l.createElement(
+                  y,
+                  null,
+                  l.createElement(
+                    k,
+                    { lg: 5, style: { paddingRight: "30px" } },
+                    l.createElement("img", {
+                      src: "../../images/pfp.png",
+                      width: "100%",
+                    }),
+                  ),
+                  l.createElement(
+                    k,
+                    { lg: 6 },
+                    l.createElement(
+                      "div",
+                      { style: { color: "var(--paragraph)" } },
+                      l.createElement(
+                        "p",
+                        null,
+                        "Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for any animation internships over the Summer.",
+                      ),
+                      l.createElement(
+                        "p",
+                        null,
+                        "During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.",
+                      ),
+                    ),
+                    l.createElement(
+                      "h2",
+                      {
+                        style: {
+                          paddingTop: "60px",
+                          paddingBottom: "20px",
+                          color: "var(--textcolor)",
+                        },
+                      },
+                      "LET'S BE FRIENDS :D",
+                    ),
+                    l.createElement(
+                      "div",
+                      null,
+                      l.createElement(
+                        "a",
+                        {
+                          href: "https://www.instagram.com/lei_doodles",
+                          style: { paddingRight: "30px" },
+                        },
+                        l.createElement("div", {
+                          id: "insta",
+                          style: {
+                            width: "50px",
+                            height: "50px",
+                            display: "table-cell",
+                          },
+                        }),
+                      ),
+                      l.createElement(
+                        "a",
+                        {
+                          href: "mailto:mlei@students.calarts.edu",
+                          style: { paddingRight: "30px" },
+                        },
+                        l.createElement("div", {
+                          id: "mail",
+                          style: {
+                            width: "50px",
+                            height: "50px",
+                            display: "table-cell",
+                          },
+                        }),
+                      ),
+                      l.createElement(
+                        "a",
+                        {
+                          href: "https://www.youtube.com/@lei_doodles",
+                          style: { paddingRight: "30px" },
+                        },
+                        l.createElement("div", {
+                          id: "youtube",
+                          style: {
+                            width: "50px",
+                            height: "50px",
+                            display: "table-cell",
+                          },
+                        }),
+                      ),
+                      l.createElement(
+                        "a",
+                        {
+                          href: "https://www.linkedin.com/in/leidoodles/",
+                          style: { paddingRight: "30px" },
+                        },
+                        l.createElement("div", {
+                          id: "linkedin",
+                          style: {
+                            width: "50px",
+                            height: "50px",
+                            display: "table-cell",
+                          },
+                        }),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            l.createElement(
+              "div",
+              { className: "mobile-only" },
+              l.createElement(
+                "div",
+                { className: "section" },
+                l.createElement(
+                  "div",
+                  { style: { paddingRight: "30px", textAlign: "center" } },
+                  l.createElement("img", {
+                    style: { maxWidth: "200px" },
+                    src: "../../images/pfp.png",
+                    width: "100%",
+                  }),
+                ),
+                l.createElement(
+                  "div",
+                  { style: { paddingTop: "50px" } },
+                  l.createElement(
+                    "div",
+                    { style: { color: "var(--paragraph)" } },
+                    l.createElement(
+                      "p",
+                      null,
+                      "Hi! I'm a BFA1 CalArts Character Animation student. I'm also an animation assistant and storyboard artist for Gingerpale. I'm currently on the hunt for any animation internships over the Summer.",
+                    ),
+                    l.createElement(
+                      "p",
+                      null,
+                      "During my free time you'll find me messing around on blender, writing silly songs, and goofing off on my YouTube channel.",
+                    ),
+                  ),
+                  l.createElement(
+                    "h2",
+                    {
+                      style: {
+                        paddingTop: "60px",
+                        paddingBottom: "20px",
+                        color: "var(--textcolor)",
+                      },
+                    },
+                    "LET'S BE FRIENDS :D",
+                  ),
+                  l.createElement(
+                    "div",
+                    { style: { paddingBottom: "80px" } },
+                    l.createElement(
+                      "a",
+                      {
+                        href: "https://www.instagram.com/lei_doodles",
+                        style: { paddingLeft: "10px", paddingRight: "10px" },
+                      },
+                      l.createElement("div", {
+                        id: "insta",
+                        style: {
+                          width: "40px",
+                          height: "40px",
+                          display: "table-cell",
+                        },
+                      }),
+                    ),
+                    l.createElement(
+                      "a",
+                      {
+                        href: "mailto:mlei@students.calarts.edu",
+                        style: { paddingLeft: "10px", paddingRight: "10px" },
+                      },
+                      l.createElement("div", {
+                        id: "mail",
+                        style: {
+                          width: "40px",
+                          height: "40px",
+                          display: "table-cell",
+                        },
+                      }),
+                    ),
+                    l.createElement(
+                      "a",
+                      {
+                        href: "https://www.youtube.com/@lei_doodles",
+                        style: { paddingLeft: "10px", paddingRight: "10px" },
+                      },
+                      l.createElement("div", {
+                        id: "youtube",
+                        style: {
+                          width: "40px",
+                          height: "40px",
+                          display: "table-cell",
+                        },
+                      }),
+                    ),
+                    l.createElement(
+                      "a",
+                      {
+                        href: "https://www.linkedin.com/in/leidoodles/",
+                        style: { paddingLeft: "10px", paddingRight: "10px" },
+                      },
+                      l.createElement("div", {
+                        id: "linkedin",
+                        style: {
+                          width: "40px",
+                          height: "40px",
+                          display: "table-cell",
+                        },
+                      }),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+    },
+  },
+]);
 //# sourceMappingURL=component---src-pages-about-js-8eeb496d7076e84bbebd.js.map

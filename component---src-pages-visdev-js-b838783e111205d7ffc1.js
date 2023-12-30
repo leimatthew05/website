@@ -1,2 +1,631 @@
-"use strict";(self.webpackChunksimple_gallery=self.webpackChunksimple_gallery||[]).push([[748],{5469:function(e,t,n){n.d(t,{Z:function(){return w}});var o=n(4578),a=n(7294);let l=function(e){function t(){return e.apply(this,arguments)||this}(0,o.Z)(t,e);var n=t.prototype;return n.componentDidMount=function(){!function(e,t){if(!document.head.querySelector("#"+e)){const n=document.createElement("style");n.textContent=t,n.type="text/css",n.id=e,document.head.appendChild(n)}}(this.props.name,this.props.css)},n.componentWillUnmount=function(){const e=document.getElementById(this.props.name);e.parentNode.removeChild(e)},n.render=function(){return null},t}(a.Component);const r=e=>{let{imageBackgroundColor:t}=e;return`\n  body {\n    overflow: hidden;\n  }\n\n  .__react_modal_image__modal_container {\n    position: fixed;\n    z-index: 5000;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.8);\n    touch-action: none;\n    overflow: hidden;\n  }\n\n  .__react_modal_image__modal_content {\n    position: relative;\n    height: 100%;\n    width: 100%;\n  }\n\n  .__react_modal_image__modal_content img, \n  .__react_modal_image__modal_content svg {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate3d(-50%, -50%, 0);\n    -webkit-transform: translate3d(-50%, -50%, 0);\n    -ms-transform: translate3d(-50%, -50%, 0);\n    overflow: hidden;\n  }\n\n  .__react_modal_image__medium_img {\n    max-width: 98%;\n    max-height: 98%;\n    background-color: ${t};\n  }\n\n  .__react_modal_image__large_img {\n    cursor: move;\n    background-color: ${t}\n  }\n\n  .__react_modal_image__icon_menu a {\n    display: inline-block;\n    font-size: 40px;\n    cursor: pointer;\n    line-height: 40px;\n    box-sizing: border-box;\n    border: none;\n    padding: 0px 5px 0px 5px;\n    margin-left: 10px;\n    color: white;\n    background-color: rgba(0, 0, 0, 0);\n  }\n\n  .__react_modal_image__icon_menu {\n    display: inline-block;\n    float: right;\n  }\n\n  .__react_modal_image__caption {\n    display: inline-block;\n    color: white;\n    font-size: 120%;\n    padding: 10px;\n    margin: 0;\n  }\n\n  .__react_modal_image__header {\n    position: absolute;\n    top: 0;\n    width: 100%;\n    background-color: rgba(0, 0, 0, 0.7);\n    overflow: hidden;\n  }\n`},i=()=>a.createElement("svg",{fill:"#ffffff",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},a.createElement("path",{d:"M0 0h24v24H0z",fill:"none"}),a.createElement("path",{d:"M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"})),c=()=>a.createElement("svg",{fill:"#ffffff",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},a.createElement("path",{d:"M0 0h24v24H0z",fill:"none"}),a.createElement("path",{d:"M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"})),m=()=>a.createElement("svg",{fill:"#ffffff",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},a.createElement("path",{d:"M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"}),a.createElement("path",{d:"M0 0h24v24H0z",fill:"none"})),s=()=>a.createElement("svg",{fill:"#ffffff",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},a.createElement("path",{d:"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"}),a.createElement("path",{d:"M0 0h24v24H0z",fill:"none"})),h=()=>a.createElement("svg",{fill:"#ffffff",height:"48",viewBox:"0 0 24 24",width:"48",xmlns:"http://www.w3.org/2000/svg"},a.createElement("path",{d:"M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z"}),a.createElement("path",{d:"M0 0h24v24H0V0z",fill:"none"})),d=()=>a.createElement("svg",{fill:"#ffffff",width:"24",height:"24",viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg"},a.createElement("path",{fill:"none",d:"M0 0h24v24H0V0zm0 0h24v24H0V0z"}),a.createElement("path",{d:"M7.47 21.49C4.2 19.93 1.86 16.76 1.5 13H0c.51 6.16 5.66 11 11.95 11 .23 0 .44-.02.66-.03L8.8 20.15l-1.33 1.34zM12.05 0c-.23 0-.44.02-.66.04l3.81 3.81 1.33-1.33C19.8 4.07 22.14 7.24 22.5 11H24c-.51-6.16-5.66-11-11.95-11zM16 14h2V8c0-1.11-.9-2-2-2h-6v2h6v6zm-8 2V4H6v2H4v2h2v8c0 1.1.89 2 2 2h8v2h2v-2h2v-2H8z"}));const g=e=>t=>{(function(e){return document.location.hostname!==new URL(e,document.location).hostname})(e)&&(t.preventDefault(),fetch(e).then((t=>(t.ok||console.error("Failed to download image, HTTP status "+t.status+" from "+e),t.blob().then((t=>{let n=document.createElement("a");n.setAttribute("download",e.split("/").pop()),n.href=URL.createObjectURL(t),n.click()}))))).catch((t=>{console.error(t),console.error("Failed to download image from "+e)})))};var u=e=>{let{image:t,alt:n,zoomed:o,toggleZoom:l,toggleRotate:r,onClose:h,enableDownload:u,enableZoom:p,enableRotate:f}=e;return a.createElement("div",{className:"__react_modal_image__header"},a.createElement("span",{className:"__react_modal_image__icon_menu"},u&&a.createElement("a",{href:t,download:!0,onClick:g(t)},a.createElement(m,null)),p&&a.createElement("a",{onClick:l},o?a.createElement(c,null):a.createElement(i,null)),f&&a.createElement("a",{onClick:r},a.createElement(d,null)),a.createElement("a",{onClick:h},a.createElement(s,null))),n&&a.createElement("span",{className:"__react_modal_image__caption"},n))};let p=function(e){function t(){for(var t,n=arguments.length,o=new Array(n),a=0;a<n;a++)o[a]=arguments[a];return(t=e.call.apply(e,[this].concat(o))||this).state={loading:!0},t.handleOnLoad=()=>{t.setState({loading:!1})},t.handleOnContextMenu=e=>{!t.props.contextMenu&&e.preventDefault()},t}return(0,o.Z)(t,e),t.prototype.render=function(){const{id:e,className:t,src:n,style:o,handleDoubleClick:l}=this.props;return a.createElement("div",null,this.state.loading&&a.createElement(h,null),a.createElement("img",{id:e,className:t,src:n,style:o,onLoad:this.handleOnLoad,onDoubleClick:l,onContextMenu:this.handleOnContextMenu}))},t}(a.Component),f=function(e){function t(){for(var t,n=arguments.length,o=new Array(n),a=0;a<n;a++)o[a]=arguments[a];return(t=e.call.apply(e,[this].concat(o))||this).state={move:{x:0,y:0},moveStart:void 0,zoomed:!1,rotationDeg:0},t.handleKeyDown=e=>{27!==e.keyCode&&13!==e.keyCode||t.props.onClose()},t.getCoordinatesIfOverImg=e=>{const n=e.changedTouches?e.changedTouches[0]:e;if("react-modal-image-img"!==n.target.id)return;const o=t.contentEl.getBoundingClientRect();return{x:n.clientX-o.left,y:n.clientY-o.top}},t.handleMouseDownOrTouchStart=e=>{if(e.preventDefault(),e.touches&&e.touches.length>1)return;const n=t.getCoordinatesIfOverImg(e);n||t.props.onClose(),t.state.zoomed&&t.setState((e=>({moveStart:{x:n.x-e.move.x,y:n.y-e.move.y}})))},t.handleMouseMoveOrTouchMove=e=>{if(e.preventDefault(),!t.state.zoomed||!t.state.moveStart)return;if(e.touches&&e.touches.length>1)return;const n=t.getCoordinatesIfOverImg(e);n&&t.setState((e=>({move:{x:n.x-e.moveStart.x,y:n.y-e.moveStart.y}})))},t.handleMouseUpOrTouchEnd=e=>{t.setState({moveStart:void 0})},t.toggleZoom=e=>{e.preventDefault(),t.setState((e=>({zoomed:!e.zoomed,move:e.zoomed?{x:0,y:0}:e.move})))},t.toggleRotate=e=>{e.preventDefault();const{rotationDeg:n}=t.state;360!==n?t.setState((e=>({rotationDeg:e.rotationDeg+=90}))):t.setState({rotationDeg:90})},t}(0,o.Z)(t,e);var n=t.prototype;return n.componentDidMount=function(){document.addEventListener("keydown",this.handleKeyDown,!1)},n.componentWillUnmount=function(){document.removeEventListener("keydown",this.handleKeyDown,!1)},n.render=function(){const{medium:e,large:t,alt:n,onClose:o,hideDownload:i,hideZoom:c,showRotate:m,imageBackgroundColor:s="black"}=this.props,{move:h,zoomed:d,rotationDeg:g}=this.state;return a.createElement("span",null,a.createElement(l,{name:"__react_modal_image__lightbox",css:r({imageBackgroundColor:s})}),a.createElement("div",{className:"__react_modal_image__modal_container"},a.createElement("div",{className:"__react_modal_image__modal_content",onMouseDown:this.handleMouseDownOrTouchStart,onMouseUp:this.handleMouseUpOrTouchEnd,onMouseMove:this.handleMouseMoveOrTouchMove,onTouchStart:this.handleMouseDownOrTouchStart,onTouchEnd:this.handleMouseUpOrTouchEnd,onTouchMove:this.handleMouseMoveOrTouchMove,ref:e=>{this.contentEl=e}},d&&a.createElement(p,{id:"react-modal-image-img",className:"__react_modal_image__large_img",src:t||e,style:{transform:`translate3d(-50%, -50%, 0) translate3d(${h.x}px, ${h.y}px, 0) rotate(${g}deg)`,WebkitTransform:`translate3d(-50%, -50%, 0) translate3d(${h.x}px, ${h.y}px, 0) rotate(${g}deg)`,MsTransform:`translate3d(-50%, -50%, 0) translate3d(${h.x}px, ${h.y}px, 0) rotate(${g}deg)`},handleDoubleClick:this.toggleZoom}),!d&&a.createElement(p,{id:"react-modal-image-img",className:"__react_modal_image__medium_img",src:e||t,handleDoubleClick:this.toggleZoom,contextMenu:!e,style:{transform:`translate3d(-50%, -50%, 0) rotate(${g}deg)`,WebkitTransform:`translate3d(-50%, -50%, 0) rotate(${g}deg)`,MsTransform:`translate3d(-50%, -50%, 0) rotate(${g}deg)`}})),a.createElement(u,{image:t||e,alt:n,zoomed:d,toggleZoom:this.toggleZoom,toggleRotate:this.toggleRotate,onClose:o,enableDownload:!i,enableZoom:!c,enableRotate:!!m})))},t}(a.Component);const _=function(){return Date.now().toString(36)+Math.random().toString(36).substr(2)};let v=function(e){function t(){for(var t,n=arguments.length,o=new Array(n),a=0;a<n;a++)o[a]=arguments[a];return(t=e.call.apply(e,[this].concat(o))||this).state={modalOpen:!1},t.toggleModal=()=>{t.setState((e=>({modalOpen:!e.modalOpen})))},t}return(0,o.Z)(t,e),t.prototype.render=function(){const{className:e,small:t,smallSrcSet:n,medium:o,large:l,alt:r,hideDownload:i,hideZoom:c,showRotate:m,imageBackgroundColor:s,height:h,width:d}=this.props,{modalOpen:g}=this.state;return a.createElement("span",null,a.createElement("img",{id:_(),className:e,style:{cursor:"pointer",width:d,maxHeight:h,padding:0},onClick:this.toggleModal,src:t,srcSet:n,alt:r}),g&&a.createElement(f,{id:_(),medium:o,large:l,alt:r,onClose:this.toggleModal,hideDownload:!0,hideZoom:c,showRotate:m,imageBackgroundColor:s}))},t}(a.Component),w=function(e){function t(){for(var t,n=arguments.length,o=new Array(n),a=0;a<n;a++)o[a]=arguments[a];return(t=e.call.apply(e,[this].concat(o))||this).state={modalOpen:!1},t}return(0,o.Z)(t,e),t.prototype.render=function(){const{images:e}=this.props;var t=[];e.map((e=>{var n=e.reduce(((e,t)=>e+t.width/t.height),0);e.forEach((e=>{e.large_file||(e.large_file=e.file),t.push(a.createElement(v,{small:e.file,large:e.large_file,alt:a.createElement("span",null,a.createElement("h3",null,e.caption),a.createElement("h4",null,e.subcaption)),width:e.width/e.height/n*100+"%"}))}))}));var n=[];return e.map((e=>{e.reduce(((e,t)=>e+t.width/t.height),0);e.forEach((e=>{e.large_file||(e.large_file=e.file),n.push(a.createElement(v,{small:e.file,large:e.large_file,alt:a.createElement("span",null,a.createElement("h3",null,e.caption),a.createElement("h4",null,e.subcaption)),width:"100%"}))}))})),a.createElement("div",null,a.createElement("div",{className:"desktop-only"},t),a.createElement("div",{className:"mobile-only"},n))},t}(a.Component)},6350:function(e,t,n){n.r(t),n.d(t,{Head:function(){return r}});var o=n(7294),a=n(5469),l=n(319);const r=()=>o.createElement("title",null,"Home Page");t.default=()=>o.createElement("main",null,o.createElement(l.Z,{pageTitle:"Visual Development"},o.createElement(a.Z,{images:[[{file:"../../images/cnidaria-background.jpg",caption:"Cnidaria",width:1920,height:1080},{file:"../../images/achilles.jpg",caption:"The Song Of Achilles",width:6300,height:2700}],[{file:"../../images/fox-1.jpg",caption:"The Fox And The Grapes (1/3)",width:1920,height:1080},{file:"../../images/fox-2.jpg",caption:"The Fox And The Grapes (2/3)",width:1920,height:1080},{file:"../../images/fox-3.jpg",caption:"The Fox And The Grapes (3/3)",width:1920,height:1080}],[{file:"../../images/marble.jpg",caption:"I Lost My Marbles",width:1920,height:1080},{file:"../../images/aclockalypse.jpg",caption:"Aclockalypse",width:1920,height:1080}]]})))}}]);
+"use strict";
+(self.webpackChunksimple_gallery = self.webpackChunksimple_gallery || []).push([
+  [748],
+  {
+    5469: function (e, t, n) {
+      n.d(t, {
+        Z: function () {
+          return w;
+        },
+      });
+      var o = n(4578),
+        a = n(7294);
+      let l = (function (e) {
+        function t() {
+          return e.apply(this, arguments) || this;
+        }
+        (0, o.Z)(t, e);
+        var n = t.prototype;
+        return (
+          (n.componentDidMount = function () {
+            !(function (e, t) {
+              if (!document.head.querySelector("#" + e)) {
+                const n = document.createElement("style");
+                (n.textContent = t),
+                  (n.type = "text/css"),
+                  (n.id = e),
+                  document.head.appendChild(n);
+              }
+            })(this.props.name, this.props.css);
+          }),
+          (n.componentWillUnmount = function () {
+            const e = document.getElementById(this.props.name);
+            e.parentNode.removeChild(e);
+          }),
+          (n.render = function () {
+            return null;
+          }),
+          t
+        );
+      })(a.Component);
+      const r = (e) => {
+          let { imageBackgroundColor: t } = e;
+          return `\n  body {\n    overflow: hidden;\n  }\n\n  .__react_modal_image__modal_container {\n    position: fixed;\n    z-index: 5000;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.8);\n    touch-action: none;\n    overflow: hidden;\n  }\n\n  .__react_modal_image__modal_content {\n    position: relative;\n    height: 100%;\n    width: 100%;\n  }\n\n  .__react_modal_image__modal_content img, \n  .__react_modal_image__modal_content svg {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate3d(-50%, -50%, 0);\n    -webkit-transform: translate3d(-50%, -50%, 0);\n    -ms-transform: translate3d(-50%, -50%, 0);\n    overflow: hidden;\n  }\n\n  .__react_modal_image__medium_img {\n    max-width: 98%;\n    max-height: 98%;\n    background-color: ${t};\n  }\n\n  .__react_modal_image__large_img {\n    cursor: move;\n    background-color: ${t}\n  }\n\n  .__react_modal_image__icon_menu a {\n    display: inline-block;\n    font-size: 40px;\n    cursor: pointer;\n    line-height: 40px;\n    box-sizing: border-box;\n    border: none;\n    padding: 0px 5px 0px 5px;\n    margin-left: 10px;\n    color: white;\n    background-color: rgba(0, 0, 0, 0);\n  }\n\n  .__react_modal_image__icon_menu {\n    display: inline-block;\n    float: right;\n  }\n\n  .__react_modal_image__caption {\n    display: inline-block;\n    color: white;\n    font-size: 120%;\n    padding: 10px;\n    margin: 0;\n  }\n\n  .__react_modal_image__header {\n    position: absolute;\n    top: 0;\n    width: 100%;\n    background-color: rgba(0, 0, 0, 0.7);\n    overflow: hidden;\n  }\n`;
+        },
+        i = () =>
+          a.createElement(
+            "svg",
+            {
+              fill: "#ffffff",
+              height: "24",
+              viewBox: "0 0 24 24",
+              width: "24",
+              xmlns: "http://www.w3.org/2000/svg",
+            },
+            a.createElement("path", { d: "M0 0h24v24H0z", fill: "none" }),
+            a.createElement("path", {
+              d: "M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z",
+            }),
+          ),
+        c = () =>
+          a.createElement(
+            "svg",
+            {
+              fill: "#ffffff",
+              height: "24",
+              viewBox: "0 0 24 24",
+              width: "24",
+              xmlns: "http://www.w3.org/2000/svg",
+            },
+            a.createElement("path", { d: "M0 0h24v24H0z", fill: "none" }),
+            a.createElement("path", {
+              d: "M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z",
+            }),
+          ),
+        m = () =>
+          a.createElement(
+            "svg",
+            {
+              fill: "#ffffff",
+              height: "24",
+              viewBox: "0 0 24 24",
+              width: "24",
+              xmlns: "http://www.w3.org/2000/svg",
+            },
+            a.createElement("path", {
+              d: "M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z",
+            }),
+            a.createElement("path", { d: "M0 0h24v24H0z", fill: "none" }),
+          ),
+        s = () =>
+          a.createElement(
+            "svg",
+            {
+              fill: "#ffffff",
+              height: "24",
+              viewBox: "0 0 24 24",
+              width: "24",
+              xmlns: "http://www.w3.org/2000/svg",
+            },
+            a.createElement("path", {
+              d: "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
+            }),
+            a.createElement("path", { d: "M0 0h24v24H0z", fill: "none" }),
+          ),
+        h = () =>
+          a.createElement(
+            "svg",
+            {
+              fill: "#ffffff",
+              height: "48",
+              viewBox: "0 0 24 24",
+              width: "48",
+              xmlns: "http://www.w3.org/2000/svg",
+            },
+            a.createElement("path", {
+              d: "M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z",
+            }),
+            a.createElement("path", { d: "M0 0h24v24H0V0z", fill: "none" }),
+          ),
+        d = () =>
+          a.createElement(
+            "svg",
+            {
+              fill: "#ffffff",
+              width: "24",
+              height: "24",
+              viewBox: "0 0 24 24",
+              xmlns: "http://www.w3.org/2000/svg",
+            },
+            a.createElement("path", {
+              fill: "none",
+              d: "M0 0h24v24H0V0zm0 0h24v24H0V0z",
+            }),
+            a.createElement("path", {
+              d: "M7.47 21.49C4.2 19.93 1.86 16.76 1.5 13H0c.51 6.16 5.66 11 11.95 11 .23 0 .44-.02.66-.03L8.8 20.15l-1.33 1.34zM12.05 0c-.23 0-.44.02-.66.04l3.81 3.81 1.33-1.33C19.8 4.07 22.14 7.24 22.5 11H24c-.51-6.16-5.66-11-11.95-11zM16 14h2V8c0-1.11-.9-2-2-2h-6v2h6v6zm-8 2V4H6v2H4v2h2v8c0 1.1.89 2 2 2h8v2h2v-2h2v-2H8z",
+            }),
+          );
+      const g = (e) => (t) => {
+        (function (e) {
+          return (
+            document.location.hostname !==
+            new URL(e, document.location).hostname
+          );
+        })(e) &&
+          (t.preventDefault(),
+          fetch(e)
+            .then(
+              (t) => (
+                t.ok ||
+                  console.error(
+                    "Failed to download image, HTTP status " +
+                      t.status +
+                      " from " +
+                      e,
+                  ),
+                t.blob().then((t) => {
+                  let n = document.createElement("a");
+                  n.setAttribute("download", e.split("/").pop()),
+                    (n.href = URL.createObjectURL(t)),
+                    n.click();
+                })
+              ),
+            )
+            .catch((t) => {
+              console.error(t),
+                console.error("Failed to download image from " + e);
+            }));
+      };
+      var u = (e) => {
+        let {
+          image: t,
+          alt: n,
+          zoomed: o,
+          toggleZoom: l,
+          toggleRotate: r,
+          onClose: h,
+          enableDownload: u,
+          enableZoom: p,
+          enableRotate: f,
+        } = e;
+        return a.createElement(
+          "div",
+          { className: "__react_modal_image__header" },
+          a.createElement(
+            "span",
+            { className: "__react_modal_image__icon_menu" },
+            u &&
+              a.createElement(
+                "a",
+                { href: t, download: !0, onClick: g(t) },
+                a.createElement(m, null),
+              ),
+            p &&
+              a.createElement(
+                "a",
+                { onClick: l },
+                o ? a.createElement(c, null) : a.createElement(i, null),
+              ),
+            f && a.createElement("a", { onClick: r }, a.createElement(d, null)),
+            a.createElement("a", { onClick: h }, a.createElement(s, null)),
+          ),
+          n &&
+            a.createElement(
+              "span",
+              { className: "__react_modal_image__caption" },
+              n,
+            ),
+        );
+      };
+      let p = (function (e) {
+          function t() {
+            for (
+              var t, n = arguments.length, o = new Array(n), a = 0;
+              a < n;
+              a++
+            )
+              o[a] = arguments[a];
+            return (
+              ((t = e.call.apply(e, [this].concat(o)) || this).state = {
+                loading: !0,
+              }),
+              (t.handleOnLoad = () => {
+                t.setState({ loading: !1 });
+              }),
+              (t.handleOnContextMenu = (e) => {
+                !t.props.contextMenu && e.preventDefault();
+              }),
+              t
+            );
+          }
+          return (
+            (0, o.Z)(t, e),
+            (t.prototype.render = function () {
+              const {
+                id: e,
+                className: t,
+                src: n,
+                style: o,
+                handleDoubleClick: l,
+              } = this.props;
+              return a.createElement(
+                "div",
+                null,
+                this.state.loading && a.createElement(h, null),
+                a.createElement("img", {
+                  id: e,
+                  className: t,
+                  src: n,
+                  style: o,
+                  onLoad: this.handleOnLoad,
+                  onDoubleClick: l,
+                  onContextMenu: this.handleOnContextMenu,
+                }),
+              );
+            }),
+            t
+          );
+        })(a.Component),
+        f = (function (e) {
+          function t() {
+            for (
+              var t, n = arguments.length, o = new Array(n), a = 0;
+              a < n;
+              a++
+            )
+              o[a] = arguments[a];
+            return (
+              ((t = e.call.apply(e, [this].concat(o)) || this).state = {
+                move: { x: 0, y: 0 },
+                moveStart: void 0,
+                zoomed: !1,
+                rotationDeg: 0,
+              }),
+              (t.handleKeyDown = (e) => {
+                (27 !== e.keyCode && 13 !== e.keyCode) || t.props.onClose();
+              }),
+              (t.getCoordinatesIfOverImg = (e) => {
+                const n = e.changedTouches ? e.changedTouches[0] : e;
+                if ("react-modal-image-img" !== n.target.id) return;
+                const o = t.contentEl.getBoundingClientRect();
+                return { x: n.clientX - o.left, y: n.clientY - o.top };
+              }),
+              (t.handleMouseDownOrTouchStart = (e) => {
+                if ((e.preventDefault(), e.touches && e.touches.length > 1))
+                  return;
+                const n = t.getCoordinatesIfOverImg(e);
+                n || t.props.onClose(),
+                  t.state.zoomed &&
+                    t.setState((e) => ({
+                      moveStart: { x: n.x - e.move.x, y: n.y - e.move.y },
+                    }));
+              }),
+              (t.handleMouseMoveOrTouchMove = (e) => {
+                if ((e.preventDefault(), !t.state.zoomed || !t.state.moveStart))
+                  return;
+                if (e.touches && e.touches.length > 1) return;
+                const n = t.getCoordinatesIfOverImg(e);
+                n &&
+                  t.setState((e) => ({
+                    move: { x: n.x - e.moveStart.x, y: n.y - e.moveStart.y },
+                  }));
+              }),
+              (t.handleMouseUpOrTouchEnd = (e) => {
+                t.setState({ moveStart: void 0 });
+              }),
+              (t.toggleZoom = (e) => {
+                e.preventDefault(),
+                  t.setState((e) => ({
+                    zoomed: !e.zoomed,
+                    move: e.zoomed ? { x: 0, y: 0 } : e.move,
+                  }));
+              }),
+              (t.toggleRotate = (e) => {
+                e.preventDefault();
+                const { rotationDeg: n } = t.state;
+                360 !== n
+                  ? t.setState((e) => ({ rotationDeg: (e.rotationDeg += 90) }))
+                  : t.setState({ rotationDeg: 90 });
+              }),
+              t
+            );
+          }
+          (0, o.Z)(t, e);
+          var n = t.prototype;
+          return (
+            (n.componentDidMount = function () {
+              document.addEventListener("keydown", this.handleKeyDown, !1);
+            }),
+            (n.componentWillUnmount = function () {
+              document.removeEventListener("keydown", this.handleKeyDown, !1);
+            }),
+            (n.render = function () {
+              const {
+                  medium: e,
+                  large: t,
+                  alt: n,
+                  onClose: o,
+                  hideDownload: i,
+                  hideZoom: c,
+                  showRotate: m,
+                  imageBackgroundColor: s = "black",
+                } = this.props,
+                { move: h, zoomed: d, rotationDeg: g } = this.state;
+              return a.createElement(
+                "span",
+                null,
+                a.createElement(l, {
+                  name: "__react_modal_image__lightbox",
+                  css: r({ imageBackgroundColor: s }),
+                }),
+                a.createElement(
+                  "div",
+                  { className: "__react_modal_image__modal_container" },
+                  a.createElement(
+                    "div",
+                    {
+                      className: "__react_modal_image__modal_content",
+                      onMouseDown: this.handleMouseDownOrTouchStart,
+                      onMouseUp: this.handleMouseUpOrTouchEnd,
+                      onMouseMove: this.handleMouseMoveOrTouchMove,
+                      onTouchStart: this.handleMouseDownOrTouchStart,
+                      onTouchEnd: this.handleMouseUpOrTouchEnd,
+                      onTouchMove: this.handleMouseMoveOrTouchMove,
+                      ref: (e) => {
+                        this.contentEl = e;
+                      },
+                    },
+                    d &&
+                      a.createElement(p, {
+                        id: "react-modal-image-img",
+                        className: "__react_modal_image__large_img",
+                        src: t || e,
+                        style: {
+                          transform: `translate3d(-50%, -50%, 0) translate3d(${h.x}px, ${h.y}px, 0) rotate(${g}deg)`,
+                          WebkitTransform: `translate3d(-50%, -50%, 0) translate3d(${h.x}px, ${h.y}px, 0) rotate(${g}deg)`,
+                          MsTransform: `translate3d(-50%, -50%, 0) translate3d(${h.x}px, ${h.y}px, 0) rotate(${g}deg)`,
+                        },
+                        handleDoubleClick: this.toggleZoom,
+                      }),
+                    !d &&
+                      a.createElement(p, {
+                        id: "react-modal-image-img",
+                        className: "__react_modal_image__medium_img",
+                        src: e || t,
+                        handleDoubleClick: this.toggleZoom,
+                        contextMenu: !e,
+                        style: {
+                          transform: `translate3d(-50%, -50%, 0) rotate(${g}deg)`,
+                          WebkitTransform: `translate3d(-50%, -50%, 0) rotate(${g}deg)`,
+                          MsTransform: `translate3d(-50%, -50%, 0) rotate(${g}deg)`,
+                        },
+                      }),
+                  ),
+                  a.createElement(u, {
+                    image: t || e,
+                    alt: n,
+                    zoomed: d,
+                    toggleZoom: this.toggleZoom,
+                    toggleRotate: this.toggleRotate,
+                    onClose: o,
+                    enableDownload: !i,
+                    enableZoom: !c,
+                    enableRotate: !!m,
+                  }),
+                ),
+              );
+            }),
+            t
+          );
+        })(a.Component);
+      const _ = function () {
+        return Date.now().toString(36) + Math.random().toString(36).substr(2);
+      };
+      let v = (function (e) {
+          function t() {
+            for (
+              var t, n = arguments.length, o = new Array(n), a = 0;
+              a < n;
+              a++
+            )
+              o[a] = arguments[a];
+            return (
+              ((t = e.call.apply(e, [this].concat(o)) || this).state = {
+                modalOpen: !1,
+              }),
+              (t.toggleModal = () => {
+                t.setState((e) => ({ modalOpen: !e.modalOpen }));
+              }),
+              t
+            );
+          }
+          return (
+            (0, o.Z)(t, e),
+            (t.prototype.render = function () {
+              const {
+                  className: e,
+                  small: t,
+                  smallSrcSet: n,
+                  medium: o,
+                  large: l,
+                  alt: r,
+                  hideDownload: i,
+                  hideZoom: c,
+                  showRotate: m,
+                  imageBackgroundColor: s,
+                  height: h,
+                  width: d,
+                } = this.props,
+                { modalOpen: g } = this.state;
+              return a.createElement(
+                "span",
+                null,
+                a.createElement("img", {
+                  id: _(),
+                  className: e,
+                  style: {
+                    cursor: "pointer",
+                    width: d,
+                    maxHeight: h,
+                    padding: 0,
+                  },
+                  onClick: this.toggleModal,
+                  src: t,
+                  srcSet: n,
+                  alt: r,
+                }),
+                g &&
+                  a.createElement(f, {
+                    id: _(),
+                    medium: o,
+                    large: l,
+                    alt: r,
+                    onClose: this.toggleModal,
+                    hideDownload: !0,
+                    hideZoom: c,
+                    showRotate: m,
+                    imageBackgroundColor: s,
+                  }),
+              );
+            }),
+            t
+          );
+        })(a.Component),
+        w = (function (e) {
+          function t() {
+            for (
+              var t, n = arguments.length, o = new Array(n), a = 0;
+              a < n;
+              a++
+            )
+              o[a] = arguments[a];
+            return (
+              ((t = e.call.apply(e, [this].concat(o)) || this).state = {
+                modalOpen: !1,
+              }),
+              t
+            );
+          }
+          return (
+            (0, o.Z)(t, e),
+            (t.prototype.render = function () {
+              const { images: e } = this.props;
+              var t = [];
+              e.map((e) => {
+                var n = e.reduce((e, t) => e + t.width / t.height, 0);
+                e.forEach((e) => {
+                  e.large_file || (e.large_file = e.file),
+                    t.push(
+                      a.createElement(v, {
+                        small: e.file,
+                        large: e.large_file,
+                        alt: a.createElement(
+                          "span",
+                          null,
+                          a.createElement("h3", null, e.caption),
+                          a.createElement("h4", null, e.subcaption),
+                        ),
+                        width: (e.width / e.height / n) * 100 + "%",
+                      }),
+                    );
+                });
+              });
+              var n = [];
+              return (
+                e.map((e) => {
+                  e.reduce((e, t) => e + t.width / t.height, 0);
+                  e.forEach((e) => {
+                    e.large_file || (e.large_file = e.file),
+                      n.push(
+                        a.createElement(v, {
+                          small: e.file,
+                          large: e.large_file,
+                          alt: a.createElement(
+                            "span",
+                            null,
+                            a.createElement("h3", null, e.caption),
+                            a.createElement("h4", null, e.subcaption),
+                          ),
+                          width: "100%",
+                        }),
+                      );
+                  });
+                }),
+                a.createElement(
+                  "div",
+                  null,
+                  a.createElement("div", { className: "desktop-only" }, t),
+                  a.createElement("div", { className: "mobile-only" }, n),
+                )
+              );
+            }),
+            t
+          );
+        })(a.Component);
+    },
+    6350: function (e, t, n) {
+      n.r(t),
+        n.d(t, {
+          Head: function () {
+            return r;
+          },
+        });
+      var o = n(7294),
+        a = n(5469),
+        l = n(319);
+      const r = () => o.createElement("title", null, "Home Page");
+      t.default = () =>
+        o.createElement(
+          "main",
+          null,
+          o.createElement(
+            l.Z,
+            { pageTitle: "Visual Development" },
+            o.createElement(a.Z, {
+              images: [
+                [
+                  {
+                    file: "../../images/cnidaria-background.jpg",
+                    caption: "Cnidaria",
+                    width: 1920,
+                    height: 1080,
+                  },
+                  {
+                    file: "../../images/achilles.jpg",
+                    caption: "The Song Of Achilles",
+                    width: 6300,
+                    height: 2700,
+                  },
+                ],
+                [
+                  {
+                    file: "../../images/fox-1.jpg",
+                    caption: "The Fox And The Grapes (1/3)",
+                    width: 1920,
+                    height: 1080,
+                  },
+                  {
+                    file: "../../images/fox-2.jpg",
+                    caption: "The Fox And The Grapes (2/3)",
+                    width: 1920,
+                    height: 1080,
+                  },
+                  {
+                    file: "../../images/fox-3.jpg",
+                    caption: "The Fox And The Grapes (3/3)",
+                    width: 1920,
+                    height: 1080,
+                  },
+                ],
+                [
+                  {
+                    file: "../../images/marble.jpg",
+                    caption: "I Lost My Marbles",
+                    width: 1920,
+                    height: 1080,
+                  },
+                  {
+                    file: "../../images/aclockalypse.jpg",
+                    caption: "Aclockalypse",
+                    width: 1920,
+                    height: 1080,
+                  },
+                ],
+              ],
+            }),
+          ),
+        );
+    },
+  },
+]);
 //# sourceMappingURL=component---src-pages-visdev-js-b838783e111205d7ffc1.js.map
