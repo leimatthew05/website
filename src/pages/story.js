@@ -34,6 +34,14 @@ const Page = () => {
             webkitallowfullscreen="true"
             style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
           ></iframe>
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTz33blGyNGj1RcKxf6iu56jYuLzPbqGBC1YYKVA_gO4pnaLRkqZrkdAkJYem2Kx--OigjiqpZotASt/embed?start=false&loop=false&delayms=60000"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
+          ></iframe>
         </div>
 
         <div className="mobile-only">
@@ -60,6 +68,14 @@ const Page = () => {
             mozallowfullscreen="true"
             webkitallowfullscreen="true"
             style={{ width: "100%", height: "300px", margin: "0" }}
+          ></iframe>
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTz33blGyNGj1RcKxf6iu56jYuLzPbqGBC1YYKVA_gO4pnaLRkqZrkdAkJYem2Kx--OigjiqpZotASt/embed?start=false&loop=false&delayms=60000"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ width: "60%", height: "600px", margin: "0" }}
           ></iframe>
         </div>
       </Layout>
