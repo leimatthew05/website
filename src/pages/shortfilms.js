@@ -26,4 +26,6 @@ const Page = () => {
 };
 
 // Step 3: Export your component
+export const Head = () => <title>Matthew Lei</title>;
+
 export default Page;
