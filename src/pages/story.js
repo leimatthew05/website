@@ -75,7 +75,7 @@ const Page = () => {
             allowfullscreen="true"
             mozallowfullscreen="true"
             webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0" }}
+            style={{ width: "100%", height: "600px", margin: "0" }}
           ></iframe>
         </div>
       </Layout>
