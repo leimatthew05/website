@@ -11,6 +11,14 @@ const Page = () => {
       <Layout pageTitle="STORY">
         <div className="desktop-only">
           <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTwa0Fff98itrA4boBKJQJ2oa-w17ZVnSpPUKmmhYirab6TVaXHXypqKnCbORneATJkp3EHXkaV_aMf/embed?start=false&loop=false&delayms=60000"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
+          ></iframe>
+          <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vS-3rLxvn8DSEd62pHcOHzz82dDf0GdEiJ2aZD0hy1T1MJoCB23pVDt5Et_6mjUWmT10SIjRInKJWJ6/embed?start=false&loop=false&delayms=60000"
             frameborder="0"
             allowfullscreen="true"
@@ -45,6 +53,14 @@ const Page = () => {
         </div>
 
         <div className="mobile-only">
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTwa0Fff98itrA4boBKJQJ2oa-w17ZVnSpPUKmmhYirab6TVaXHXypqKnCbORneATJkp3EHXkaV_aMf/embed?start=false&loop=false&delayms=60000"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ width: "100%", height: "300px", margin: "0" }}
+          ></iframe>
           <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vS-3rLxvn8DSEd62pHcOHzz82dDf0GdEiJ2aZD0hy1T1MJoCB23pVDt5Et_6mjUWmT10SIjRInKJWJ6/embed?start=false&loop=false&delayms=60000"
             frameborder="0"
