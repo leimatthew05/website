@@ -29,7 +29,7 @@ class Menu extends Component {
   render() {
     var menuitems = [
       <NavLink>
-        <Link to={"/"}>Character Design</Link>
+        <Link to={"/"}>Personal</Link>
       </NavLink>,
       <NavLink>
         <Link to={"/story/"}>Story</Link>

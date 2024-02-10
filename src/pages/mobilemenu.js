@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children }) => {
           MENU
         </div>
         <NavLink style={{ paddingBottom: "20px" }}>
-          <Link to={"/"}>Character Design</Link>
+          <Link to={"/"}>Personal</Link>
         </NavLink>
         <NavLink style={{ paddingBottom: "20px" }}>
           <Link to={"/story/"}>Story</Link>

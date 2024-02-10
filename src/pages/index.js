@@ -8,6 +8,42 @@ const IndexPage = () => {
   const images = [
     [
       {
+        file: "../../images/rainstorm.png",
+        caption: "The Storm",
+        subcaption:
+        "A quick doodle I made on a particularly stormy day.",
+        width: 3840,
+        height: 2160,
+      },
+      {
+        file: "../../images/stage fright.png",
+        caption: "Stage Fright",
+        subcaption:
+        "Inspired by when I got so dizzy the lights were blinding and time froze.",
+        width: 2500,
+        height: 2500,
+      },
+    ],
+    [
+      {
+        file: "../../images/dead-inside.png",
+        caption: "Dead Inside",
+        subcaption:
+        "That moment when you feel empty inside.",
+        width: 2500,
+        height: 3000,
+      },
+      {
+        file: "../../images/art-block-2.png",
+        caption: "Art Block",
+        subcaption:
+        "The perfect thing to draw when I don't feel like drawing.",
+        width: 3840,
+        height: 2160,
+      },
+    ],
+    [
+      {
         file: "../../images/13-final.png",
         caption: "Sky",
         width: 2500,
@@ -28,26 +64,6 @@ const IndexPage = () => {
     ],
     [
       {
-        file: "../../images/sky.jpg",
-        caption: "Sky",
-        width: 6207,
-        height: 2456,
-      },
-      {
-        file: "../../images/cometandaster.jpg",
-        caption: "Comet And Aster",
-        width: 6207,
-        height: 2456,
-      },
-      {
-        file: "../../images/lucifer.jpg",
-        caption: "Lucifer",
-        width: 6207,
-        height: 2456,
-      },
-    ],
-    [
-      {
         file: "../../images/robots-example.jpg",
         caption: "The Last Human On Earth",
         subcaption:
@@ -58,79 +74,25 @@ const IndexPage = () => {
       {
         file: "../../images/robots-human.jpg",
         caption: "The Last Human On Earth (Reaction Sheet)",
+        subcaption:
+        "In a world run by robots, a young girl is raised as the last human on Earth.",
         width: 2880,
         height: 2304,
       },
       {
         file: "../../images/robots-robots.jpg",
         caption: "The Last Human On Earth (Robot Designs)",
+        subcaption:
+        "In a world run by robots, a young girl is raised as the last human on Earth.",
         width: 2880,
         height: 2304,
-      },
-    ],
-    [
-      {
-        file: "../../images/axolotl.jpg",
-        caption: "Sci-Fi Teenage Axolotls!",
-        width: 3000,
-        height: 2500,
-      },
-      {
-        file: "../../images/spider-butler-1.jpg",
-        caption: "Spider Butler Character Exploration",
-        width: 3000,
-        height: 2500,
-      },
-      {
-        file: "../../images/spider-butler-2.jpg",
-        caption: "Spider Butler Character Sheet",
-        width: 2500,
-        height: 2500,
-      },
-      {
-        file: "../../images/Sarah.jpg",
-        caption: "Sarah and Her Best Friend",
-        width: 1080,
-        height: 1350,
-      },
-      {
-        file: "../../images/character-design.jpg",
-        caption: "Sarah Character Sheet",
-        width: 1650,
-        height: 1400,
-      },
-    ],
-    [
-      {
-        file: "../../images/Aurelia Aurita.jpg",
-        caption: "Aurelia Aurita",
-        width: 2000,
-        height: 2500,
-      },
-      {
-        file: "../../images/Anton Aiptasia.jpg",
-        caption: "Anton Aiptasia",
-        width: 2000,
-        height: 2500,
-      },
-      {
-        file: "../../images/Turri Dohrns.jpg",
-        caption: "Turri Dohrns",
-        width: 2000,
-        height: 2500,
-      },
-      {
-        file: "../../images/Cnidaria Citizens.jpg",
-        caption: "Cnidaria Citizens",
-        width: 2000,
-        height: 2500,
       },
     ],
   ];
 
   return (
     <main>
-      <Layout pageTitle="CHARACTER DESIGN">
+      <Layout pageTitle="PERSONAL">
         <Gallery images={images} />
       </Layout>
     </main>

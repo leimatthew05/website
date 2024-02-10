@@ -25,7 +25,7 @@ const IndexPage = () => {
                   </p>
                   <p>
                     During my free time you'll find me messing around on
-                    blender, writing silly songs, and goofing off on my YouTube
+                    Blender, writing silly songs, and goofing off on my YouTube
                     channel.
                   </p>
                 </div>
@@ -115,7 +115,7 @@ const IndexPage = () => {
                   the Summer.
                 </p>
                 <p>
-                  During my free time you'll find me messing around on blender,
+                  During my free time you'll find me messing around on Blender,
                   writing silly songs, and goofing off on my YouTube channel.
                 </p>
               </div>

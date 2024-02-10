@@ -9,7 +9,7 @@ import Menu from "./menu.js";
 const Layout = ({ pageTitle, children }) => {
   var menuitems = [
     <NavLink>
-      <Link to={"/"}>Character Design</Link>
+      <Link to={"/"}>Personal</Link>
     </NavLink>,
     <NavLink>
       <Link to={"/story/"}>Story</Link>
