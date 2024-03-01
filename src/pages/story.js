@@ -11,6 +11,14 @@ const Page = () => {
       <Layout pageTitle="STORY">
         <div className="desktop-only">
           <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTOXlXe6JbKAhNTl_4ycHYRxscC7Xw_nckg9CYHIPninVSDNlFQ1EVrkS8kccRu-F7e9rJwy6woty9C/embed?start=false&loop=true&delayms=60000"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
+          ></iframe>
+          <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vTwa0Fff98itrA4boBKJQJ2oa-w17ZVnSpPUKmmhYirab6TVaXHXypqKnCbORneATJkp3EHXkaV_aMf/embed?start=false&loop=false&delayms=60000"
             frameborder="0"
             allowfullscreen="true"
@@ -28,14 +36,6 @@ const Page = () => {
           ></iframe>
           <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vRe8-8ZmO2WfI5KTkmozWPeYuxhWC-T0NkbYyDReuVzkwKPVrDy4tk_6yQtMxbtN7r005JoLoZsb2Li/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vQPi_Iy3rXsjsGlI-vxhKDJXgwuLuBcVs2glDsBl6EuIfj4zdkEuXC7XR5Ot7vwVTTk9dPtwli-ptKi/embed?start=false&loop=false&delayms=60000"
             frameborder="0"
             allowfullscreen="true"
             mozallowfullscreen="true"
@@ -53,6 +53,14 @@ const Page = () => {
         </div>
 
         <div className="mobile-only">
+        <   iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTOXlXe6JbKAhNTl_4ycHYRxscC7Xw_nckg9CYHIPninVSDNlFQ1EVrkS8kccRu-F7e9rJwy6woty9C/embed?start=false&loop=true&delayms=60000"
+            frameborder="0"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            style={{ width: "100%", height: "300px", margin: "0" }}
+          ></iframe>
           <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vTwa0Fff98itrA4boBKJQJ2oa-w17ZVnSpPUKmmhYirab6TVaXHXypqKnCbORneATJkp3EHXkaV_aMf/embed?start=false&loop=false&delayms=60000"
             frameborder="0"
@@ -71,14 +79,6 @@ const Page = () => {
           ></iframe>
           <iframe
             src="https://docs.google.com/presentation/d/e/2PACX-1vRe8-8ZmO2WfI5KTkmozWPeYuxhWC-T0NkbYyDReuVzkwKPVrDy4tk_6yQtMxbtN7r005JoLoZsb2Li/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "100%", height: "300px", margin: "0" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vQPi_Iy3rXsjsGlI-vxhKDJXgwuLuBcVs2glDsBl6EuIfj4zdkEuXC7XR5Ot7vwVTTk9dPtwli-ptKi/embed?start=false&loop=false&delayms=60000"
             frameborder="0"
             allowfullscreen="true"
             mozallowfullscreen="true"

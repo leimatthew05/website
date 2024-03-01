@@ -8,12 +8,12 @@ const IndexPage = () => {
   const images = [
     [
       {
-        file: "../../images/rainstorm.png",
-        caption: "The Storm",
+        file: "../../images/go-outside.jpg",
+        caption: "Must Go Outside!",
         subcaption:
-        "A quick doodle I made on a particularly stormy day.",
-        width: 3840,
-        height: 2160,
+        "A comic I made about my dorm-dwelling habits.",
+        width: 3000,
+        height: 2000,
       },
       {
         file: "../../images/stage fright.png",
@@ -23,8 +23,6 @@ const IndexPage = () => {
         width: 2500,
         height: 2500,
       },
-    ],
-    [
       {
         file: "../../images/dead-inside.png",
         caption: "Dead Inside",
@@ -32,6 +30,16 @@ const IndexPage = () => {
         "That moment when you feel empty inside.",
         width: 2500,
         height: 3000,
+      },
+    ],
+    [
+      {
+        file: "../../images/rainstorm.png",
+        caption: "The Storm",
+        subcaption:
+        "A quick doodle I made on a particularly stormy day.",
+        width: 3840,
+        height: 2160,
       },
       {
         file: "../../images/art-block-2.png",
