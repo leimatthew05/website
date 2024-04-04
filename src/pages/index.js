@@ -8,12 +8,22 @@ const IndexPage = () => {
   const images = [
     [
       {
-        file: "../../images/go-outside.jpg",
-        caption: "Must Go Outside!",
-        subcaption:
-        "A comic I made about my dorm-dwelling habits.",
-        width: 3000,
-        height: 2000,
+        file: "../../images/nature.jpg",
+        caption: "Secret Adventure",
+        width: 2500,
+        height: 3000,
+      },
+      {
+        file: "../../images/touchy.jpg",
+        caption: "Touchy",
+        width: 2000,
+        height: 2500,
+      },
+      {
+        file: "../../images/everywhere.jpg",
+        caption: "The Journey Ahead",
+        width: 4032,
+        height: 3024,
       },
       {
         file: "../../images/stage fright.png",
@@ -23,6 +33,32 @@ const IndexPage = () => {
         width: 2500,
         height: 2500,
       },
+    ],
+    [
+      {
+        file: "../../images/go-outside.jpg",
+        caption: "Must Go Outside!",
+        subcaption:
+        "A comic I made about my dorm-dwelling habits.",
+        width: 3000,
+        height: 2000,
+      },
+      {
+        file: "../../images/mirrors.png",
+        caption: "Self Conscious",
+        subcaption:
+        "Sometimes, being self conscious feels like standing in a room full of mirrors.",
+        width: 2500,
+        height: 2500,
+      },
+      {
+        file: "../../images/toomuch.jpg",
+        caption: "Too Much!!",
+        width: 3000,
+        height: 2000,
+      },
+    ],
+    [
       {
         file: "../../images/dead-inside.png",
         caption: "Dead Inside",
@@ -31,8 +67,6 @@ const IndexPage = () => {
         width: 2500,
         height: 3000,
       },
-    ],
-    [
       {
         file: "../../images/rainstorm.png",
         caption: "The Storm",
