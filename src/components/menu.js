@@ -29,11 +29,11 @@ class Menu extends Component {
   render() {
     var menuitems = [
       <NavLink>
-        <Link to={"/"}>Personal</Link>
+        <Link to={"/"}>Story</Link>
       </NavLink>,
       <NavLink>
-        <Link to={"/story/"}>Story</Link>
-      </NavLink>,
+      <Link to={"/personal/"}>Personal</Link>
+    </NavLink>,
       <NavLink>
         <Link to={"/shortfilms/"}>Short Films</Link>
       </NavLink>,

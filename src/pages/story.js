@@ -1,99 +1,83 @@
 // Step 1: Import React
 import * as React from "react";
-import Gallery from "../components/gallery";
 import Layout from "../components/layout";
-import YoutubeEmbed from "../components/youtubeembed";
+import { Row, Col } from "reactstrap";
+import { Link } from "gatsby";
 
 // Step 2: Define your component
-const Page = () => {
+const IndexPage = () => {
   return (
     <main>
-      <Layout pageTitle="STORY">
-        <div className="desktop-only">
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTOXlXe6JbKAhNTl_4ycHYRxscC7Xw_nckg9CYHIPninVSDNlFQ1EVrkS8kccRu-F7e9rJwy6woty9C/embed?start=false&loop=true&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTwa0Fff98itrA4boBKJQJ2oa-w17ZVnSpPUKmmhYirab6TVaXHXypqKnCbORneATJkp3EHXkaV_aMf/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vS-3rLxvn8DSEd62pHcOHzz82dDf0GdEiJ2aZD0hy1T1MJoCB23pVDt5Et_6mjUWmT10SIjRInKJWJ6/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vRe8-8ZmO2WfI5KTkmozWPeYuxhWC-T0NkbYyDReuVzkwKPVrDy4tk_6yQtMxbtN7r005JoLoZsb2Li/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTz33blGyNGj1RcKxf6iu56jYuLzPbqGBC1YYKVA_gO4pnaLRkqZrkdAkJYem2Kx--OigjiqpZotASt/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "60%", height: "600px", margin: "0 20% auto" }}
-          ></iframe>
-        </div>
-
-        <div className="mobile-only">
-        <   iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTOXlXe6JbKAhNTl_4ycHYRxscC7Xw_nckg9CYHIPninVSDNlFQ1EVrkS8kccRu-F7e9rJwy6woty9C/embed?start=false&loop=true&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "100%", height: "300px", margin: "0" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTwa0Fff98itrA4boBKJQJ2oa-w17ZVnSpPUKmmhYirab6TVaXHXypqKnCbORneATJkp3EHXkaV_aMf/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "100%", height: "300px", margin: "0" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vS-3rLxvn8DSEd62pHcOHzz82dDf0GdEiJ2aZD0hy1T1MJoCB23pVDt5Et_6mjUWmT10SIjRInKJWJ6/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "100%", height: "300px", margin: "0" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vRe8-8ZmO2WfI5KTkmozWPeYuxhWC-T0NkbYyDReuVzkwKPVrDy4tk_6yQtMxbtN7r005JoLoZsb2Li/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "100%", height: "300px", margin: "0" }}
-          ></iframe>
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTz33blGyNGj1RcKxf6iu56jYuLzPbqGBC1YYKVA_gO4pnaLRkqZrkdAkJYem2Kx--OigjiqpZotASt/embed?start=false&loop=false&delayms=60000"
-            frameborder="0"
-            allowfullscreen="true"
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            style={{ width: "100%", height: "600px", margin: "0" }}
-          ></iframe>
-        </div>
+      <Layout pageTitle="My story page is now on the homepage :)">
+          <div className="section">
+            <Row>
+              <Col lg={6}>
+                <h2
+                  style={{
+                    paddingTop: "60px",
+                    paddingBottom: "20px",
+                    color: "var(--textcolor)",
+                  }}
+                >
+                  LET'S BE FRIENDS :D
+                </h2>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/lei_doodles"}
+                    style={{ paddingRight: "30px" }}
+                  >
+                    <div
+                      id="insta"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                  <a
+                    href={"mailto:mlei@students.calarts.edu"}
+                    style={{ paddingRight: "30px" }}
+                  >
+                    <div
+                      id="mail"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                  <a
+                    href={"https://www.youtube.com/@lei_doodles"}
+                    style={{ paddingRight: "30px" }}
+                  >
+                    <div
+                      id="youtube"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                  <a
+                    href={"https://www.linkedin.com/in/leidoodles/"}
+                    style={{ paddingRight: "30px" }}
+                  >
+                    <div
+                      id="linkedin"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
       </Layout>
     </main>
   );
@@ -103,4 +87,4 @@ const Page = () => {
 export const Head = () => <title>Matthew Lei</title>;
 
 // Step 3: Export your component
-export default Page;
+export default IndexPage;

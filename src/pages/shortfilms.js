@@ -7,6 +7,7 @@ import YoutubeEmbed from "../components/youtubeembed";
 // Step 2: Define your component
 const Page = () => {
   const embed_ids = [
+    "nuKLxaHLWyQ?si=fu43cI2g0uYXKV7r",
     "MURybgFO7Ls?si=-CmXCvicWvfrUXUr",
     "pZPMxcY1nGM?si=zrCOZ1E6_6JSzEuy",
     "x_JN3huCfFQ?si=FitQM7LsfT2Rs9q6",
