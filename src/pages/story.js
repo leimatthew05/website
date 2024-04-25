@@ -12,6 +12,11 @@ const IndexPage = () => {
           <div className="section">
             <Row>
               <Col lg={6}>
+                <h2>
+                  <Link to={"/"}>Click Here To See!</Link>
+                </h2>
+              </Col>
+              <Col lg={6}>
                 <h2
                   style={{
                     paddingTop: "60px",
