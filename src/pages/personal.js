@@ -20,18 +20,18 @@ const IndexPage = () => {
         height: 2500,
       },
       {
+        file: "../../images/producersshow.jpg",
+        caption: "Emotional Soup",
+        subcaption:
+        "That feeling when you feel like you could explode in to soup.",
+        width: 2500,
+        height: 2500,
+      },
+      {
         file: "../../images/everywhere.jpg",
         caption: "The Journey Ahead",
         width: 4032,
         height: 3024,
-      },
-      {
-        file: "../../images/stage fright.png",
-        caption: "Stage Fright",
-        subcaption:
-        "Inspired by when I got so dizzy the lights were blinding and time froze.",
-        width: 2500,
-        height: 2500,
       },
     ],
     [
