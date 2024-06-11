@@ -7,6 +7,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
+  DropdownItem,
 } from "reactstrap";
 import { Link, withPrefix } from "gatsby";
 
@@ -32,11 +33,21 @@ class Menu extends Component {
         <Link to={"/"}>Story</Link>
       </NavLink>,
       <NavLink>
-      <Link to={"/personal/"}>Personal</Link>
-    </NavLink>,
-      <NavLink>
-        <Link to={"/shortfilms/"}>Short Films</Link>
+      <Link to={"/shortfilms/"}>Short Films</Link>
       </NavLink>,
+          <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav caret>
+            Others
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem>
+              <Link to={"/personal/"}>Personal</Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link to="/compositing/">Compositing</Link>
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>,
       <NavLink>
         <Link to={"/about/"}>About</Link>
       </NavLink>,

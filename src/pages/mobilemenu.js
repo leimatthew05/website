@@ -22,10 +22,13 @@ const Layout = ({ pageTitle, children }) => {
           <Link to={"/"}>Story</Link>
         </NavLink>
         <NavLink style={{ paddingBottom: "20px" }}>
+          <Link to={"/shortfilms/"}>Short Films</Link>
+        </NavLink>
+        <NavLink style={{ paddingBottom: "20px" }}>
           <Link to={"/personal/"}>Personal</Link>
         </NavLink>
         <NavLink style={{ paddingBottom: "20px" }}>
-          <Link to={"/shortfilms/"}>Short Films</Link>
+          <Link to={"/compositing/"}>Compositing</Link>
         </NavLink>
         <NavLink style={{ paddingBottom: "20px" }}>
           <Link to={"/about/"}>About</Link>
