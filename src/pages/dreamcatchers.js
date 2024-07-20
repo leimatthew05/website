@@ -54,7 +54,7 @@ const DreamCatchers = () => {
                 </h2>
                 <div style={{paddingBottom: "50px"}}>
                   <a
-                    href={"https://www.instagram.com/lei_doodles"}
+                    href={"https://www.instagram.com/thedreamcatchersshow"}
                     style={{ paddingRight: "30px" }}
                   >
                     <div
@@ -67,7 +67,7 @@ const DreamCatchers = () => {
                     ></div>
                   </a>
                   <a
-                    href={"https://www.youtube.com/@lei_doodles"}
+                    href={"https://www.youtube.com/@thedreamcatchersshow"}
                     style={{ paddingRight: "30px" }}
                   >
                     <div
