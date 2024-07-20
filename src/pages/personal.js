@@ -8,6 +8,26 @@ const IndexPage = () => {
   const images = [
     [
       {
+        file: "../../images/sea-shepherd.jpg",
+        caption: "Sea Shepherd",
+        width: 3996,
+        height: 2160,
+      },
+      {
+        file: "../../images/sky-poster.jpg",
+        caption: "Sky Poster",
+        width: 2000,
+        height: 2500,
+      },
+      {
+        file: "../../images/self love.jpg",
+        caption: "Self Love",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    [
+      {
         file: "../../images/nature.jpg",
         caption: "Secret Adventure",
         width: 2500,

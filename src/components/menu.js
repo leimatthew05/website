@@ -39,14 +39,17 @@ class Menu extends Component {
           <DropdownToggle nav caret>
             Others
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>
-              <Link to={"/personal/"}>Personal</Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link to="/compositing/">Compositing</Link>
-            </DropdownItem>
-          </DropdownMenu>
+              <DropdownMenu>
+                  <DropdownItem>
+                    <Link to={"/dreamcatchers/"}>Dream Catchers</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to={"/personal/"}>Personal</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/compositing/">Compositing</Link>
+                  </DropdownItem>
+              </DropdownMenu>
         </UncontrolledDropdown>,
       <NavLink>
         <Link to={"/about/"}>About</Link>
