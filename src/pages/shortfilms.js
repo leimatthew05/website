@@ -8,6 +8,10 @@ import YoutubeEmbed from "../components/youtubeembed";
 const Page = () => {
   const embed_ids = [
     "nuKLxaHLWyQ?si=fu43cI2g0uYXKV7r",
+    "8HUbtIjpKSo?si=g3NFNjszy2-lXax0",
+    "QFOMZLlpOms?si=3sUutOKlf5R6otYQ",
+    "znGdFCYXd3M?si=3Q6OlojKx5XoJfoc",
+    "jBJ8pcl8UCw?si=CbbqFqnSUftSaDA7",
     "MURybgFO7Ls?si=-CmXCvicWvfrUXUr",
     "pZPMxcY1nGM?si=zrCOZ1E6_6JSzEuy",
     "x_JN3huCfFQ?si=FitQM7LsfT2Rs9q6",
@@ -20,7 +24,17 @@ const Page = () => {
   return (
     <main>
       <Layout pageTitle="SHORT FILMS">
-        <div style={{ display: "block" }}>{embeds}</div>
+        <div className="desktop-only">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridAutoRows: "1"}}>
+            {embeds}
+          </div>
+        </div>
+
+        <div className="mobile-only">
+          <div style={{ display: "grid"}}>
+            {embeds}
+          </div>
+        </div>
       </Layout>
     </main>
   );

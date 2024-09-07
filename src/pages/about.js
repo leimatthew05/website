@@ -19,8 +19,7 @@ const IndexPage = () => {
                 <div style={{ color: "var(--paragraph)" }}>
                   <p>
                     Hi! I'm a BFA1 CalArts Character Animation student. I'm also
-                    an animation assistant and storyboard artist for Gingerpale,
-                    as well as the creator of an upcoming indie animated series,
+                    the creator of an upcoming indie animated series,
                     "Dream Catchers"!
                   </p>
                   <p>
@@ -109,10 +108,9 @@ const IndexPage = () => {
             <div style={{ paddingTop: "50px" }}>
               <div style={{ color: "var(--paragraph)" }}>
                 <p>
-                Hi! I'm a BFA1 CalArts Character Animation student. I'm also
-                an animation assistant and storyboard artist for Gingerpale,
-                as well as the creator of an upcoming indie animated series,
-                "Dream Catchers"!
+                  Hi! I'm a BFA1 CalArts Character Animation student. I'm also
+                  the creator of an upcoming indie animated series,
+                  "Dream Catchers"!
                 </p>
                 <p>
                   During my free time you'll find me messing around on Blender,

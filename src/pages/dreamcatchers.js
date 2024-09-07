@@ -3,14 +3,22 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Row, Col } from "reactstrap";
 import { Link } from "gatsby";
+import YoutubeEmbed from "../components/youtubeembed";
 
 // Step 2: Define your component
 const DreamCatchers = () => {
+  const embed_ids = [
+    "gwp1oQai7vM?si=ObvZt7VkNhPEF3PC",
+  ];
+
+  var embeds = embed_ids.map((i) => {
+    return <YoutubeEmbed embedId={i} />;
+  });
   return (
     <main>
       <Layout pageTitle="DREAM CATCHERS">
           <div className="section">
-                <img src="../../images/dreamcatchers-banner.jpg" width="100%" />
+              <div style={{ display: "block" }}>{embeds}</div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
                   About The Show
                 </h2>
