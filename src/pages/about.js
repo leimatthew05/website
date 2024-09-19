@@ -18,7 +18,7 @@ const IndexPage = () => {
               <Col lg={6}>
                 <div style={{ color: "var(--paragraph)" }}>
                   <p>
-                    Hi! I'm a BFA1 CalArts Character Animation student. I'm also
+                    Hi! I'm a BFA2 CalArts Character Animation student. I'm also
                     the creator of an upcoming indie animated series,
                     "Dream Catchers"!
                   </p>
@@ -108,7 +108,7 @@ const IndexPage = () => {
             <div style={{ paddingTop: "50px" }}>
               <div style={{ color: "var(--paragraph)" }}>
                 <p>
-                  Hi! I'm a BFA1 CalArts Character Animation student. I'm also
+                  Hi! I'm a BFA2 CalArts Character Animation student. I'm also
                   the creator of an upcoming indie animated series,
                   "Dream Catchers"!
                 </p>
