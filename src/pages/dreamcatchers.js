@@ -31,6 +31,9 @@ const DreamCatchers = () => {
                   job of traveling through people’s dreams to help them with their troubles. Join them,
                   as they learn new things, solve problems, and make new ones!
                   </p>
+                  <p>
+                  The first episode has garnered over 40,000 views, and our community Discord has over 400 members!
+                  </p>
                 </div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
                   My Role
@@ -46,7 +49,7 @@ const DreamCatchers = () => {
                   the episodes are being made on a reasonable but timely schedule.
                   </p>
                   <p>
-                  On top of voicing one of the main characters, I'm also (currently) the only animator on the teeam, creating the layouts,
+                  On top of voicing one of the main characters, I'm also (currently) the only animator on the team, creating the layouts,
                   staging, and character acting of every episode. While the show is still a work in progress, we're about half way through
                   the first season, which we plan to contain six episodes!
                   </p>

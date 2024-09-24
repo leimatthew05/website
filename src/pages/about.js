@@ -19,7 +19,7 @@ const IndexPage = () => {
                 <div style={{ color: "var(--paragraph)" }}>
                   <p>
                     Hi! I'm a BFA2 CalArts Character Animation student. I'm also
-                    the creator of an upcoming indie animated series,
+                    the co-creator, showrunner, and animator of an indie animated series,
                     "Dream Catchers"!
                   </p>
                   <p>
@@ -109,7 +109,7 @@ const IndexPage = () => {
               <div style={{ color: "var(--paragraph)" }}>
                 <p>
                   Hi! I'm a BFA2 CalArts Character Animation student. I'm also
-                  the creator of an upcoming indie animated series,
+                  the co-creator, showrunner, and animator of an indie animated series,
                   "Dream Catchers"!
                 </p>
                 <p>
