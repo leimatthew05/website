@@ -2,6 +2,7 @@
 import * as React from "react";
 import Gallery from "../components/gallery";
 import Layout from "../components/layout";
+import Contacts from "../components/contacts";
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -110,58 +111,13 @@ const IndexPage = () => {
         height: 2160,
       },
     ],
-    [
-      {
-        file: "../../images/13-final.png",
-        caption: "Sky",
-        width: 2500,
-        height: 2500,
-      },
-      {
-        file: "../../images/comet_0005_Layer-2.png",
-        caption: "Comet",
-        width: 2500,
-        height: 2500,
-      },
-      {
-        file: "../../images/aster_0005_Layer-10.png",
-        caption: "Aster",
-        width: 2500,
-        height: 2500,
-      },
-    ],
-    [
-      {
-        file: "../../images/robots-example.jpg",
-        caption: "The Last Human On Earth",
-        subcaption:
-          "In a world run by robots, a young girl is raised as the last human on Earth.",
-        width: 2880,
-        height: 2304,
-      },
-      {
-        file: "../../images/robots-human.jpg",
-        caption: "The Last Human On Earth (Reaction Sheet)",
-        subcaption:
-        "In a world run by robots, a young girl is raised as the last human on Earth.",
-        width: 2880,
-        height: 2304,
-      },
-      {
-        file: "../../images/robots-robots.jpg",
-        caption: "The Last Human On Earth (Robot Designs)",
-        subcaption:
-        "In a world run by robots, a young girl is raised as the last human on Earth.",
-        width: 2880,
-        height: 2304,
-      },
-    ],
   ];
 
   return (
     <main>
       <Layout pageTitle="PERSONAL">
         <Gallery images={images} />
+        <Contacts></Contacts>
       </Layout>
     </main>
   );

@@ -3,6 +3,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Row, Col } from "reactstrap";
 import YoutubeEmbed from "../components/youtubeembed";
+import Contacts from "../components/contacts";
 
 // Step 2: Define your component
 const Page = () => {
@@ -35,6 +36,7 @@ const Page = () => {
             {embeds}
           </div>
         </div>
+        <Contacts></Contacts>
       </Layout>
     </main>
   );

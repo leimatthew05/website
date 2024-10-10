@@ -33,7 +33,10 @@ class Menu extends Component {
         <Link to={"/"}>Story</Link>
       </NavLink>,
       <NavLink>
-      <Link to={"/shortfilms/"}>Short Films</Link>
+        <Link to={"/lifedrawing"}>LifeDrawing</Link>
+      </NavLink>,
+      <NavLink>
+      <Link to={"/shortfilms/"}>ShortFilms</Link>
       </NavLink>,
           <UncontrolledDropdown nav inNavbar>
           <DropdownToggle nav caret>
