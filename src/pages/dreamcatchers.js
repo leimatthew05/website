@@ -24,7 +24,7 @@ const DreamCatchers = () => {
                 </h2>
                 <div style={{ color: "var(--paragraph)"}}>
                   <p>
-                  The indie animated show of your DREAMS! Created by a team of CalArts Students.
+                  The indie animated show of your DREAMS! Created by a team of CalArts Students (and various friends from other schools).
                   </p>
                   <p>
                   Dream Catchers is a surreal series that follows Star and TV, who are tasked with the
@@ -32,7 +32,7 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  The first episode has garnered over 40,000 views, and our community Discord has over 400 members!
+                  So far, we've start production on our fifth episode. Our plan is to create 6 episodes in Season 1, and raise funding for a second Season!
                   </p>
                 </div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
@@ -49,9 +49,9 @@ const DreamCatchers = () => {
                   the episodes are being made on a reasonable but timely schedule.
                   </p>
                   <p>
-                  On top of voicing one of the main characters, I'm also (currently) the only animator on the team, creating the layouts,
-                  staging, and character acting of every episode. While the show is still a work in progress, we're about half way through
-                  the first season, which we plan to contain six episodes!
+                  On top of voicing one of the main characters, I'm also (currently) the only animator on the team, responsible for the layout,
+                  staging, and character acting of every episode. Working on this show has taught me a lot about collaborating with other artists,
+                  and being a good leader.
                   </p>
                 </div>
                 <h2

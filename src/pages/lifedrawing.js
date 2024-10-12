@@ -9,26 +9,43 @@ const IndexPage = () => {
   const images = [
     [
       {
-        file: "../../images/IMG_4216.jpg",
+        file: "../../images/life/IMG_4216.jpg",
         width: 3477,
         height: 2739,
       },
       {
-        file: "../../images/IMG_4217.jpg",
+        file: "../../images/life/IMG_4217.jpg",
         width: 3320,
         height: 2193,
       },
     ],
     [
       {
-        file: "../../images/IMG_4218.jpg",
+        file: "../../images/life/IMG_4218.jpg",
         width: 3504,
         height: 2339,
       },
       {
-        file: "../../images/IMG_4223.jpg",
+        file: "../../images/life/IMG_4223.jpg",
         width: 3386,
         height: 2749,
+      },
+    ],
+    [
+      {
+        file: "../../images/life/IMG_4308.jpg",
+        width: 3546,
+        height: 2554,
+      },
+      {
+        file: "../../images/life/IMG_4309.jpg",
+        width: 2697,
+        height: 3430,
+      },
+      {
+        file: "../../images/life/IMG_4311.jpg",
+        width: 2871,
+        height: 2153,
       },
     ],
   ];

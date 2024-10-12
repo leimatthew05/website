@@ -10,12 +10,10 @@ const Page = () => {
   const embed_ids = [
     "nuKLxaHLWyQ?si=fu43cI2g0uYXKV7r",
     "8HUbtIjpKSo?si=g3NFNjszy2-lXax0",
+    "G9MrWnCpNFs?si=EP5oPHdmSFXH_4UK",
     "QFOMZLlpOms?si=3sUutOKlf5R6otYQ",
     "znGdFCYXd3M?si=3Q6OlojKx5XoJfoc",
     "jBJ8pcl8UCw?si=CbbqFqnSUftSaDA7",
-    "MURybgFO7Ls?si=-CmXCvicWvfrUXUr",
-    "pZPMxcY1nGM?si=zrCOZ1E6_6JSzEuy",
-    "x_JN3huCfFQ?si=FitQM7LsfT2Rs9q6",
   ];
 
   var embeds = embed_ids.map((i) => {
