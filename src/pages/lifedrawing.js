@@ -9,6 +9,18 @@ const IndexPage = () => {
   const images = [
     [
       {
+        file: "../../images/life/IMG_4582.jpg",
+        width: 3868,
+        height: 2948,
+      },
+      {
+        file: "../../images/life/IMG_4584.jpg",
+        width: 3550,
+        height: 3024,
+      },
+    ],
+    [
+      {
         file: "../../images/life/IMG_4216.jpg",
         width: 3477,
         height: 2739,
@@ -18,8 +30,6 @@ const IndexPage = () => {
         width: 3320,
         height: 2193,
       },
-    ],
-    [
       {
         file: "../../images/life/IMG_4218.jpg",
         width: 3504,

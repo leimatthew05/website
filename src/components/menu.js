@@ -47,7 +47,7 @@ class Menu extends Component {
                     <Link to={"/dreamcatchers/"}>Dream Catchers</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to={"/personal/"}>Personal</Link>
+                    <Link to={"/animation/"}>Animation</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/compositing/">Compositing</Link>

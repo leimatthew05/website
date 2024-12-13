@@ -6,11 +6,10 @@ import YoutubeEmbed from "../components/youtubeembed";
 import Contacts from "../components/contacts";
 
 // Step 2: Define your component
-const Page = () => {
+const Animation = () => {
   const embed_ids = [
-    "oMDtgr6kqUY?si=DF07PeSuXQ8EqDn3",
-    "JbzJROmevvA?si=DRV8ZsqVlK7JrgkM",
-    "ajJi2HEmfC0?si=UEYtn5mSOcigRoGT",
+    "q80Uv_p8u2I?si=2elumxVcXuObQmsT",
+    "QR6U-wmA484?si=fPqs2ifQR2npc73n",
   ];
 
   var embeds = embed_ids.map((i) => {
@@ -19,7 +18,7 @@ const Page = () => {
 
   return (
     <main>
-      <Layout pageTitle="COMPOSITING">
+      <Layout pageTitle="ANIMATION">
       <div className="desktop-only">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridAutoRows: "1"}}>
             {embeds}
@@ -40,4 +39,4 @@ const Page = () => {
 // Step 3: Export your component
 export const Head = () => <title>Matthew Lei</title>;
 
-export default Page;
+export default Animation;

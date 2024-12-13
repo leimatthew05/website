@@ -31,7 +31,7 @@ const Layout = ({ pageTitle, children }) => {
           <Link to={"/dreamcatchers/"}>Dream Catchers</Link>
         </NavLink>
         <NavLink style={{ paddingBottom: "20px" }}>
-          <Link to={"/personal/"}>Personal</Link>
+          <Link to={"/animation/"}>Animation</Link>
         </NavLink>
         <NavLink style={{ paddingBottom: "20px" }}>
           <Link to={"/compositing/"}>Compositing</Link>

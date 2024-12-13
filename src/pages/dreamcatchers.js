@@ -32,7 +32,7 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  So far, we've start production on our fifth episode. Our plan is to create 6 episodes in Season 1, and raise funding for a second Season!
+                  So far, we've started production on our fifth episode. Our plan is to create 6 episodes in Season 1, and make a second Season!
                   </p>
                 </div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
