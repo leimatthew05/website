@@ -27,6 +27,7 @@ const IndexPage = () => {
                     Blender, writing silly songs, and goofing off on my YouTube
                     channel.
                   </p>
+                  <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
                 </div>
                 <h2
                   style={{
@@ -116,6 +117,7 @@ const IndexPage = () => {
                   During my free time you'll find me messing around on Blender,
                   writing silly songs, and goofing off on my YouTube channel.
                 </p>
+                <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
               </div>
               <h2
                 style={{
