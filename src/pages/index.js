@@ -14,10 +14,19 @@ const Page = () => {
           <iframe
             class="speakerdeck-iframe"
             frameborder="0"
+            src="https://speakerdeck.com/player/79aa7ceb24e34651b30ae6e4bc880253"
+            title="You'll Thank Me 'Letter'"
+            allowfullscreen="true"
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
+            data-ratio="1.78343949044586">
+          </iframe>
+          <iframe
+            class="speakerdeck-iframe"
+            frameborder="0"
             src="https://speakerdeck.com/player/245b0364686242c1bd60ebd052974cc4"
             title="The Encounter"
             allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
             data-ratio="1.78343949044586">
           </iframe>
           <iframe
@@ -26,7 +35,7 @@ const Page = () => {
             src="https://speakerdeck.com/player/ba8a719e6c4d4ab59609c9a765cadb05"
             title="Chewed Pen"
             allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
             data-ratio="1.78343949044586">
           </iframe>
           <iframe
@@ -47,28 +56,27 @@ const Page = () => {
             style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
             data-ratio="1.78343949044586">
           </iframe>
-
-          <iframe
-            class="speakerdeck-iframe"
-            frameborder="0"
-            src="https://speakerdeck.com/player/cf25f19fea7143eab916a444c798fb75"
-            title="My Pet Land Shark"
-            allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0 20% auto", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "60%", height: "600px", aspectratio: "560 / 314;"}}
-            data-ratio="1.78343949044586">
-          </iframe>
-        </div>
+          </div>
 
 
 
         <div className="mobile-only">
+          <iframe
+            class="speakerdeck-iframe"
+            frameborder="0"
+            src="https://speakerdeck.com/player/79aa7ceb24e34651b30ae6e4bc880253"
+            title="You'll Thank Me 'Letter'"
+            allowfullscreen="true"
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
+            data-ratio="1.78343949044586">
+          </iframe>
          <iframe
             class="speakerdeck-iframe"
             frameborder="0"
             src="https://speakerdeck.com/player/245b0364686242c1bd60ebd052974cc4"
             title="The Encounter"
             allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
             data-ratio="1.78343949044586">
           </iframe>
           <iframe
@@ -77,10 +85,9 @@ const Page = () => {
             src="https://speakerdeck.com/player/ba8a719e6c4d4ab59609c9a765cadb05"
             title="Chewed Pen"
             allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
             data-ratio="1.78343949044586">
           </iframe>
-
           <iframe
             style={{width: "100%", height: "300px", margin: "0"}}
             src="https://www.youtube.com/embed/GyjHQcxAK9A?si=EdZ339pb3IJ48Ipk"
@@ -96,18 +103,10 @@ const Page = () => {
             src="https://speakerdeck.com/player/65d53621ec694c25ac15c66efa9fecff"
             title="Heathers (&quot;Beautiful&quot; Part One)"
             allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
+            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
             data-ratio="1.78343949044586">
           </iframe>
-          <iframe
-            class="speakerdeck-iframe"
-            frameborder="0"
-            src="https://speakerdeck.com/player/cf25f19fea7143eab916a444c798fb75"
-            title="My Pet Land Shark"
-            allowfullscreen="true"
-            style={{border: "0px", background: "padding-box padding-box rgba(0, 0, 0, 0.1)", margin: "0", padding: "0px", borderradius: "6px", boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px", width: "100%", height: "300px", aspectratio: "560 / 314;"}}
-            data-ratio="1.78343949044586">
-          </iframe>
+
         </div>
         <Contacts></Contacts>
       </Layout>

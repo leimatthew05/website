@@ -9,6 +9,8 @@ import YoutubeEmbed from "../components/youtubeembed";
 const DreamCatchers = () => {
   const embed_ids = [
     "gwp1oQai7vM?si=ObvZt7VkNhPEF3PC",
+    "dyC-9eoKR2k?si=J3X-rEOQJmFSQUeK",
+    "XPgLdkUIoj0?si=ztdV78xQtPU78jps",
   ];
 
   var embeds = embed_ids.map((i) => {
@@ -17,8 +19,17 @@ const DreamCatchers = () => {
   return (
     <main>
       <Layout pageTitle="DREAM CATCHERS">
+      <div className="desktop-only">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridAutoRows: "1"}}>
+            {embeds}
+          </div>
+      </div>
+      <div className="mobile-only">
+          <div style={{ display: "grid"}}>
+            {embeds}
+          </div>
+      </div>
           <div className="section">
-              <div style={{ display: "block" }}>{embeds}</div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
                   About The Show
                 </h2>
@@ -32,7 +43,7 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  So far, we've started production on our fifth episode. Our plan is to create 6 episodes in Season 1, and make a second Season!
+                  We're starting to finish production on Season 1, and getting ready for Season 2!
                   </p>
                 </div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
@@ -45,13 +56,13 @@ const DreamCatchers = () => {
                   <p>
                   With the rise of independent animation, I had the idea to create this show with one of my best friend, Val Yu.
                   After recruiting more friends onboard, the show quickly became the biggest project I've ever started!
-                  Working with writers, visual artists, and musicians, my job is to manage the production, and make sure that
-                  the episodes are being made on a reasonable but timely schedule.
+                  My job is to manage the production of episodes, run social media accounts for promotional material, and collaborate with musicians,
+                  language dubbers, and merchandisers
                   </p>
                   <p>
-                  On top of voicing one of the main characters, I'm also (currently) the only animator on the team, responsible for the layout,
-                  staging, and character acting of every episode. Working on this show has taught me a lot about collaborating with other artists,
-                  and being a good leader.
+                  I'm also the lead animator on the team, animating characters, props, and the camera in episodes 1-4. I plan to train
+                  animators in Blender to assist me with future episodes. Working on this show has taught me a lot about
+                  collaborating with other artists, and being a leader.
                   </p>
                 </div>
                 <h2
@@ -65,11 +76,12 @@ const DreamCatchers = () => {
                 </h2>
                 <div style={{paddingBottom: "50px"}}>
                   <a
-                    href={"https://www.instagram.com/thedreamcatchersshow"}
+                    href={"https://www.youtube.com/@thedreamcatchersshow"}
                     style={{ paddingRight: "30px" }}
+                    target="_blank"
                   >
                     <div
-                      id="insta"
+                      id="youtube"
                       style={{
                         width: "50px",
                         height: "50px",
@@ -78,11 +90,12 @@ const DreamCatchers = () => {
                     ></div>
                   </a>
                   <a
-                    href={"https://www.youtube.com/@thedreamcatchersshow"}
+                    href={"https://www.instagram.com/thedreamcatchersshow"}
                     style={{ paddingRight: "30px" }}
+                    target="_blank"
                   >
                     <div
-                      id="youtube"
+                      id="insta"
                       style={{
                         width: "50px",
                         height: "50px",

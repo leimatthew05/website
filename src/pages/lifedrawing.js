@@ -31,11 +31,6 @@ const IndexPage = () => {
         height: 2193,
       },
       {
-        file: "../../images/life/IMG_4218.jpg",
-        width: 3504,
-        height: 2339,
-      },
-      {
         file: "../../images/life/IMG_4223.jpg",
         width: 3386,
         height: 2749,

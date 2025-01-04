@@ -12,21 +12,9 @@ const Contacts = ({ pageTitle, children }) => {
 
         <div style={{textAlign: "right",paddingRight: "2%", paddingTop:"2%", paddingBottom:"1%"}}>
             <a
-            href={"https://www.instagram.com/lei_doodles"}
-            style={{ paddingRight: "30px" }}
-            >
-            <div
-                id="insta"
-                style={{
-                width: "50px",
-                height: "50px",
-                display: "table-cell",
-                }}
-            ></div>
-            </a>
-            <a
             href={"mailto:mlei@students.calarts.edu"}
             style={{ paddingRight: "30px" }}
+            target="_blank"
             >
             <div
                 id="mail"
@@ -38,8 +26,23 @@ const Contacts = ({ pageTitle, children }) => {
             ></div>
             </a>
             <a
+            href={"https://www.instagram.com/lei_doodles"}
+            style={{ paddingRight: "30px" }}
+            target="_blank"
+            >
+            <div
+                id="insta"
+                style={{
+                width: "50px",
+                height: "50px",
+                display: "table-cell",
+                }}
+            ></div>
+            </a>
+            <a
             href={"https://www.youtube.com/@lei_doodles"}
             style={{ paddingRight: "30px" }}
+            target="_blank"
             >
             <div
                 id="youtube"
@@ -53,6 +56,7 @@ const Contacts = ({ pageTitle, children }) => {
             <a
             href={"https://www.linkedin.com/in/leidoodles/"}
             style={{ paddingRight: "30px" }}
+            target="_blank"
             >
             <div
                 id="linkedin"

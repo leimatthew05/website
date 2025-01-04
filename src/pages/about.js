@@ -40,21 +40,9 @@ const IndexPage = () => {
                 </h2>
                 <div>
                   <a
-                    href={"https://www.instagram.com/lei_doodles"}
-                    style={{ paddingRight: "30px" }}
-                  >
-                    <div
-                      id="insta"
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        display: "table-cell",
-                      }}
-                    ></div>
-                  </a>
-                  <a
                     href={"mailto:mlei@students.calarts.edu"}
                     style={{ paddingRight: "30px" }}
+                    target="_blank"
                   >
                     <div
                       id="mail"
@@ -66,8 +54,23 @@ const IndexPage = () => {
                     ></div>
                   </a>
                   <a
+                    href={"https://www.instagram.com/lei_doodles"}
+                    style={{ paddingRight: "30px" }}
+                    target="_blank"
+                  >
+                    <div
+                      id="insta"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                  <a
                     href={"https://www.youtube.com/@lei_doodles"}
                     style={{ paddingRight: "30px" }}
+                    target="_blank"
                   >
                     <div
                       id="youtube"
@@ -81,6 +84,7 @@ const IndexPage = () => {
                   <a
                     href={"https://www.linkedin.com/in/leidoodles/"}
                     style={{ paddingRight: "30px" }}
+                    target="_blank"
                   >
                     <div
                       id="linkedin"
@@ -130,21 +134,9 @@ const IndexPage = () => {
               </h2>
               <div style={{ paddingBottom: "80px" }}>
                 <a
-                  href={"https://www.instagram.com/lei_doodles"}
-                  style={{ paddingLeft: "10px", paddingRight: "10px" }}
-                >
-                  <div
-                    id="insta"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      display: "table-cell",
-                    }}
-                  ></div>
-                </a>
-                <a
                   href={"mailto:mlei@students.calarts.edu"}
                   style={{ paddingLeft: "10px", paddingRight: "10px" }}
+                  target="_blank"
                 >
                   <div
                     id="mail"
@@ -156,8 +148,23 @@ const IndexPage = () => {
                   ></div>
                 </a>
                 <a
+                  href={"https://www.instagram.com/lei_doodles"}
+                  style={{ paddingLeft: "10px", paddingRight: "10px" }}
+                  target="_blank"
+                >
+                  <div
+                    id="insta"
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      display: "table-cell",
+                    }}
+                  ></div>
+                </a>
+                <a
                   href={"https://www.youtube.com/@lei_doodles"}
                   style={{ paddingLeft: "10px", paddingRight: "10px" }}
+                  target="_blank"
                 >
                   <div
                     id="youtube"
@@ -171,6 +178,7 @@ const IndexPage = () => {
                 <a
                   href={"https://www.linkedin.com/in/leidoodles/"}
                   style={{ paddingLeft: "10px", paddingRight: "10px" }}
+                  target="_blank"
                 >
                   <div
                     id="linkedin"
