@@ -9,6 +9,11 @@ const IndexPage = () => {
   const images = [
     [
       {
+        file: "../../images/life/IMG_5153.jpg",
+        width: 3868,
+        height: 2948,
+      },
+      {
         file: "../../images/life/IMG_4582.jpg",
         width: 3868,
         height: 2948,

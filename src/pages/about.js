@@ -13,18 +13,18 @@ const IndexPage = () => {
           <div className="section">
             <Row>
               <Col lg={5} style={{ paddingRight: "30px" }}>
-                <img src="../../images/pfp.png" width="100%" />
+                <img src="../../images/picture.png" width="100%" />
               </Col>
               <Col lg={6}>
                 <div style={{ color: "var(--paragraph)" }}>
                   <p>
                     Hi! I'm a BFA2 CalArts Character Animation student. I'm also
-                    the co-creator, showrunner, and animator of an indie animated series,
+                    a co-creator, showrunner, and animator on an indie animated series,
                     "Dream Catchers"!
                   </p>
                   <p>
-                    During my free time you'll find me messing around on
-                    Blender, writing silly songs, and goofing off on my YouTube
+                    During my free time, I like to make music videos,
+                    short films, and animated memes for my YouTube
                     channel.
                   </p>
                   <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
@@ -36,7 +36,7 @@ const IndexPage = () => {
                     color: "var(--textcolor)",
                   }}
                 >
-                  LET'S BE FRIENDS :D
+                  SOCIALS
                 </h2>
                 <div>
                   <a
@@ -105,8 +105,8 @@ const IndexPage = () => {
           <div className="section">
             <div style={{ paddingRight: "30px", textAlign: "center" }}>
               <img
-                style={{ maxWidth: "200px" }}
-                src="../../images/pfp.png"
+                style={{ maxWidth: "300px" }}
+                src="../../images/picture.png"
                 width="100%"
               />
             </div>
@@ -114,12 +114,13 @@ const IndexPage = () => {
               <div style={{ color: "var(--paragraph)" }}>
                 <p>
                   Hi! I'm a BFA2 CalArts Character Animation student. I'm also
-                  the co-creator, showrunner, and animator of an indie animated series,
+                  a co-creator, showrunner, and animator on an indie animated series,
                   "Dream Catchers"!
                 </p>
                 <p>
-                  During my free time you'll find me messing around on Blender,
-                  writing silly songs, and goofing off on my YouTube channel.
+                  During my free time, I like to make music videos,
+                  short films, and animated memes for my YouTube
+                  channel.
                 </p>
                 <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
               </div>
@@ -130,7 +131,7 @@ const IndexPage = () => {
                   color: "var(--textcolor)",
                 }}
               >
-                LET'S BE FRIENDS :D
+                SOCIALS
               </h2>
               <div style={{ paddingBottom: "80px" }}>
                 <a

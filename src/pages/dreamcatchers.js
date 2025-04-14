@@ -11,6 +11,7 @@ const DreamCatchers = () => {
     "gwp1oQai7vM?si=ObvZt7VkNhPEF3PC",
     "dyC-9eoKR2k?si=J3X-rEOQJmFSQUeK",
     "XPgLdkUIoj0?si=ztdV78xQtPU78jps",
+    "oBBig20jLJs?si=feckcqHFHDGBLeRg",
   ];
 
   var embeds = embed_ids.map((i) => {
@@ -20,7 +21,7 @@ const DreamCatchers = () => {
     <main>
       <Layout pageTitle="DREAM CATCHERS">
       <div className="desktop-only">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridAutoRows: "1"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridAutoRows: "1"}}>
             {embeds}
           </div>
       </div>
@@ -43,7 +44,7 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  We're starting to finish production on Season 1, and getting ready for Season 2!
+                  We're currently starting production on the Season 1 finale, and getting ready for Season 2!
                   </p>
                 </div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
@@ -60,9 +61,8 @@ const DreamCatchers = () => {
                   language dubbers, and merchandisers
                   </p>
                   <p>
-                  I'm also the lead animator on the team, animating characters, props, and the camera in episodes 1-4. I plan to train
-                  animators in Blender to assist me with future episodes. Working on this show has taught me a lot about
-                  collaborating with other artists, and being a leader.
+                  I'm also the lead animator on the team. So far, I've animated all the characters, props, and cameras in episodes 1-4. However, I plan to train
+                  more animators in Blender to assist me with future episodes.
                   </p>
                 </div>
                 <h2
