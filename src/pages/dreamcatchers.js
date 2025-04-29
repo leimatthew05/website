@@ -46,6 +46,11 @@ const DreamCatchers = () => {
                   <p>
                   We're currently starting production on the Season 1 finale, and getting ready for Season 2!
                   </p>
+                  <p>
+                    <Link to= {"https://thedreamcatchersshow-shop.fourthwall.com"} target="_blank">
+                    Go check out our website!
+                    </Link>
+                  </p>
                 </div>
                 <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
                   My Role

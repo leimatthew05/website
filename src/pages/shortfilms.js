@@ -8,12 +8,12 @@ import Contacts from "../components/contacts";
 // Step 2: Define your component
 const Page = () => {
   const embed_ids = [
+    "IZFuBIg1mzc",
     "nuKLxaHLWyQ?si=fu43cI2g0uYXKV7r",
-    "8HUbtIjpKSo?si=g3NFNjszy2-lXax0",
+    "aFXa-YSXbQo",
     "G9MrWnCpNFs?si=EP5oPHdmSFXH_4UK",
-    "QFOMZLlpOms?si=3sUutOKlf5R6otYQ",
+    "8HUbtIjpKSo?si=g3NFNjszy2-lXax0",
     "znGdFCYXd3M?si=3Q6OlojKx5XoJfoc",
-    "jBJ8pcl8UCw?si=CbbqFqnSUftSaDA7",
   ];
 
   var embeds = embed_ids.map((i) => {
