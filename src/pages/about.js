@@ -18,13 +18,13 @@ const IndexPage = () => {
               <Col lg={6}>
                 <div style={{ color: "var(--paragraph)" }}>
                   <p>
-                    Hi! I'm a BFA2 CalArts Character Animation student. I'm also
+                    Hi! I'm a BFA3 CalArts Character Animation student. I'm also
                     a co-creator, showrunner, and animator on an indie animated series,
                     "Dream Catchers"!
                   </p>
                   <p>
                     During my free time, I like to make music videos,
-                    short films, and animated memes for my YouTube
+                    short films, and other nonsense for my YouTube
                     channel.
                   </p>
                   <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
@@ -113,13 +113,13 @@ const IndexPage = () => {
             <div style={{ paddingTop: "50px" }}>
               <div style={{ color: "var(--paragraph)" }}>
                 <p>
-                  Hi! I'm a BFA2 CalArts Character Animation student. I'm also
+                  Hi! I'm a BFA3 CalArts Character Animation student. I'm also
                   a co-creator, showrunner, and animator on an indie animated series,
                   "Dream Catchers"!
                 </p>
                 <p>
                   During my free time, I like to make music videos,
-                  short films, and animated memes for my YouTube
+                  short films, and other nonsense for my YouTube
                   channel.
                 </p>
                 <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>

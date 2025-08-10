@@ -12,6 +12,7 @@ const DreamCatchers = () => {
     "dyC-9eoKR2k?si=J3X-rEOQJmFSQUeK",
     "XPgLdkUIoj0?si=ztdV78xQtPU78jps",
     "oBBig20jLJs?si=feckcqHFHDGBLeRg",
+    "MBjFq2p95QY?si=vj4TRSyvcGYDsaON",
   ];
 
   var embeds = embed_ids.map((i) => {
@@ -21,7 +22,7 @@ const DreamCatchers = () => {
     <main>
       <Layout pageTitle="DREAM CATCHERS">
       <div className="desktop-only">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridAutoRows: "1"}}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridAutoRows: "1"}}>
             {embeds}
           </div>
       </div>
@@ -44,7 +45,7 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  We're currently starting production on the Season 1 finale, and getting ready for Season 2!
+                  The season 1 finale is set to release September 1st, 2025. Pre-production for Season 2 has begun!
                   </p>
                   <p>
                     <Link to= {"https://thedreamcatchersshow-shop.fourthwall.com"} target="_blank">
@@ -61,13 +62,13 @@ const DreamCatchers = () => {
                   </p>
                   <p>
                   With the rise of independent animation, I had the idea to create this show with one of my best friend, Val Yu.
-                  After recruiting more friends onboard, the show quickly became the biggest project I've ever started!
-                  My job is to manage the production of episodes, run social media accounts for promotional material, and collaborate with musicians,
-                  language dubbers, and merchandisers
+                  After bringing more friends onboard, the show quickly became the biggest project I've ever started!
+                  My job on this show is to manage the production of episodes, run promotional accounts, and collaborate with musicians,
+                  language dubbers, and merchandising services.
                   </p>
                   <p>
-                  I'm also the lead animator on the team. So far, I've animated all the characters, props, and cameras in episodes 1-4. However, I plan to train
-                  more animators in Blender to assist me with future episodes.
+                  During episodes 1-4, I was the sole animator on the project. Thankfully, I've gotten to
+                  recruite and train a team of animators to animate on episodes 5 and onward.
                   </p>
                 </div>
                 <h2
