@@ -4,31 +4,96 @@ import Layout from "../components/layout";
 import { Row, Col } from "reactstrap";
 import { Link } from "gatsby";
 
-// Step 2: Define your component
+// Bio and Resume
+const bio = (
+  <div style={{ color: "var(--paragraph)" }}>
+    <p>
+      Hi! I'm a BFA3 CalArts Character Animation student. I'm also
+      a co-creator, showrunner, and animator on an indie animated series,
+      "Dream Catchers"!
+    </p>
+    <p>
+      During my free time, I like to make music videos,
+      short films, and other nonsense for my YouTube
+      channel.
+    </p>
+    <Link
+      className="link"
+      to={
+        "https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"
+      }
+      target="_blank"
+    >
+      <p>Here's my resume</p>
+    </Link>
+  </div>
+);
+
+// Socials data
+const socials = [
+  {
+    id: "mail",
+    href: "mailto:mlei@students.calarts.edu",
+  },
+  {
+    id: "insta",
+    href: "https://www.instagram.com/lei_doodles",
+  },
+  {
+    id: "youtube",
+    href: "https://www.youtube.com/@lei_doodles",
+  },
+  {
+    id: "linkedin",
+    href: "https://www.linkedin.com/in/leidoodles/",
+  },
+];
+
+// Socials component
+const SocialLinks = ({ iconSize = 50, padding = "30px", isMobile = false }) => (
+  <div style={isMobile ? { paddingBottom: "80px" } : {}}>
+    {socials.map((social) => (
+      <a
+        key={social.id}
+        href={social.href}
+        style={
+          isMobile
+            ? { paddingLeft: "10px", paddingRight: "10px" }
+            : { paddingRight: padding }
+        }
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          id={social.id}
+          style={{
+            width: `${iconSize}px`,
+            height: `${iconSize}px`,
+            display: "table-cell",
+          }}
+        ></div>
+      </a>
+    ))}
+  </div>
+);
+
 const IndexPage = () => {
   return (
     <main>
       <Layout pageTitle="ABOUT">
+        {/* Desktop */}
         <div className="desktop-only">
-          <div className="section">
+          <div className="section" style={{ paddingBottom: "40px" }}>
             <Row>
               <Col lg={5} style={{ paddingRight: "30px" }}>
-                <img src="../../images/picture.png" width="100%" />
+                <img
+                  src="../../images/picture.png"
+                  width="100%"
+                  style={{ borderRadius: "20%" }}
+                />
               </Col>
               <Col lg={6}>
-                <div style={{ color: "var(--paragraph)" }}>
-                  <p>
-                    Hi! I'm a BFA3 CalArts Character Animation student. I'm also
-                    a co-creator, showrunner, and animator on an indie animated series,
-                    "Dream Catchers"!
-                  </p>
-                  <p>
-                    During my free time, I like to make music videos,
-                    short films, and other nonsense for my YouTube
-                    channel.
-                  </p>
-                  <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
-                </div>
+                {bio}
                 <h2
                   style={{
                     paddingTop: "60px",
@@ -38,92 +103,23 @@ const IndexPage = () => {
                 >
                   SOCIALS
                 </h2>
-                <div>
-                  <a
-                    href={"mailto:mlei@students.calarts.edu"}
-                    style={{ paddingRight: "30px" }}
-                    target="_blank"
-                  >
-                    <div
-                      id="mail"
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        display: "table-cell",
-                      }}
-                    ></div>
-                  </a>
-                  <a
-                    href={"https://www.instagram.com/lei_doodles"}
-                    style={{ paddingRight: "30px" }}
-                    target="_blank"
-                  >
-                    <div
-                      id="insta"
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        display: "table-cell",
-                      }}
-                    ></div>
-                  </a>
-                  <a
-                    href={"https://www.youtube.com/@lei_doodles"}
-                    style={{ paddingRight: "30px" }}
-                    target="_blank"
-                  >
-                    <div
-                      id="youtube"
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        display: "table-cell",
-                      }}
-                    ></div>
-                  </a>
-                  <a
-                    href={"https://www.linkedin.com/in/leidoodles/"}
-                    style={{ paddingRight: "30px" }}
-                    target="_blank"
-                  >
-                    <div
-                      id="linkedin"
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        display: "table-cell",
-                      }}
-                    ></div>
-                  </a>
-                </div>
+                <SocialLinks iconSize={50} padding="30px"/>
               </Col>
             </Row>
           </div>
         </div>
-
+        {/* Mobile */}
         <div className="mobile-only">
-          <div className="section">
+          <div className="section" style={{ paddingBottom: "40px" }}>
             <div style={{ paddingRight: "30px", textAlign: "center" }}>
               <img
-                style={{ maxWidth: "300px" }}
+                style={{ maxWidth: "300px", borderRadius: "16px", borderRadius: "20%" }}
                 src="../../images/picture.png"
                 width="100%"
               />
             </div>
             <div style={{ paddingTop: "50px" }}>
-              <div style={{ color: "var(--paragraph)" }}>
-                <p>
-                  Hi! I'm a BFA3 CalArts Character Animation student. I'm also
-                  a co-creator, showrunner, and animator on an indie animated series,
-                  "Dream Catchers"!
-                </p>
-                <p>
-                  During my free time, I like to make music videos,
-                  short films, and other nonsense for my YouTube
-                  channel.
-                </p>
-                <Link to={"https://docs.google.com/document/d/1VD6JdyE-SBA52g6i_UtTPPggHKcrppe1lGyWUh4qDs4/edit?usp=sharing"} target="_blank"><p>Here's my resume</p></Link>
-              </div>
+              {bio}
               <h2
                 style={{
                   paddingTop: "60px",
@@ -132,65 +128,8 @@ const IndexPage = () => {
                 }}
               >
                 SOCIALS
-              </h2>
-              <div style={{ paddingBottom: "80px" }}>
-                <a
-                  href={"mailto:mlei@students.calarts.edu"}
-                  style={{ paddingLeft: "10px", paddingRight: "10px" }}
-                  target="_blank"
-                >
-                  <div
-                    id="mail"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      display: "table-cell",
-                    }}
-                  ></div>
-                </a>
-                <a
-                  href={"https://www.instagram.com/lei_doodles"}
-                  style={{ paddingLeft: "10px", paddingRight: "10px" }}
-                  target="_blank"
-                >
-                  <div
-                    id="insta"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      display: "table-cell",
-                    }}
-                  ></div>
-                </a>
-                <a
-                  href={"https://www.youtube.com/@lei_doodles"}
-                  style={{ paddingLeft: "10px", paddingRight: "10px" }}
-                  target="_blank"
-                >
-                  <div
-                    id="youtube"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      display: "table-cell",
-                    }}
-                  ></div>
-                </a>
-                <a
-                  href={"https://www.linkedin.com/in/leidoodles/"}
-                  style={{ paddingLeft: "10px", paddingRight: "10px" }}
-                  target="_blank"
-                >
-                  <div
-                    id="linkedin"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      display: "table-cell",
-                    }}
-                  ></div>
-                </a>
-              </div>
+              </h2 >
+              <SocialLinks iconSize={40} isMobile />
             </div>
           </div>
         </div>
@@ -199,8 +138,5 @@ const IndexPage = () => {
   );
 };
 
-// You'll learn about this in the next task, just copy it for now
 export const Head = () => <title>Matthew Lei</title>;
-
-// Step 3: Export your component
 export default IndexPage;

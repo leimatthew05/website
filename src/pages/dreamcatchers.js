@@ -48,8 +48,8 @@ const DreamCatchers = () => {
                   The season 1 finale is set to release September 1st, 2025. Pre-production for Season 2 has begun!
                   </p>
                   <p>
-                    <Link to= {"https://thedreamcatchersshow-shop.fourthwall.com"} target="_blank">
-                    Go check out our website!
+                    <Link className="link" to= {"https://thedreamcatchersshow-shop.fourthwall.com"} target="_blank">
+                    Check out our website!
                     </Link>
                   </p>
                 </div>

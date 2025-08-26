@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?&family=Archivo&family=Poppins:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans&family=Grandstander:wght@900&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 :root {
-  --bg: #ffded58d;
-  --textcolor: #a10043d2;
-  --paragraph: #600028d3;
-  --title: #ff3d8e;
-  --btn: rgb(177, 208, 233);
-  --btn-select: rgb(243, 210, 148);
+  --bg: transparent;
+  --textcolor: #003038;
+  --paragraph: #006f80;
+  --title: #00a5be;
+  --btn: #00a5be;
+  --btn-select: #e5ffde;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "VT323", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url(../../public/images/paper.jpg) !important; */
@@ -25,6 +23,12 @@ body {
   /* filter: contrast(170%) brightness(1000%);  */
 }
 
+.a{
+  all: unset;
+  color: #00a5be !important;
+  text-decoration:none !important;
+}
+
 .mobile-only {
   display: none;
 }
@@ -33,7 +37,7 @@ body {
   text-align: center;
   padding-top: 80px;
   font-size: 40px;
-  font-family: "Grandstander", "Helvetica Neue", sans-serif;
+  font-family: "VT323", monospace;
 }
 
 .mobilemenu a {
@@ -46,7 +50,7 @@ body {
 }
 
 .layout {
-  font-family: "Grandstander", "Helvetica Neue", sans-serif;
+  font-family: "VT323", monospace;
 }
 
 h1 {
@@ -56,23 +60,23 @@ h1 {
 }
 
 h2 {
-  font-size: 50px !important;
+  font-size: 60px !important;
   margin-top: -30px !important;
 }
 
 p {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-family: "VT323", monospace;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .menu {
-  font-family: "Grandstander", "Helvetica Neue", sans-serif;
-  min-height: 20px;
+  font-family: "VT323", monospace;
+  min-height: 30px;
 }
 
 .menu a {
-  font-size: 25px;
+  font-size: 35px;
   text-decoration: none;
   color: var(--textcolor);
   margin-bottom: 5px;
@@ -87,15 +91,19 @@ p {
 }
 
 .link {
+  display: inline-block;
   min-height: 50px;
+  color: var(--title);
+  padding: 10px;
 }
 
 .link a {
-  color: var(--textcolor);
+  color: var(--btn-select);
 }
 
-.link a:hover {
-  color: var(--title);
+.link:hover {
+  color: var(--btn-select);
+  background-color: var(--title);
 }
 
 .socialicon {
@@ -167,3 +175,52 @@ p {
   background-size: contain;
   cursor: pointer !important;
 }
+
+.dropdown-menu {
+  all: unset;
+  display: block;
+  background-color: #a8ffccde !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 100;
+  --bs-dropdown-link-hover-bg: #00a5be !important;
+  --bs-dropdown-link-active-bg: #00a5be !important;
+  border-radius: 0% !important;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+.dropdown-menu a {
+  all: unset;
+  display: block;
+  width: 100%;
+  color: #00a5be;
+  background-color: transparent;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0;
+  
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus,
+.dropdown-menu a:focus-visible,
+.dropdown-menu a:active {
+  background-color: transparent;
+  color: var(--btn-select);
+}
+
+.dropdown-link{
+  background: #00a5be !important;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  color: #00a5be !important;
+}
+
+
