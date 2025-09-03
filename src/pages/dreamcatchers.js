@@ -13,6 +13,7 @@ const DreamCatchers = () => {
     "XPgLdkUIoj0?si=ztdV78xQtPU78jps",
     "oBBig20jLJs?si=feckcqHFHDGBLeRg",
     "MBjFq2p95QY?si=vj4TRSyvcGYDsaON",
+    "nhWmHGEhzcU?si=_8jeBsfJspHGl2nB",
   ];
 
   var embeds = embed_ids.map((i) => {
@@ -45,7 +46,7 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  The season 1 finale is set to release September 1st, 2025. Pre-production for Season 2 has begun!
+                  We've finished making Season 1, and are currently developing Season 2!
                   </p>
                   <p>
                     <Link className="link" to= {"https://thedreamcatchersshow-shop.fourthwall.com"} target="_blank">
