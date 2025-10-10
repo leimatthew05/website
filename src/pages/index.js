@@ -8,12 +8,12 @@ import Contacts from "../components/contacts";
 // Step 2: Define your component
 const speakerDecks = [
   {
-    src: "https://speakerdeck.com/player/b19180719b3e4316a1f12a6ab7a67886",
-    title: "Curse of the Amulet'",
-  },
-  {
     src: "https://speakerdeck.com/player/d2c7f77b83714fbe9e00ee56fe9dd2a7",
     title: "Aquarium Fantasy",
+  },
+  {
+    src: "https://speakerdeck.com/player/b19180719b3e4316a1f12a6ab7a67886",
+    title: "Curse of the Amulet'",
   },
   {
     src: "https://speakerdeck.com/player/245b0364686242c1bd60ebd052974cc4",
