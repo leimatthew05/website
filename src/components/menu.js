@@ -33,7 +33,7 @@ class Menu extends Component {
         <Link to={"/"}>Story</Link>
       </NavLink>,
       <NavLink>
-        <Link to={"/lifedrawing"}>LifeDrawing</Link>
+        <Link to={"/dreamcatchers/"}>DreamCatchers</Link>
       </NavLink>,
       <NavLink>
       <Link to={"/shortfilms/"}>ShortFilms</Link>
@@ -44,10 +44,10 @@ class Menu extends Component {
           </DropdownToggle>
               <DropdownMenu>
                   <DropdownItem>
-                    <Link to={"/dreamcatchers/"}>DreamCatchers</Link>
+                    <Link to={"/animation/"}>Animation</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to={"/animation/"}>Animation</Link>
+                    <Link to={"/lifedrawing"}>LifeDrawing</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/compositing/">Compositing</Link>

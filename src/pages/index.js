@@ -4,16 +4,17 @@ import Gallery from "../components/gallery";
 import Layout from "../components/layout";
 import YoutubeEmbed from "../components/youtubeembed";
 import Contacts from "../components/contacts";
+import { Link } from "gatsby";
 
 // Step 2: Define your component
 const speakerDecks = [
   {
-    src: "https://speakerdeck.com/player/d2c7f77b83714fbe9e00ee56fe9dd2a7",
-    title: "Aquarium Fantasy",
-  },
-  {
     src: "https://speakerdeck.com/player/b19180719b3e4316a1f12a6ab7a67886",
     title: "Curse of the Amulet'",
+  },
+  {
+    src: "https://speakerdeck.com/player/d2c7f77b83714fbe9e00ee56fe9dd2a7",
+    title: "Aquarium Fantasy",
   },
   {
     src: "https://speakerdeck.com/player/245b0364686242c1bd60ebd052974cc4",
@@ -53,6 +54,17 @@ const Page = () => {
   return (
     <main>
       <Layout pageTitle="STORY">
+        <div style={{textAlign: "center"}}>
+            <Link
+              className="link"
+              to={
+                "/lifedrawing"
+              }
+              target="_blank"
+            >
+              <p>Check out my life drawings!</p>
+            </Link>
+        </div>
         <div className="desktop-only">
           {speakerDecks.map((deck) => (
             <iframe
