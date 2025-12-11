@@ -46,7 +46,8 @@ const DreamCatchers = () => {
                   as they learn new things, solve problems, and make new ones!
                   </p>
                   <p>
-                  We've finished making Season 1, and are currently developing Season 2!
+                  We've finished making Season 1, and are currently developing Season 2! We hope to
+                  get more eyes on this series while we continue doing what we love.
                   </p>
                   <p>
                     <Link className="link" to= {"https://thedreamcatchersshow-shop.fourthwall.com"} target="_blank">
@@ -62,10 +63,10 @@ const DreamCatchers = () => {
                   I'm a co-creator, showrunner, animator, and voice actor!
                   </p>
                   <p>
-                  With the rise of independent animation, I had the idea to create this show with one of my best friend, Val Yu.
+                  It started as a small side project between my friend, Val Yu, and I that we'd work on during our free time at CalArts.
                   After bringing more friends onboard, the show quickly became the biggest project I've ever started!
-                  My job on this show is to manage the production of episodes, run promotional accounts, and collaborate with musicians,
-                  language dubbers, and merchandising services.
+                  I've taken this unique opportunity to try many hats including writing, storyboarding, production management,
+                  modeling/rigging, social media management, and more.
                   </p>
                   <p>
                   During episodes 1-4, I was the sole animator on the project. Thankfully, I've gotten to
