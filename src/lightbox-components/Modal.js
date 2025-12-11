@@ -42,7 +42,9 @@ export default class extends Component {
           style={{
             cursor: "pointer",
             width: width,
+            maxWidth: "100%",
             maxHeight: height,
+            objectFit: "contain",
             padding: 0,
           }}
           onClick={this.toggleModal}

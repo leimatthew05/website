@@ -54,7 +54,7 @@ const Page = () => {
   return (
     <main>
       <Layout pageTitle="STORY">
-        <div style={{textAlign: "center"}}>
+        <div style={{textAlign: "center", paddingBottom: "40px"}}>
             <Link
               className="link"
               to={
@@ -62,7 +62,7 @@ const Page = () => {
               }
               target="_blank"
             >
-              <p>Check out my life drawings!</p>
+              <p>Check out my LIFE DRAWINGS!</p>
             </Link>
         </div>
         <div className="desktop-only">

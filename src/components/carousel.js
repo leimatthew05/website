@@ -1,135 +1,182 @@
-import React, { useState, useEffect, useMemo } from "react";
-import Img from "../lightbox-components/Modal";
+import React, { useEffect, useMemo, useRef, useState } from 'react'
+import ModalImage from '../lightbox-components/Modal'
 
-// Simple carousel that shows one image at a time in a fixed-size container.
-// Props:
-// - images: either a flat array of image objects or an array of rows (nested arrays)
-// - width: CSS width for the carousel container (default: '800px')
-// - height: CSS height for the carousel container (default: '600px')
-export default function Carousel({ images = [], width = "800px", height = "600px" }) {
-  // flatten nested arrays if needed
+export default function Carousel({ images = [], width = 900, height = 600, showThumbnails = true }) {
+  // Normalize images: accept nested arrays, strings or objects
   const flat = useMemo(() => {
-    if (!images) return [];
-    if (Array.isArray(images) && images.length > 0 && Array.isArray(images[0])) {
-      return images.reduce((acc, row) => acc.concat(row), []);
-    }
-    return images;
-  }, [images]);
+    const list = Array.isArray(images) ? images.flat(Infinity) : []
+    return list.map((it) => {
+      if (typeof it === 'string') return { src: it, thumb: it, caption: '' }
+      // support objects that use `file`, `large_file`, or `src`
+      const src = it.file || it.src || it.small || it
+      const large = it.large_file || it.large || it.file || src
+      const thumb = it.thumb || it.file || it.src || src
+      return {
+        src,
+        large,
+        thumb,
+        caption: it.caption || it.alt || ''
+      }
+    })
+  }, [images])
 
-  const [index, setIndex] = useState(0);
+  const count = flat.length
+  const [index, setIndex] = useState(0)
+  const trackRef = useRef(null)
+  const containerRef = useRef(null)
 
   useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === "ArrowRight") next();
-      if (e.key === "ArrowLeft") prev();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [index, flat]);
+    function onKey(e) {
+      if (e.key === 'ArrowLeft') setIndex((i) => (i - 1 + count) % count)
+      if (e.key === 'ArrowRight') setIndex((i) => (i + 1) % count)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [count])
 
-  const prev = () => {
-    setIndex((i) => (flat.length ? (i - 1 + flat.length) % flat.length : 0));
-  };
-  const next = () => {
-    setIndex((i) => (flat.length ? (i + 1) % flat.length : 0));
-  };
+  useEffect(() => {
+    if (index >= count) setIndex(Math.max(0, count - 1))
+  }, [count])
 
-  if (!flat || flat.length === 0) {
-    return null;
+  if (count === 0) return null
+
+  const current = flat[index]
+
+  function shouldShowCaption(caption) {
+    if (!caption) return false
+    if (/\.[a-zA-Z0-9]{2,4}$/.test(caption)) return false
+    return true
   }
 
-  const current = flat[index];
-
   const containerStyle = {
-    width: width,
-    height: height,
-    position: "relative",
-    overflow: "hidden",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    background: "#111",
-    // center horizontally when given a fixed width
-    margin: "0 auto",
-  };
+    width: '100%',
+    maxWidth: typeof width === 'number' ? `${width}px` : width,
+    margin: '0 auto'
+  }
 
-  const arrowStyle = {
-    position: "absolute",
-    top: "50%",
-    transform: "translateY(-50%)",
-    background: "rgba(0,0,0,0.5)",
-    border: "none",
-    color: "white",
-    padding: "8px 12px",
-    cursor: "pointer",
-    fontSize: "20px",
-  };
+  const viewportStyle = {
+    width: '100%',
+    height: typeof height === 'number' ? `${height}px` : height,
+    overflow: 'hidden',
+    position: 'relative',
+    background: '#000'
+  }
 
-  const leftStyle = { ...arrowStyle, left: "8px" };
-  const rightStyle = { ...arrowStyle, right: "8px" };
+  const trackStyle = {
+    display: 'flex',
+    transition: 'transform 400ms ease',
+    transform: `translateX(-${index * 100}%)`
+  }
 
-  // Modal Img expects width prop as CSS width and height as maxHeight.
-  // We'll place the Img inside a fixed-size box and give it width: 100% and maxHeight: height
+  const slideStyle = {
+    flex: '0 0 100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+
+  const imgStyle = {
+    maxWidth: '100%',
+    maxHeight: '100%',
+    objectFit: 'contain'
+  }
+
+  const arrowBase = {
+    position: 'absolute',
+    top: '50%',
+    transform: 'translateY(-50%)',
+    background: 'rgba(0,0,0,0.5)',
+    border: 'none',
+    color: '#fff',
+    width: 44,
+    height: 44,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    zIndex: 20,
+    pointerEvents: 'auto',
+    borderRadius: 4
+  }
+
+  const thumbBarStyle = {
+    display: 'flex',
+    gap: 8,
+    overflowX: 'auto',
+    paddingTop: 12,
+    justifyContent: 'center'
+  }
+
+  const thumbStyle = (active) => ({
+    width: 80,
+    height: 60,
+    objectFit: 'cover',
+    cursor: 'pointer',
+    border: active ? '3px solid #007acc' : '2px solid rgba(0,0,0,0.15)',
+    boxSizing: 'border-box'
+  })
+
   return (
-    <div style={containerStyle} aria-roledescription="carousel">
-      <button
-        aria-label="Previous"
-        style={leftStyle}
-        onClick={prev}
-        type="button"
-      >
-        ‹
-      </button>
+    <div ref={containerRef} style={containerStyle}>
+      <div style={viewportStyle} aria-roledescription="carousel">
+        <button
+          type="button"
+          aria-label="Previous"
+          onClick={() => setIndex((i) => (i - 1 + count) % count)}
+          style={{ ...arrowBase, left: 8 }}
+        >
+          ‹
+        </button>
 
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          pointerEvents: "none",
-        }}
-      >
-        <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          {/* pointerEvents none above prevents the wrapper from intercepting clicks; Img itself is clickable */}
-          <Img
-            small={current.file}
-            large={current.large_file || current.file}
-            alt={current.caption || current.file}
-            // let the image size naturally but constrain its max height to the carousel height
-            width="auto"
-            height={height}
-            className="carousel-image"
-          />
+        <div ref={trackRef} style={trackStyle}>
+          {flat.map((item, i) => (
+            <div key={i} style={slideStyle}>
+              <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ maxWidth: '100%', maxHeight: '100%' }}>
+                  <ModalImage
+                    small={item.src}
+                    large={item.large}
+                    alt={shouldShowCaption(item.caption) ? item.caption : ''}
+                    height={typeof height === 'number' ? `${height}px` : height}
+                    width="100%"
+                    style={imgStyle}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <button
+          type="button"
+          aria-label="Next"
+          onClick={() => setIndex((i) => (i + 1) % count)}
+          style={{ ...arrowBase, right: 8 }}
+        >
+          ›
+        </button>
+
+        <div style={{ position: 'absolute', bottom: 8, right: 12, color: '#fff', background: 'rgba(0,0,0,0.4)', padding: '4px 8px', borderRadius: 4, fontSize: 13 }}>
+          {index + 1} / {count}
         </div>
       </div>
 
-      <button
-        aria-label="Next"
-        style={rightStyle}
-        onClick={next}
-        type="button"
-      >
-        ›
-      </button>
-
-      {/* simple position indicator */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "8px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          color: "white",
-          fontSize: "14px",
-          background: "rgba(0,0,0,0.4)",
-          padding: "4px 8px",
-          borderRadius: "12px",
-        }}
-      >
-        {index + 1} / {flat.length}
-      </div>
+      {showThumbnails && (
+        <div style={thumbBarStyle} role="tablist" aria-label="Thumbnails">
+          {flat.map((item, i) => (
+            <img
+              key={i}
+              src={item.thumb}
+              alt={''}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIndex(i) }}
+              onClick={() => setIndex(i)}
+              style={thumbStyle(i === index)}
+            />
+          ))}
+        </div>
+      )}
     </div>
-  );
+  )
 }
