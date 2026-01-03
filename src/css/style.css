@@ -14,13 +14,28 @@ body {
   font-family: "VT323", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(../../public/images/paper.jpg) !important; */
-  background: linear-gradient(var(--bg), var(--bg)),
-    url(../../public/images/paper.png) !important;
-  background-size: 100vw !important;
-  background-color: var(--title) !important;
+  /* Use a single top image and a page background color for the rest */
+  background-color: #e5ffde; /* fill below the top image */
+  background-image: url(../../public/images/paper.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto; /* span the width at the top, height auto */
   /* url(https://grainy-gradients.vercel.app/noise.svg); */
   /* filter: contrast(170%) brightness(1000%);  */
+}
+
+/* Ensure the page background color is applied behind all content.
+   Use the darker color on the root so pulling past page boundaries
+   (overscroll) reveals that color, while the page body itself is
+   filled with the lighter #e5ffde up to the end of content. */
+html {
+  height: 100%;
+  background-color: #00a5be; /* #00a5be visible on overscroll */
+}
+
+body {
+  min-height: 100%;
+  background-color: #e5ffde !important; /* page fill color */
 }
 
 .a{

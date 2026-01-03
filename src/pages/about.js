@@ -13,8 +13,8 @@ const bio = (
       "Dream Catchers"!
     </p>
     <p>
-      During my free time, I like to make music videos,
-      short films, and other nonsense for my YouTube
+      During my free time, I like to make short films,
+      music videos, and other nonsense for my YouTube
       channel.
     </p>
     <Link

@@ -1,6 +1,6 @@
 // Step 1: Import React
 import * as React from "react";
-import Carousel from "../components/carousel";
+import Gallery from "../components/gallery";
 import Layout from "../components/layout";
 import Contact from "../components/contacts";
 
@@ -64,18 +64,17 @@ const IndexPage = () => {
     <main>
       <Layout pageTitle="LIFE DRAWING">
         <Contact>
-          {/* Center carousel horizontally and vertically within the page area */}
+          {/* Center the gallery area */}
           <div
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              minHeight: "70vh",
+              minHeight: "20vh",
               padding: "2rem 0",
             }}
           >
-            {/* Use Carousel to show all images in a fixed-size carousel. */}
-            <Carousel images={images} width="900px" height="600px" />
+            <Gallery images={images} />
           </div>
         </Contact>
       </Layout>
