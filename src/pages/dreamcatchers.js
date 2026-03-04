@@ -4,8 +4,33 @@ import Layout from "../components/layout";
 import { Row, Col } from "reactstrap";
 import { Link } from "gatsby";
 import YoutubeEmbed from "../components/youtubeembed";
+import Gallery from "../components/gallery";
 
 // Step 2: Define your component
+const desktopStyle = {
+  border: "0px",
+  background: "padding-box padding-box rgba(0, 0, 0, 0)",
+  margin: "0 0% auto",
+  padding: "0px",
+  borderradius: "6px",
+  boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px",
+  width: "100%",
+  height: "600px",
+  aspectratio: "560 / 314;",
+};
+
+const mobileStyle = {
+  border: "0px",
+  background: "padding-box padding-box rgba(0, 0, 0, 0)",
+  margin: "0",
+  padding: "0px",
+  borderradius: "6px",
+  boxshadow: "rgba(0, 0, 0, 0.2) 0px 5px 40px",
+  width: "100%",
+  height: "300px",
+  aspectratio: "560 / 314;",
+};
+
 const DreamCatchers = () => {
   const embed_ids = [
     "gwp1oQai7vM?si=ObvZt7VkNhPEF3PC",
@@ -19,6 +44,62 @@ const DreamCatchers = () => {
   var embeds = embed_ids.map((i) => {
     return <YoutubeEmbed embedId={i} />;
   });
+
+  const images = [
+    [
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_2.png",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_5.png",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_1.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    [
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_7.png",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_4.png",
+        width: 1125,
+        height: 1214,
+      },
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_9.png",
+        width: 2000,
+        height: 2000,
+      },
+
+    ],
+    [
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_8.png",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_6.png",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        file: "../../images/Dream Catchers VisDev/DC_Visdev_3.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+  ];
+
   return (
     <main>
       <Layout pageTitle="DREAM CATCHERS">
@@ -73,6 +154,64 @@ const DreamCatchers = () => {
                   recruite and train a team of animators to animate on episodes 5 and onward.
                   </p>
                 </div>
+
+                <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
+                  Storyboards
+                </h2>
+                <div className="desktop-only">
+                  <iframe
+                    className="speakerdeck-iframe"
+                    frameBorder="0"
+                    src="https://speakerdeck.com/player/72ede410c1344835a94f3b17ff5d43a7"
+                    title="Dream Catchers Presentation"
+                    allowFullScreen={true}
+                    style={desktopStyle}
+                    data-ratio="1.78343949044586"
+                  />
+                </div>
+                <div className="mobile-only">
+                  <iframe
+                    className="speakerdeck-iframe"
+                    frameBorder="0"
+                    src="https://speakerdeck.com/player/72ede410c1344835a94f3b17ff5d43a7"
+                    title="Dream Catchers Presentation"
+                    allowFullScreen={true}
+                    style={mobileStyle}
+                    data-ratio="1.78343949044586"
+                  />
+                </div>
+
+                <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
+                  Visual Development
+                </h2>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    minHeight: "20vh",
+                    padding: "2rem 0",
+                  }}
+                >
+                  <Gallery images={images} />
+                </div>
+
+                <h2 style={{paddingTop: "60px", paddingBottom: "20px", color: "var(--textcolor)",}}>
+                  Animation Director
+                </h2>
+                <div style={{ color: "var(--paragraph)"}}>
+                  <p>
+                  After onboarding new aniamtors, I needed to step up from sole animator to animation director.
+                  I created an OFFICIAL GUIDE to the show's animation style and pipeline to help train our team
+                  of animators, regardless of their experience level with Blender or 3D animation.
+                  </p>
+                  <p>
+                    <Link className="link" to= {"https://docs.google.com/document/d/1VjG8_D_HVb4heKUQF1iC7U3Er-F6HTcNysCfp-zmIU4/edit?usp=sharing"} target="_blank">
+                    The Official Animation Guide 
+                    </Link>
+                  </p>
+                </div>
+
                 <h2
                   style={{
                     paddingTop: "60px",

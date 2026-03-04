@@ -8,8 +8,8 @@ import Contacts from "../components/contacts";
 // Step 2: Define your component
 const Animation = () => {
   const embed_ids = [
+    "S7ZNqNpDPXk?si=EQIMROVkJVR8E29R",
     "q80Uv_p8u2I?si=2elumxVcXuObQmsT",
-    "QR6U-wmA484?si=fPqs2ifQR2npc73n",
   ];
 
   var embeds = embed_ids.map((i) => {
