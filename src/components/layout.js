@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Nav, Navbar, NavLink } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.css";
 import "../css/style.css";
 import "../css/mobile.css";
-import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "gatsby";
 import Menu from "./menu.js";
 

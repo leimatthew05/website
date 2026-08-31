@@ -1,8 +1,13 @@
 import * as React from "react";
-import { NavLink } from "reactstrap";
+import {
+  Nav,
+  NavItem,
+  Navbar,
+  NavLink,
+} from "reactstrap";
+import "bootstrap/dist/css/bootstrap.css";
 import "../css/style.css";
 import "../css/mobile.css";
-import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "gatsby";
 
 const Layout = ({ pageTitle, children }) => {
@@ -27,15 +32,15 @@ const Layout = ({ pageTitle, children }) => {
         <NavLink style={{ paddingBottom: "20px" }}>
           <Link to={"/shortfilms/"}>Short Films</Link>
         </NavLink>
-        <NavLink style={{ paddingBottom: "20px" }}>
-          <Link to={"/animation/"}>Animation</Link>
-        </NavLink>
-        <NavLink style={{ paddingBottom: "20px" }}>
-          <Link to={"/lifedrawing/"}>Life Drawing</Link>
-        </NavLink>
-        <NavLink style={{ paddingBottom: "20px" }}>
-          <Link to={"/compositing/"}>Compositing</Link>
-        </NavLink>
+
+        <details className="mobile-submenu">
+          <summary>Others</summary>
+          <div className="mobile-submenu-links">
+            <Link to={"/animation/"}>Animation</Link>
+            <Link to={"/lifedrawing"}>LifeDrawing</Link>
+          </div>
+        </details>
+
         <NavLink style={{ paddingBottom: "20px" }}>
           <Link to={"/about/"}>About</Link>
         </NavLink>

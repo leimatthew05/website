@@ -8,14 +8,9 @@ import { Link } from "gatsby";
 const bio = (
   <div style={{ color: "var(--paragraph)" }}>
     <p>
-      Hi! I'm a BFA3 CalArts Character Animation student. I'm also
-      a co-creator, showrunner, and animator on an indie animated series,
-      "Dream Catchers"!
-    </p>
-    <p>
-      During my free time, I like to make short films,
-      music videos, and other nonsense for my YouTube
-      channel.
+      Hi! I'm a 4th year CalArts Character Animation student, and the showrunner of an indie
+      series called "Dream Catchers"! I'm interested in storyboarding, animating, directing,
+      and just making my own stuff.
     </p>
     <Link
       className="link"
@@ -26,6 +21,11 @@ const bio = (
     >
       <p>Here's my resume</p>
     </Link>
+    <p>
+      During my free time, I like to make short films,
+      music videos, and other nonsense on my YouTube
+      channel.
+    </p>
   </div>
 );
 

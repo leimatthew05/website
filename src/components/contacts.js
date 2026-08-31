@@ -1,7 +1,7 @@
 import * as React from "react";
+import "bootstrap/dist/css/bootstrap.css";
 import "../css/style.css";
 import "../css/mobile.css";
-import "bootstrap/dist/css/bootstrap.css";
 
 const Contacts = ({ pageTitle, children }) => {
 

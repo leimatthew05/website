@@ -49,9 +49,6 @@ class Menu extends Component {
                   <DropdownItem>
                     <Link to={"/lifedrawing"}>LifeDrawing</Link>
                   </DropdownItem>
-                  <DropdownItem>
-                    <Link to="/compositing/">Compositing</Link>
-                  </DropdownItem>
               </DropdownMenu>
         </UncontrolledDropdown>,
       <NavLink>

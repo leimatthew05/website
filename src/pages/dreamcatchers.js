@@ -223,6 +223,20 @@ const DreamCatchers = () => {
                 </h2>
                 <div style={{paddingBottom: "50px"}}>
                   <a
+                    href={"mailto:thedreamcatchersshow@gmail.com"}
+                    style={{ paddingRight: "30px" }}
+                    target="_blank"
+                  >
+                    <div
+                      id="mail"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                  <a
                     href={"https://www.youtube.com/@thedreamcatchersshow"}
                     style={{ paddingRight: "30px" }}
                     target="_blank"
@@ -243,6 +257,20 @@ const DreamCatchers = () => {
                   >
                     <div
                       id="insta"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        display: "table-cell",
+                      }}
+                    ></div>
+                  </a>
+                  <a
+                    href={"https://www.tiktok.com/@thedreamcatchersshow"}
+                    style={{ paddingRight: "30px" }}
+                    target="_blank"
+                  >
+                    <div
+                      id="tiktok"
                       style={{
                         width: "50px",
                         height: "50px",
